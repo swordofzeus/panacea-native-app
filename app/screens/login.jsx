@@ -9,7 +9,7 @@ export default function LoginScreen({ onLogin }) {
     <View style={styles.container}>
       {/* Company Logo */}
       <Image
-        source={{ uri: 'https://via.placeholder.com/150' }} // Replace with your company logo URL
+        source={{ uri: 'https://images.squarespace-cdn.com/content/v1/64e4a36859c2011894dc418a/a4d9ca8e-0e3f-414f-a8bd-58906ed17de5/horizontal.png' }} // Replace with your company logo URL
         style={styles.logo}
       />
 
@@ -51,11 +51,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f5f5f5', // Light background
     padding: 20,
   },
   logo: {
-    width: 100,
+    width: 300,
     height: 100,
     marginBottom: 20,
   },

@@ -13,7 +13,7 @@ const CardComponent = ({ title, subheader, children, description }) => {
         {/* Summary/Description Section */}
         <View style={styles.summary}>
           <Text style={styles.description}>
-            {description || 'This is a summary section with some dummy placeholder text about the data shown in the graph.'}
+            {description || ''}
           </Text>
         </View>
       </View>
