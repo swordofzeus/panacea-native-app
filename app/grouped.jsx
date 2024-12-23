@@ -1,5 +1,5 @@
 import React from "react";
-import { VictoryChart, VictoryBar, VictoryAxis, VictoryTheme, VictoryGroup, VictoryTooltip } from "victory";
+import { VictoryChart, VictoryBar, VictoryAxis, VictoryGroup, VictoryTooltip } from "victory-native";
 
 const GroupedBarChartStyled = () => {
   const data = [
@@ -16,7 +16,6 @@ const GroupedBarChartStyled = () => {
 
   return (
     <VictoryChart
-      theme={VictoryTheme.material}
       domainPadding={{ x: 60 }}
       style={{ parent: { maxWidth: "90%", margin: "0 auto" } }}
     >

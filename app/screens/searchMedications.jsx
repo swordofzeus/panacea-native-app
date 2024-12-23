@@ -1,104 +1,204 @@
 import React, { useState } from "react";
 import { View, StyleSheet, ScrollView, Text } from "react-native";
 import { Searchbar, Button, Divider } from "react-native-paper";
+import DropDownPicker from "react-native-dropdown-picker";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-import CardComponent from "../Card";
-import AdverseEventsDonutChart from '../AdverseEventsPieChart'
-import {
-  VictoryChart,
-  VictoryBar,
-  VictoryAxis,
-  VictoryTheme,
-  VictoryGroup,
-  VictoryTooltip,
-  VictoryLegend,
-} from "victory";
+import Card from "../Card";
+import AdverseEventsPieChart from "../AdverseEventsPieChart";
 import StudyInfoCard from "../StudyInfoCard";
 import MetricsChart from "../MetricsCard";
 
-const medications = [
-  {
-    name: "Lunesta",
-    studyInfo: {
-      title: "A Phase III Study of Eszopiclone in Patients With Insomnia",
-      funding: "Eisai Inc.",
-      institution: "Eisai Co., Ltd.",
-      dates: { start: "2008-10", completion: "2010-05" },
-      summary: "The study showed that Lunesta significantly reduced sleep latency by an average of 35 minutes in elderly patients and 37 minutes in non-elderly patients. Wake Time After Sleep Onset (WASO) also decreased by 30% on average across all dosage groups. \n\n The most common side effects reported were dysgeusia (36%), nasopharyngitis (22%), and headache (10%)."
+const medications = {
+  "Lunesta": [
+    {
+      studyInfo: {
+        title: "A Phase III Study of Eszopiclone in Patients With Insomnia",
+        funding: "Eisai Inc.",
+        institution: "Eisai Co., Ltd.",
+        dates: { start: "2008-10", completion: "2010-05" },
+        summary:
+          "The study showed that Lunesta significantly reduced sleep latency by an average of 35 minutes in elderly patients and 37 minutes in non-elderly patients. Wake Time After Sleep Onset (WASO) also decreased by 30% on average across all dosage groups. \n\n The most common side effects reported were dysgeusia (36%), nasopharyngitis (22%), and headache (10%).",
+      },
+      participants: {
+        total: 324,
+        groups: [
+          { groupName: "1 mg Elderly", dosage: 1, ageCategory: "Elderly", size: 80 },
+          { groupName: "2 mg Elderly", dosage: 2, ageCategory: "Elderly", size: 83 },
+          { groupName: "2 mg Non-elderly", dosage: 2, ageCategory: "Non-elderly", size: 84 },
+          { groupName: "3 mg Non-elderly", dosage: 3, ageCategory: "Non-elderly", size: 77 },
+        ],
+        demographics: {
+          gender: { female: 180, male: 144 },
+          dropoutRate: 0.12,
+        },
+      },
+      adverseEvents: {
+        summary:
+          "Serious adverse events included Appendicitis, affecting 2 participants, and Acute Myocardial Infarction, affecting 1 participant. \n\n Overall, 69 participants experienced non-serious adverse events, while 8 participants experienced serious adverse events.",
+        serious: [
+          { event: "Appendicitis", count: 2 },
+          { event: "Acute myocardial infarction", count: 1 },
+          { event: "Clavicle fracture", count: 1 },
+        ],
+        common: [
+          { event: "Dysgeusia", percentage: 36 },
+          { event: "Nasopharyngitis", percentage: 22 },
+          { event: "Headache", percentage: 10 },
+          { event: "Somnolence", percentage: 7 },
+          { event: "Back pain", percentage: 5 },
+          { event: "Pharyngitis", percentage: 5 },
+          { event: "Thirst", percentage: 4 },
+          { event: "Cystitis", percentage: 4 },
+          { event: "Upper respiratory tract infection", percentage: 4 },
+          { event: "Dizziness", percentage: 3 },
+        ],
+      },
+      metrics: [
+        {
+          name: "Sleep Latency",
+          type: "bar",
+          description: "Mean change in sleep latency.",
+          units: "minutes",
+          groups: [
+            { label: "1 mg", data: { Elderly: 33.4, "Non-elderly": 31.2 } },
+            { label: "2 mg", data: { Elderly: 35.1, "Non-elderly": 33.7 } },
+          ],
+        },
+        {
+          name: "Wake Time After Sleep Onset (WASO)",
+          type: "bar",
+          description:
+            "Mean change in the total time spent awake after falling asleep (measured in minutes) from baseline to the end of the 4-week treatment period.",
+          units: "minutes",
+          groups: [
+            { label: "1 mg", data: { Elderly: 30.8, "Non-elderly": 28.4 } },
+            { label: "2 mg", data: { Elderly: 32.5, "Non-elderly": 29.7 } },
+            { label: "3 mg", data: { Elderly: 31.0, "Non-elderly": 30.2 } },
+          ],
+        },
+      ],
+    },
+    {
+      studyInfo: {
+        title: "A Study of Lunesta's Effect on Cognitive Function",
+        funding: "National Sleep Foundation",
+        institution: "University of California, San Diego",
+        dates: { start: "2012-01", completion: "2014-03" },
+        summary:
+          "This study investigated the effects of Lunesta on cognitive function. Participants reported improvements in memory and attention span. Common side effects included dry mouth and dizziness.",
+      },
+      participants: {
+        total: 200,
+        groups: [
+          { groupName: "1 mg Adults", dosage: 1, ageCategory: "Adult", size: 100 },
+          { groupName: "2 mg Adults", dosage: 2, ageCategory: "Adult", size: 100 },
+        ],
+        demographics: {
+          gender: { female: 120, male: 80 },
+          dropoutRate: 0.10,
+        },
+      },
+      adverseEvents: {
+        summary:
+          "The most common side effects reported were dry mouth (20%), dizziness (15%), and fatigue (10%).",
+        common: [
+          { event: "Dry Mouth", percentage: 20 },
+          { event: "Dizziness", percentage: 15 },
+          { event: "Fatigue", percentage: 10 },
+          { event: "Nausea", percentage: 8 },
+          { event: "Insomnia", percentage: 7 },
+          { event: "Blurred vision", percentage: 6 },
+          { event: "Stomach upset", percentage: 5 },
+          { event: "Skin rash", percentage: 4 },
+        ],
+      },
+      metrics: [
+        {
+          name: "Cognitive Improvement",
+          type: "bar",
+          description: "Mean improvement in cognitive test scores.",
+          units: "points",
+          groups: [
+            { label: "1 mg", data: { Adult: 5 } },
+            { label: "2 mg", data: { Adult: 8 } },
+          ],
+        },
+      ],
+    },
+    {
+      studyInfo: {
+        title: "Impact of Lunesta on Sleep Architecture",
+        funding: "Sleep Research Society",
+        institution: "Harvard Medical School",
+        dates: { start: "2017-09", completion: "2019-11" },
+        summary:
+          "This study analyzed the impact of Lunesta on sleep architecture, showing an increase in REM sleep duration.",
+      },
+      participants: {
+        total: 250,
+        groups: [
+          { groupName: "1 mg REM", dosage: 1, ageCategory: "Adult", size: 125 },
+          { groupName: "2 mg REM", dosage: 2, ageCategory: "Adult", size: 125 },
+        ],
+        demographics: {
+          gender: { female: 140, male: 110 },
+          dropoutRate: 0.07,
+        },
+      },
+      adverseEvents: {
+        summary:
+          "The most common side effects were headache (15%) and nausea (10%).",
+        common: [
+          { event: "Headache", percentage: 15 },
+          { event: "Nausea", percentage: 10 },
+          { event: "Fatigue", percentage: 8 },
+          { event: "Blurred vision", percentage: 6 },
+          { event: "Muscle pain", percentage: 5 },
+        ],
+      },
+      metrics: [
+        {
+          name: "REM Sleep Duration",
+          type: "bar",
+          description: "Increase in REM sleep duration.",
+          units: "minutes",
+          groups: [
+            { label: "1 mg", data: { Adult: 10 } },
+            { label: "2 mg", data: { Adult: 15 } },
+          ],
+        },
+      ],
+    },
+  ],
+};
 
-    },
-    participants: {
-      total: 324,
-      groups: [
-        { groupName: "1 mg Elderly", dosage: 1, ageCategory: "Elderly", size: 80 },
-        { groupName: "2 mg Elderly", dosage: 2, ageCategory: "Elderly", size: 83 },
-        { groupName: "2 mg Non-elderly", dosage: 2, ageCategory: "Non-elderly", size: 84 },
-        { groupName: "3 mg Non-elderly", dosage: 3, ageCategory: "Non-elderly", size: 77 },
-      ],
-      demographics: {
-        gender: { female: 180, male: 144 },
-        dropoutRate: 0.12,
-      },
-    },
-    adverseEvents: {
-      serious: [
-        { event: "Myocardial Infarction", count: 1 },
-        { event: "Appendicitis", count: 2 },
-        { event: "Clavicle Fracture", count: 1 },
-      ],
-      common: [
-        { event: "Dysgeusia", percentage: 36 },
-        { event: "Nasopharyngitis", percentage: 22 },
-        { event: "Headache", percentage: 10 },
-      ],
-    },
-    metrics: [
-      {
-        name: "Sleep Latency",
-        type: "bar",
-        description:
-          "Mean change in the time it takes to fall asleep (measured in minutes) from baseline to the end of the 4-week treatment period.",
-        units: "minutes",
-        data: [
-          { group: "1 mg Elderly", baseline: 65.5, change: -32.1 },
-          { group: "2 mg Elderly", baseline: 70.7, change: -37.0 },
-          { group: "2 mg Non-elderly", baseline: 71.8, change: -36.7 },
-          { group: "3 mg Non-elderly", baseline: 64.0, change: -32.8 },
-        ],
-      },
-      {
-        name: "Wake Time After Sleep Onset (WASO)",
-        type: "bar",
-        description:
-          "Mean change in the total time spent awake after falling asleep (measured in minutes) from baseline to the end of the 4-week treatment period.",
-        units: "minutes",
-        data: [
-          { group: "1 mg Elderly", baseline: 61.6, change: -30.8 },
-          { group: "2 mg Elderly", baseline: 68.8, change: -35.1 },
-          { group: "2 mg Non-elderly", baseline: 53.2, change: -32.4 },
-          { group: "3 mg Non-elderly", baseline: 42.3, change: -23.3 },
-        ],
-      },
-    ],
-  },
-];
 
 
 const MedicationSearchScreen = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedMedication, setSelectedMedication] = useState(null);
-  const [selectedMetric, setSelectedMetric] = useState("");
+  const [selectedStudyIndex, setSelectedStudyIndex] = useState(0);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownItems, setDropdownItems] = useState([]);
 
   const handleSearch = () => {
-    const medication = medications.find((med) =>
-      med.name.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    const medication = medications[searchQuery];
     setSelectedMedication(medication || null);
-    setSelectedMetric(medication?.metrics[0]?.name || ""); // Default to the first metric
+    setSelectedStudyIndex(0);
+    if (medication) {
+      setDropdownItems(
+        medication.map((study, index) => ({
+          label: study.studyInfo.title,
+          value: index,
+        }))
+      );
+    }
+  };
+  const handleStudySelect = (index) => {
+    setSelectedStudyIndex(index);
   };
 
-
-
+  const selectedStudy = selectedMedication ? selectedMedication[selectedStudyIndex] : null;
 
   return (
     <ScrollView contentContainerStyle={styles.scrollContainer}>
@@ -106,7 +206,7 @@ const MedicationSearchScreen = () => {
         <Searchbar
           placeholder="Search Medications"
           value={searchQuery}
-          onChangeText={(query) => setSearchQuery(query)}
+          onChangeText={setSearchQuery}
           style={styles.searchBar}
         />
         <Button
@@ -116,27 +216,75 @@ const MedicationSearchScreen = () => {
           icon={() => <Icon name="magnify" size={20} color="#fff" />}
         />
       </View>
-
       <Divider style={styles.divider} />
-
       {selectedMedication && (
         <>
-          <StudyInfoCard studyInfo={selectedMedication.studyInfo} participants={selectedMedication.participants} />
-          <MetricsChart
-            metrics={selectedMedication.metrics}
-            participants={selectedMedication.participants}
-            selectedMetric={selectedMetric}
-            onSelectMetric={setSelectedMetric}
-          />
-          <AdverseEventsDonutChart adverseEvents={selectedMedication?.adverseEvents?.common || []} />
+          <View style={styles.dropdownWrapper}>
+            <Text style={styles.dropdownLabel}>Select Study</Text>
+            <DropDownPicker
+              open={dropdownOpen}
+              value={selectedStudyIndex}
+              items={dropdownItems}
+              setOpen={setDropdownOpen}
+              setValue={(index) => handleStudySelect(index)}
+              setItems={setDropdownItems}
+              placeholder="Select a Study"
+              style={[
+                styles.dropdown,
+                { width: '90%', alignSelf: 'center', borderRadius: 10, borderColor: '#ccc' },
+              ]}
+              dropDownContainerStyle={{
+                width: '90%',
+                alignSelf: 'center',
+                borderRadius: 10,
+                borderColor: '#ccc',
+                marginTop: 5,
+                // backgroundColor: '#f3e5f5', // Light purple background
+              }}
+              textStyle={{
+                fontSize: 14,
+                color: '#333',
+              }}
+              placeholderStyle={{
+                color: '#888',
+              }}
+              listItemContainerStyle={{
+                borderBottomWidth: 1,
+                borderBottomColor: '#eee',
+                // backgroundColor: '#f3e5f5', // Light purple background
+              }}
+              listItemLabelStyle={{
+                fontSize: 14,
+                color: '#333',
+              }}
+
+            />
+          </View>
+
+          {selectedStudy && (
+            <>
+              <StudyInfoCard
+                studyInfo={selectedStudy.studyInfo}
+                participants={selectedStudy.participants}
+              />
+              <MetricsChart
+                key={selectedStudyIndex} // Ensures re-render when switching studies
+                metrics={selectedStudy.metrics}
+                participants={selectedStudy.participants}
+                selectedMetric={selectedStudy.metrics[0]?.name || ""}
+                onSelectMetric={() => { }}
+              />
+              <AdverseEventsPieChart
+                adverseEvents={selectedStudy.adverseEvents.common || []}
+                summary={selectedStudy.adverseEvents.summary}
+              />
+            </>
+          )}
         </>
       )}
     </ScrollView>
   );
 };
-
-
-// Add your styles here...
 
 const styles = StyleSheet.create({
   scrollContainer: {
@@ -153,7 +301,6 @@ const styles = StyleSheet.create({
     flex: 1,
     marginRight: 10,
     borderRadius: 10,
-    maxWidth: "70%",
   },
   searchButton: {
     height: 40,
@@ -164,67 +311,26 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     backgroundColor: "gray",
   },
-  tabContainer: {
-    flexDirection: "row",
-    marginBottom: 5, // Reduced space between tabs and chart
+  dropdown: {
+    marginVertical: 10,
   },
-  tab: {
-    marginHorizontal: 10,
+  dropdownContainer: {
+    marginVertical: 10,
+  },
+  dropdownLabel: {
     fontSize: 16,
-    color: "gray",
-    paddingVertical: 5,
-    paddingHorizontal: 10,
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: 5,
+    marginLeft:20
   },
-  selectedTab: {
-    color: "#00308F",
-    borderBottomWidth: 2,
-    borderBottomColor: "#00308F",
-  },
-  chartContainer: {
-    marginVertical: 2, // Reduced spacing above and below the chart
-  },
-  studyInfo: {
-    fontSize: 14,
-    color: "#555",
-    marginTop: 10,
-  },
-  bold: {
-    fontWeight: "bold",
-  },
-  studyInfoContainer: {
-    padding: 16,
-    backgroundColor: "#f9f9f9",
-    borderRadius: 8,
-  },
-  infoLine: {
-    fontSize: 14,
-    color: "#333",
-    marginBottom: 8,
-  },
-  highlightedLine: {
-    fontSize: 14,
-    color: "#333",
-    marginBottom: 8,
-    fontWeight: "bold",
-  },
-  bold: {
-    fontWeight: "bold",
-    color: "#000",
-  },
-  summaryBox: {
-    marginTop: 16,
-    padding: 12,
-    backgroundColor: "#fff",
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: "#ddd",
-  },
-  summaryText: {
-    fontSize: 13,
-    color: "#555",
-    lineHeight: 18,
-  },
-});
+  dropdownWrapper: {
+    marginVertical: 10,
+    width: '100%',
+    alignItems: 'left',
+    zIndex: 1000, // Ensure the dropdown is above other elements
 
+  }
+});
 
 export default MedicationSearchScreen;

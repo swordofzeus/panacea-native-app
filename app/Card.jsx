@@ -11,11 +11,12 @@ const CardComponent = ({ title, subheader, children, description }) => {
       <View style={styles.content}>
         {children}
         {/* Summary/Description Section */}
-        <View style={styles.summary}>
+
+       {description && <View style={styles.summary}>
           <Text style={styles.description}>
             {description || ''}
           </Text>
-        </View>
+        </View> }
       </View>
     </View>
   );

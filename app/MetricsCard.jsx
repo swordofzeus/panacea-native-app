@@ -1,161 +1,103 @@
-import React from "react";
-import { View, ScrollView, Text, StyleSheet } from "react-native";
-import {
-  VictoryChart,
-  VictoryBar,
-  VictoryAxis,
-  VictoryTheme,
-  VictoryGroup,
-  VictoryTooltip,
-  VictoryLegend,
-} from "victory";
-import CardComponent from "./Card";
+import React, { useState } from "react";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { BarChart, XAxis, YAxis } from "react-native-svg-charts";
+import * as scale from "d3-scale";
+import Card from "./Card";
 
-const MetricsChart = ({ metrics, participants, selectedMetric, onSelectMetric }) => {
-  const prepareChartData = (metricName) => {
-    if (!metrics || !metricName || !participants) return { elderly: [], nonElderly: [], dosageLabels: [] };
+const MetricsCard = ({ metrics }) => {
+  const [selectedMetric, setSelectedMetric] = useState(metrics[0]?.name || "");
+  console.log({metrics})
+  console.log(selectedMetric)
+  // Extract the selected metric's data
+  const metric = metrics.find((m) => m.name === selectedMetric);
 
-    const metric = metrics.find((m) => m.name === metricName);
-    if (!metric) return { elderly: [], nonElderly: [], dosageLabels: [] };
+  if (!metric) {
+    return <Text style={styles.noDataText}>No data available for this metric</Text>;
+  }
 
-    const elderlyData = [];
-    const nonElderlyData = [];
-    const dosageLabels = [...new Set(participants.groups.map((g) => `${g.dosage} mg`))];
+  // Prepare chart data
+  const { groups } = metric;
+  console.log({groups})
+  const dosageLabels = groups.map((group) => group.label);
+  const categories = Object.keys(groups[0].data); // Get all categories dynamically
+  console.log({categories})
 
-    participants.groups.forEach((group) => {
-      const metricData = metric.data.find((m) => m.group === group.groupName);
-      const value = metricData ? metricData.baseline + metricData.change : 0;
+  const colors = ["#ADD8E6", "#DDA0DD", "#FFD700", "#FF6347", "#90EE90"]; // Add as many as needed
+  const barData = categories.map((category, index) => ({
+    data: groups.map((group) => group.data[category]),
+    svg: { fill: colors[index % colors.length] }, // Cycle through colors
+    label: category,
+  }));
 
-      if (group.ageCategory === "Elderly") {
-        elderlyData.push({ dosage: `${group.dosage} mg`, value });
-      } else {
-        nonElderlyData.push({ dosage: `${group.dosage} mg`, value });
-      }
-    });
-
-    return { elderly: elderlyData, nonElderly: nonElderlyData, dosageLabels };
-  };
-
-  const renderTabs = () => {
-    return (
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.tabContainer}>
-        {metrics.map((metric) => (
-          <Text
-            key={metric.name}
-            style={[styles.tab, selectedMetric === metric.name && styles.selectedTab]}
-            onPress={() => onSelectMetric(metric.name)}
-          >
-            {metric.name}
-          </Text>
-        ))}
-      </ScrollView>
-    );
-  };
-
-  const renderChart = () => {
-    const { elderly, nonElderly, dosageLabels } = prepareChartData(selectedMetric);
-
-    const metric = metrics.find((m) => m.name === selectedMetric);
-
-    return (
-      <>
-        <VictoryChart
-          theme={VictoryTheme.material}
-          domainPadding={{ x: 30 }}
-          style={{ parent: { maxWidth: "90%", margin: "0 auto" } }}
+  const renderTabs = () => (
+    <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.tabContainer}>
+      {metrics.map((metric) => (
+        <Text
+          key={metric.name}
+          style={[styles.tab, selectedMetric === metric.name && styles.selectedTab]}
+          onPress={() => setSelectedMetric(metric.name)}
         >
-          <VictoryLegend
-            x={125}
-            y={10}
-            orientation="horizontal"
-            gutter={20}
-            data={[
-              { name: "Elderly", symbol: { fill: "rgba(173, 216, 230, 0.8)" } },
-              { name: "Non-Elderly", symbol: { fill: "rgba(221, 160, 221, 0.8)" } },
-            ]}
-          />
-          <VictoryAxis
-            tickValues={dosageLabels}
-            label="Dosage"
-            style={{
-              axis: { stroke: "#756f6a" },
-              axisLabel: { fontSize: 14, padding: 30, fill: "#4a4a4a" },
-              tickLabels: { fontSize: 12, padding: 5, fill: "#4a4a4a" },
-            }}
-          />
-          <VictoryAxis
-            dependentAxis
-            label={`Change in ${selectedMetric} (${metric?.units || ""})`}
-            style={{
-              axis: { stroke: "#756f6a" },
-              axisLabel: { fontSize: 14, padding: 40, fill: "#4a4a4a" },
-              grid: { stroke: "#e0e0e0", strokeDasharray: "4,4" },
-              tickLabels: { fontSize: 12, padding: 5, fill: "#4a4a4a" },
-            }}
-          />
-          <VictoryGroup offset={20}>
-            <VictoryBar
-              data={elderly}
-              x="dosage"
-              y="value"
-              labels={({ datum }) => `${datum.value.toFixed(1)} ${metric?.units || ""}`}
-              labelComponent={
-                <VictoryTooltip
-                  flyoutStyle={{ fill: "white", stroke: "#ccc" }}
-                  style={{ fontSize: 10 }}
-                />
-              }
-              barWidth={25}
-              cornerRadius={6}
-              style={{
-                data: {
-                  fill: "rgba(173, 216, 230, 0.8)", // Light blue
-                  stroke: "rgba(0, 123, 255, 0.8)", // Border color
-                  strokeWidth: 1,
-                },
-              }}
-            />
-            <VictoryBar
-              data={nonElderly}
-              x="dosage"
-              y="value"
-              labels={({ datum }) => `${datum.value.toFixed(1)} ${metric?.units || ""}`}
-              labelComponent={
-                <VictoryTooltip
-                  flyoutStyle={{ fill: "white", stroke: "#ccc" }}
-                  style={{ fontSize: 10 }}
-                />
-              }
-              barWidth={25}
-              cornerRadius={6}
-              style={{
-                data: {
-                  fill: "rgba(221, 160, 221, 0.8)", // Light purple
-                  stroke: "rgba(186, 85, 211, 0.8)", // Border color
-                  strokeWidth: 1,
-                },
-              }}
-            />
-          </VictoryGroup>
-        </VictoryChart>
-        {metric?.description && (
-          <View style={styles.descriptionContainer}>
-            <Text style={styles.metricDescription}>{metric.description}</Text>
-          </View>
-        )}
-      </>
-    );
-  };
+          {metric.name}
+        </Text>
+      ))}
+    </ScrollView>
+  );
 
   return (
-    <CardComponent title="Metrics">
-      {renderTabs()}
-      {renderChart()}
-    </CardComponent>
+    <Card title="Metrics">
+      <View style={styles.container}>
+        {renderTabs()}
+        <Text style={styles.chartTitle}>
+          {selectedMetric} ({metric.units})
+        </Text>
+        <View style={{ flexDirection: "row", height: 300, paddingHorizontal: 10 }}>
+          <YAxis
+            data={barData.flatMap((group) => group.data)}
+            contentInset={{ top: 10, bottom: 10 }}
+            svg={{ fontSize: 12, fill: "gray" }}
+          />
+          <View style={{ flex: 1, marginLeft: 10 }}>
+            <BarChart
+              style={{ flex: 1 }}
+              data={barData}
+              yAccessor={({ item }) => item}
+              contentInset={{ top: 10, bottom: 10 }}
+              spacingInner={0.2}
+              groupMode="grouped"
+            />
+            <XAxis
+              style={{ marginTop: 10 }}
+              data={dosageLabels}
+              formatLabel={(value, index) => dosageLabels[index]}
+              scale={scale.scaleBand}
+              svg={{ fontSize: 12, fill: "gray" }}
+            />
+          </View>
+        </View>
+        <View style={styles.legendContainer}>
+          {barData.map((group, index) => (
+            <View key={index} style={styles.legendItem}>
+              <View style={[styles.legendColorBox, { backgroundColor: group.svg.fill }]} />
+              <Text style={styles.legendText}>{group.label}</Text>
+            </View>
+          ))}
+        </View>
+        <Text style={styles.description}>{metric.description}</Text>
+      </View>
+    </Card>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    padding: 10,
+  },
+  noDataText: {
+    textAlign: "center",
+    fontSize: 14,
+    color: "gray",
+    marginTop: 20,
+  },
   tabContainer: {
     flexDirection: "row",
     marginBottom: 5,
@@ -172,16 +114,38 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2,
     borderBottomColor: "#00308F",
   },
-  descriptionContainer: {
-    marginTop: 10,
-    padding: 10,
-    backgroundColor: "#f9f9f9",
-    borderRadius: 8,
+  chartTitle: {
+    fontSize: 16,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginVertical: 10,
   },
-  metricDescription: {
-    fontSize: 13,
-    color: "#555",
+  legendContainer: {
+    flexDirection: "row",
+    justifyContent: "center",
+    marginTop: 10,
+  },
+  legendItem: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginHorizontal: 10,
+  },
+  legendColorBox: {
+    width: 12,
+    height: 12,
+    borderRadius: 2,
+    marginRight: 5,
+  },
+  legendText: {
+    fontSize: 12,
+    color: "gray",
+  },
+  description: {
+    fontSize: 14,
+    color: "gray",
+    textAlign: "left",
+    marginTop: 10,
   },
 });
 
-export default MetricsChart;
+export default MetricsCard;

@@ -1,51 +1,71 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
-import { VictoryPie, VictoryLegend } from "victory";
-import CardComponent from "./Card";
+import PieChart from "react-native-pie-chart";
+import Card from "./Card";
 
-const AdverseEventsDonutChart = ({ adverseEvents }) => {
-  if (!adverseEvents || adverseEvents.length === 0) {
-    console.log(adverseEvents)
+const AdverseEventsPieChart = ({ adverseEvents, summary }) => {
+  console.log({adverseEvents})
+  if (!adverseEvents|| adverseEvents.length === 0) {
     return (
-      <CardComponent title="Adverse Events">
+      <View style={styles.container}>
         <Text style={styles.noDataText}>No adverse events data available.</Text>
-      </CardComponent>
+      </View>
     );
   }
 
-  const commonEventsData = adverseEvents.map((event) => ({
-    x: event.event,
-    y: event.percentage,
-  }));
+  const data = adverseEvents.map((event) => event.percentage);
+  const labels = adverseEvents.map((event) => event.event);
+  const colors = [
+    "#8e44ad", // Dark Purple
+    "#6c5ce7", // Light Indigo
+    "#4834d4", // Deep Blue
+    "#74b9ff", // Light Blue
+    "#00cec9", // Teal
+    "#a29bfe", // Lavender
+    "#dfe6e9", // Soft Grey-Blue
+    "#2d3436", // Charcoal
+    "#b2bec3", // Light Slate
+    "#636e72", // Dark Slate
+];
 
   return (
-    <CardComponent title="Adverse Events">
-      <View style={styles.container}>
-        <VictoryPie
-          data={commonEventsData}
-          colorScale="cool"
-          labels={({ datum }) => `${datum.x}\n${datum.y}%`}
-          innerRadius={80} // Increased innerRadius to make the ring thinner
-          labelRadius={({ radius }) => radius + 10}
-          style={{
-            labels: {
-              fontSize: 12,
-              fill: "#4a4a4a",
-            },
-          }}
-          padAngle={2} // Adds spacing between slices for better readability
-        />
-
+    <Card title="Adverse Events" description={summary}>
+    <View style={styles.container}>
+      {/* <Text style={styles.title}>Adverse Events</Text> */}
+      <PieChart
+        widthAndHeight={200}
+        series={data}
+        sliceColor={colors.slice(0,adverseEvents.length)}
+        doughnut={true}
+        coverRadius={0.5}
+        coverFill="#FFF"
+      />
+      <View style={styles.legendContainer}>
+        {labels.map((label, index) => (
+          <View key={index} style={styles.legendItem}>
+            <View
+              style={[styles.legendColorBox, { backgroundColor: colors[index % colors.length] }]}
+            />
+            <Text style={styles.legendText}>
+              {label}: {data[index]}%
+            </Text>
+          </View>
+        ))}
       </View>
-    </CardComponent>
+    </View>
+    </Card>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     alignItems: "center",
-    justifyContent: "center",
-    marginVertical: 10,
+    marginVertical: 20,
+  },
+  title: {
+    fontSize: 16,
+    fontWeight: "bold",
+    marginBottom: 10,
   },
   noDataText: {
     fontSize: 14,
@@ -53,6 +73,27 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginTop: 10,
   },
+  legendContainer: {
+    marginTop: 20,
+    alignItems: "flex-start",
+    width: "100%",
+    paddingHorizontal: 20,
+  },
+  legendItem: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginVertical: 5,
+  },
+  legendColorBox: {
+    width: 12,
+    height: 12,
+    borderRadius: 2,
+    marginRight: 8,
+  },
+  legendText: {
+    fontSize: 14,
+    color: "#333",
+  },
 });
 
-export default AdverseEventsDonutChart;
+export default AdverseEventsPieChart;

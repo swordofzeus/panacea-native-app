@@ -1,0 +1,702 @@
+{
+    "protocolSection": {
+      "identificationModule": {
+        "nctId": "NCT00724282",
+        "orgStudyIdInfo": {
+          "id": "15632"
+        },
+        "secondaryIdInfos": [
+          {
+            "id": "ESRC-124"
+          }
+        ],
+        "organization": {
+          "fullName": "University of Chicago",
+          "class": "OTHER"
+        },
+        "briefTitle": "Treatment of Insomnia and Glucose Metabolism",
+        "officialTitle": "Double-blind Placebo-controlled Study of the Effects of Eszopiclone on Glucose Tolerance, Insulin Secretion, and Insulin Action in Adults With Chronic Insomnia"
+      },
+      "statusModule": {
+        "statusVerifiedDate": "2015-10",
+        "overallStatus": "COMPLETED",
+        "expandedAccessInfo": {
+          "hasExpandedAccess": false
+        },
+        "startDateStruct": {
+          "date": "2008-04"
+        },
+        "primaryCompletionDateStruct": {
+          "date": "2012-03",
+          "type": "ACTUAL"
+        },
+        "completionDateStruct": {
+          "date": "2012-03",
+          "type": "ACTUAL"
+        },
+        "studyFirstSubmitDate": "2008-07-25",
+        "studyFirstSubmitQcDate": "2008-07-25",
+        "studyFirstPostDateStruct": {
+          "date": "2008-07-29",
+          "type": "ESTIMATED"
+        },
+        "resultsFirstSubmitDate": "2015-09-10",
+        "resultsFirstSubmitQcDate": "2015-10-15",
+        "resultsFirstPostDateStruct": {
+          "date": "2015-10-16",
+          "type": "ESTIMATED"
+        },
+        "lastUpdateSubmitDate": "2015-10-15",
+        "lastUpdatePostDateStruct": {
+          "date": "2015-10-16",
+          "type": "ESTIMATED"
+        }
+      },
+      "sponsorCollaboratorsModule": {
+        "responsibleParty": {
+          "type": "SPONSOR"
+        },
+        "leadSponsor": {
+          "name": "University of Chicago",
+          "class": "OTHER"
+        }
+      },
+      "oversightModule": {
+        "oversightHasDmc": false
+      },
+      "descriptionModule": {
+        "briefSummary": "Available data suggest that obtaining adequate sleep is associated with a better ability of the body to use carbohydrates as a source of energy and a lower risk of developing diabetes. The sleeping pill, Eszopiclone (Lunesta), has been approved by the Food and Drug Administration for the treatment of people who complain of trouble falling or staying asleep. This study will examine the hypothesis that the use of Eszopiclone (Lunesta) to improve the sleep of people with insomnia may also improve the use of sugar in their body.",
+        "detailedDescription": "Study participants will complete a set of oral and intravenous glucose (sugar) tolerance tests, which will be performed on two separate occasions in random order: once after a week of treatment with Eszopiclone (Lunesta) and once again after a week of receiving placebo."
+      },
+      "conditionsModule": {
+        "conditions": [
+          "Sleep",
+          "Insomnia",
+          "Insulin Resistance"
+        ],
+        "keywords": [
+          "sleep",
+          "eszopiclone",
+          "insulin secretion",
+          "insulin action",
+          "glucose tolerance"
+        ]
+      },
+      "designModule": {
+        "studyType": "INTERVENTIONAL",
+        "phases": [
+          "PHASE4"
+        ],
+        "designInfo": {
+          "allocation": "RANDOMIZED",
+          "interventionModel": "CROSSOVER",
+          "primaryPurpose": "TREATMENT",
+          "maskingInfo": {
+            "masking": "QUADRUPLE",
+            "whoMasked": [
+              "PARTICIPANT",
+              "CARE_PROVIDER",
+              "INVESTIGATOR",
+              "OUTCOMES_ASSESSOR"
+            ]
+          }
+        },
+        "enrollmentInfo": {
+          "count": 20,
+          "type": "ACTUAL"
+        }
+      },
+      "armsInterventionsModule": {
+        "armGroups": [
+          {
+            "label": "Eszopiclone or Placebo",
+            "type": "OTHER",
+            "description": "Subjects receive either eszopiclone or placebo for 9 days, followed by 3 week washout, then crossover to opposite treatment. Treatment is double-blinded.",
+            "interventionNames": [
+              "Drug: Eszopiclone",
+              "Drug: Placebo"
+            ]
+          }
+        ],
+        "interventions": [
+          {
+            "type": "DRUG",
+            "name": "Eszopiclone",
+            "description": "Eszopiclone 3 mg by mouth daily at bedtime for 9 days",
+            "armGroupLabels": [
+              "Eszopiclone or Placebo"
+            ],
+            "otherNames": [
+              "Lunesta"
+            ]
+          },
+          {
+            "type": "DRUG",
+            "name": "Placebo",
+            "description": "Placebo by mouth daily at bedtime for 9 days",
+            "armGroupLabels": [
+              "Eszopiclone or Placebo"
+            ]
+          }
+        ]
+      },
+      "outcomesModule": {
+        "primaryOutcomes": [
+          {
+            "measure": "Plasma Glucose Level at the 120-minute Time Point of a 75g Oral Glucose Tolerance Test",
+            "timeFrame": "at the end of each treatment"
+          }
+        ]
+      },
+      "eligibilityModule": {
+        "eligibilityCriteria": "Inclusion Criteria:\n\n* age between 35 and 64\n* must have long-standing trouble falling or staying asleep\n* BMI between 22 and 34 kg/m2\n\nExclusion Criteria:\n\n* sleep apnea or other sleep disorder other than insomnia\n* diagnosis of diabetes requiring treatment with pills or insulin\n* smoking\n* night or shift work\n* presence of a medical condition that can disrupt sleep\n* women only: irregular menstrual periods or pregnancy\n* use of medications/compounds that can disrupt sleep",
+        "healthyVolunteers": true,
+        "sex": "ALL",
+        "minimumAge": "35 Years",
+        "maximumAge": "64 Years",
+        "stdAges": [
+          "ADULT"
+        ]
+      },
+      "contactsLocationsModule": {
+        "overallOfficials": [
+          {
+            "name": "Plamen D Penev, MD, PhD",
+            "affiliation": "University of Chicago",
+            "role": "PRINCIPAL_INVESTIGATOR"
+          }
+        ],
+        "locations": [
+          {
+            "facility": "University of Chicago",
+            "city": "Chicago",
+            "state": "Illinois",
+            "zip": "60637",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.85003,
+              "lon": -87.65005
+            }
+          }
+        ]
+      }
+    },
+    "resultsSection": {
+      "participantFlowModule": {
+        "preAssignmentDetails": "Investigator left academia and is unavailable; participation in cross-over sequences was not unblinded, therefore participants are presented in one Arm throughout Results.",
+        "groups": [
+          {
+            "id": "FG000",
+            "title": "Eszopiclone or Placebo",
+            "description": "Subjects receive either eszopiclone or placebo for 9 days, followed by 3 week washout, then crossover to opposite treatment. Treatment is double-blinded.\n\nEszopiclone: Eszopiclone 3 mg by mouth daily at bedtime for 9 days\n\nPlacebo: Placebo by mouth daily at bedtime for 9 days"
+          }
+        ],
+        "periods": [
+          {
+            "title": "Overall Study",
+            "milestones": [
+              {
+                "type": "STARTED",
+                "achievements": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "20"
+                  }
+                ]
+              },
+              {
+                "type": "COMPLETED",
+                "achievements": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "16"
+                  }
+                ]
+              },
+              {
+                "type": "NOT COMPLETED",
+                "achievements": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "4"
+                  }
+                ]
+              }
+            ],
+            "dropWithdraws": [
+              {
+                "type": "Withdrawal by Subject",
+                "reasons": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "3"
+                  }
+                ]
+              },
+              {
+                "type": "Physician Decision",
+                "reasons": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "baselineCharacteristicsModule": {
+        "groups": [
+          {
+            "id": "BG000",
+            "title": "Eszopiclone or Placebo",
+            "description": "Subjects receive either eszopiclone or placebo for 9 days, followed by 3 week washout, then crossover to opposite treatment. Treatment is double-blinded.\n\nEszopiclone: Eszopiclone 3 mg by mouth daily at bedtime for 9 days\n\nPlacebo: Placebo by mouth daily at bedtime for 9 days"
+          }
+        ],
+        "denoms": [
+          {
+            "units": "Participants",
+            "counts": [
+              {
+                "groupId": "BG000",
+                "value": "20"
+              }
+            ]
+          }
+        ],
+        "measures": [
+          {
+            "title": "Age, Categorical",
+            "paramType": "COUNT_OF_PARTICIPANTS",
+            "unitOfMeasure": "Participants",
+            "classes": [
+              {
+                "categories": [
+                  {
+                    "title": "<=18 years",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Between 18 and 65 years",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "20"
+                      }
+                    ]
+                  },
+                  {
+                    "title": ">=65 years",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Sex: Female, Male",
+            "paramType": "COUNT_OF_PARTICIPANTS",
+            "unitOfMeasure": "Participants",
+            "classes": [
+              {
+                "categories": [
+                  {
+                    "title": "Female",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "14"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Male",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "6"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Race (NIH/OMB)",
+            "paramType": "COUNT_OF_PARTICIPANTS",
+            "unitOfMeasure": "Participants",
+            "classes": [
+              {
+                "categories": [
+                  {
+                    "title": "American Indian or Alaska Native",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Asian",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "1"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Native Hawaiian or Other Pacific Islander",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Black or African American",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "11"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "White",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "8"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "More than one race",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Unknown or Not Reported",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Region of Enrollment",
+            "paramType": "NUMBER",
+            "unitOfMeasure": "participants",
+            "classes": [
+              {
+                "title": "United States",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "20"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "outcomeMeasuresModule": {
+        "outcomeMeasures": [
+          {
+            "type": "PRIMARY",
+            "title": "Plasma Glucose Level at the 120-minute Time Point of a 75g Oral Glucose Tolerance Test",
+            "populationDescription": "Investigator left university without analyzing data and no information is available on unblinding.",
+            "reportingStatus": "POSTED",
+            "timeFrame": "at the end of each treatment",
+            "groups": [
+              {
+                "id": "OG000",
+                "title": "Eszopiclone or Placebo",
+                "description": "Subjects receive either eszopiclone or placebo for 9 days, followed by 3 week washout, then crossover to opposite treatment. Treatment is double-blinded.\n\nEszopiclone: Eszopiclone 3 mg by mouth daily at bedtime for 9 days\n\nPlacebo: Placebo by mouth daily at bedtime for 9 days"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "OG000",
+                    "value": "0"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "adverseEventsModule": {
+        "frequencyThreshold": "0",
+        "eventGroups": [
+          {
+            "id": "EG000",
+            "title": "Eszopiclone or Placebo",
+            "description": "Subjects receive either eszopiclone or placebo for 9 days, followed by 3 week washout, then crossover to opposite treatment. Treatment is double-blinded.\n\nEszopiclone: Eszopiclone 3 mg by mouth daily at bedtime for 9 days\n\nPlacebo: Placebo by mouth daily at bedtime for 9 days",
+            "seriousNumAffected": 0,
+            "seriousNumAtRisk": 20,
+            "otherNumAffected": 1,
+            "otherNumAtRisk": 20
+          }
+        ],
+        "otherEvents": [
+          {
+            "term": "Furuncle",
+            "organSystem": "Skin and subcutaneous tissue disorders",
+            "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numAffected": 1,
+                "numAtRisk": 20
+              }
+            ]
+          }
+        ]
+      },
+      "moreInfoModule": {
+        "certainAgreement": {
+          "piSponsorEmployee": true
+        },
+        "pointOfContact": {
+          "title": "Andrea Eiring",
+          "organization": "University of Chicago",
+          "email": "aeiring@bsd.uchicago.edu",
+          "phone": "773-702-3657"
+        }
+      }
+    },
+    "derivedSection": {
+      "miscInfoModule": {
+        "versionHolder": "2024-12-13"
+      },
+      "conditionBrowseModule": {
+        "meshes": [
+          {
+            "id": "D007319",
+            "term": "Sleep Initiation and Maintenance Disorders"
+          },
+          {
+            "id": "D007333",
+            "term": "Insulin Resistance"
+          }
+        ],
+        "ancestors": [
+          {
+            "id": "D020919",
+            "term": "Sleep Disorders, Intrinsic"
+          },
+          {
+            "id": "D020920",
+            "term": "Dyssomnias"
+          },
+          {
+            "id": "D012893",
+            "term": "Sleep Wake Disorders"
+          },
+          {
+            "id": "D009422",
+            "term": "Nervous System Diseases"
+          },
+          {
+            "id": "D001523",
+            "term": "Mental Disorders"
+          },
+          {
+            "id": "D006946",
+            "term": "Hyperinsulinism"
+          },
+          {
+            "id": "D044882",
+            "term": "Glucose Metabolism Disorders"
+          },
+          {
+            "id": "D008659",
+            "term": "Metabolic Diseases"
+          }
+        ],
+        "browseLeaves": [
+          {
+            "id": "M10370",
+            "name": "Insulin Resistance",
+            "asFound": "Insulin Resistance",
+            "relevance": "HIGH"
+          },
+          {
+            "id": "M10356",
+            "name": "Sleep Initiation and Maintenance Disorders",
+            "asFound": "Insomnia",
+            "relevance": "HIGH"
+          },
+          {
+            "id": "M22242",
+            "name": "Parasomnias",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M22654",
+            "name": "Sleep Disorders, Intrinsic",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M22655",
+            "name": "Dyssomnias",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M15696",
+            "name": "Sleep Wake Disorders",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M14473",
+            "name": "Psychotic Disorders",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M4815",
+            "name": "Mental Disorders",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M9997",
+            "name": "Hyperinsulinism",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M11639",
+            "name": "Metabolic Diseases",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M25403",
+            "name": "Glucose Metabolism Disorders",
+            "relevance": "LOW"
+          },
+          {
+            "id": "T1303",
+            "name": "Chronic Graft Versus Host Disease",
+            "relevance": "LOW"
+          }
+        ],
+        "browseBranches": [
+          {
+            "abbrev": "BC18",
+            "name": "Nutritional and Metabolic Diseases"
+          },
+          {
+            "abbrev": "All",
+            "name": "All Conditions"
+          },
+          {
+            "abbrev": "BC10",
+            "name": "Nervous System Diseases"
+          },
+          {
+            "abbrev": "BXM",
+            "name": "Behaviors and Mental Disorders"
+          },
+          {
+            "abbrev": "BC23",
+            "name": "Symptoms and General Pathology"
+          },
+          {
+            "abbrev": "Rare",
+            "name": "Rare Diseases"
+          }
+        ]
+      },
+      "interventionBrowseModule": {
+        "meshes": [
+          {
+            "id": "D000069582",
+            "term": "Eszopiclone"
+          }
+        ],
+        "ancestors": [
+          {
+            "id": "D006993",
+            "term": "Hypnotics and Sedatives"
+          },
+          {
+            "id": "D002492",
+            "term": "Central Nervous System Depressants"
+          },
+          {
+            "id": "D045505",
+            "term": "Physiological Effects of Drugs"
+          }
+        ],
+        "browseLeaves": [
+          {
+            "id": "M10365",
+            "name": "Insulin",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M173166",
+            "name": "Insulin, Globin Zinc",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M475",
+            "name": "Eszopiclone",
+            "asFound": "Healthcare Workers",
+            "relevance": "HIGH"
+          },
+          {
+            "id": "M10043",
+            "name": "Hypnotics and Sedatives",
+            "relevance": "LOW"
+          }
+        ],
+        "browseBranches": [
+          {
+            "abbrev": "Hypo",
+            "name": "Hypoglycemic Agents"
+          },
+          {
+            "abbrev": "All",
+            "name": "All Drugs and Chemicals"
+          },
+          {
+            "abbrev": "CNSDep",
+            "name": "Central Nervous System Depressants"
+          }
+        ]
+      }
+    },
+    "hasResults": true
+  }

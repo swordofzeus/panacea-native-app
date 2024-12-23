@@ -4,6 +4,9 @@ import { Slot } from 'expo-router';
 import LoginScreen from './screens/login'; // Adjusted import for login screen
 import { View, Text, Button } from 'react-native';
 import SearchMedications from './screens/searchMedications'
+import { Provider as PaperProvider, MD3LightTheme as DefaultTheme } from "react-native-paper";
+import CurrentTreatmentsScreen from './screens/addMedicationScreen'
+import MedicationDetailsScreen from './screens/medicationDetailsScreen'
 
 const Drawer = createDrawerNavigator();
 
@@ -22,12 +25,15 @@ export default function Layout() {
     return <LoginScreen onLogin={handleLogin} />;
   }
 
-  return (
+  return (<PaperProvider theme={DefaultTheme}>
     <Drawer.Navigator initialRouteName="index">
       <Drawer.Screen name="index" options={{ title: 'Home' }}>
         {() => <Slot />}
       </Drawer.Screen>
       <Drawer.Screen name="Search Medications" component={SearchMedications} />
+      <Drawer.Screen name="Add Medications" component={CurrentTreatmentsScreen} />
+      <Drawer.Screen name="MedicationDetails" component={MedicationDetailsScreen} />
+
 
       <Drawer.Screen name="profile" options={{ title: 'Profile' }}>
         {() => <Slot />}
@@ -43,5 +49,6 @@ export default function Layout() {
         )}
       />
     </Drawer.Navigator>
+    </PaperProvider>
   );
 }
