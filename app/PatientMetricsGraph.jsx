@@ -9,7 +9,7 @@ const PatientMetricsGraph = () => {
 
   const metrics = [
     {
-        name: "Hours Slept (Rolling Average)",
+        name: "Hours Slept",
         description: "Lunesta appears to be working well for you after the 4th week you were in the top 5% of improved patients based on analysis of over 1000 patients in similar demographics",
         barData: [
             { value: 6.0, label: "Wk1" },

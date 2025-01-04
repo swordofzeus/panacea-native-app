@@ -1,10 +1,11 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from models.clinical_gov_models import Study,ParticipantGroup, Participant,ParticipantDemographic
+from models.clinical_gov_models import ParticipantStatistic, Study,ParticipantGroup, Participant,ParticipantDemographic
 import openai
 
 # OpenAI API configuration
-# openai.api_key = OPENAI_API_KEY
+OPENAI_API_KEY = "OPEN_AI_APIKEY"
+openai.api_key = OPENAI_API_KEY
 
 
 
@@ -61,14 +62,21 @@ class ClinicalDataVisualizer:
             .all()
         )
         participant_demographics = (
-            self.session.query(ParticipantDemographic)
-            .filter(ParticipantDemographic.study_id == study.study_id)
+            self.session.query(ParticipantStatistic)
+            .filter(ParticipantStatistic.study_id == study.study_id)
             .all()
         )
         if not participant_groups:
+            print("no participants")
+            input()
             return
         groups_prompt = self.prompt_groups(participant_groups, participant_demographics)
+        print(groups_prompt)
+        input()
         groups = call_llm(groups_prompt)
+        print("groups")
+        print(groups)
+        input()
 
         # gender_demographics_prompt = prompt_gender_demographics(participant_demographics)
         # gender_demographics = call_llm(gender_demographics_prompt)
@@ -159,7 +167,7 @@ class ClinicalDataVisualizer:
 
             Args:
                 participant_groups (list): List of ParticipantGroup records.
-                participant_demographics (list): List of ParticipantDemographic records.
+                participant_demographics (list): List of ParticipantDemographic records. Use study id to match records to group.
 
             Returns:
                 str: The LLM prompt.
@@ -172,14 +180,19 @@ class ClinicalDataVisualizer:
 
             Participant Groups:
             {[x.__dict__ for x in participant_groups]}
+            Particpant Statistics:
+            {[x.__dict__ for x in participant_demographics]}
 
 
             Your task:
             - For each group, provide:
                 - groupName: The title of the group.
-                - dosage: The dosage derived from the group name (e.g., "2 mg" becomes 2).
+                - dosage: The medication name + dosage + time period derived from the group name. ex: 5mg advil 6 months. placebo if its a placebo. leave empty if no drug/placebo
+                - medicationName: name of medications. placebo if its a placebo. leave empty if no drug/placebo
                 - size: The number of people in the group (if its mentioned). It should be a count of people not number
                         of years or any other unit besides count and be a integer type.
+                - description of the group
+
 
             Format the output as a JSON array of objects, with each object representing a group.
             Ourput should be a list of JSONs that are parsable by Pythons json library do not
@@ -203,6 +216,8 @@ class ClinicalDataVisualizer:
                 study_info = self.format_study_info(study)
                 participants = self.format_participants(study)
                 visualization_data.append({"studyInfo": study_info, "participants": participants})
+                print(visualization_data)
+                input()
             except Exception as e:
                 print(f"Error processing study {study.study_id}: {e}")
 

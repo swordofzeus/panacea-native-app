@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-panacea-dev-5a551-authRole",
+      "UnauthRoleArn": "arn:aws:iam::602676137457:role/amplify-panacea-dev-5a551-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::602676137457:role/amplify-panacea-dev-5a551-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-panacea-dev-5a551-deployment",
+      "UnauthRoleName": "amplify-panacea-dev-5a551-unauthRole",
+      "StackName": "amplify-panacea-dev-5a551",
+      "StackId": "arn:aws:cloudformation:us-east-1:602676137457:stack/amplify-panacea-dev-5a551/894b3e90-c17c-11ef-9d02-0affe53708f9",
+      "AmplifyAppId": "d3gvez83ob7lej"
+    },
+    "categories": {
+      "auth": {
+        "panacea5bc94feb": {}
+      }
+    }
+  }
+}

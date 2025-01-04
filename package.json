@@ -16,12 +16,14 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@aws-amplify/auth": "^6.9.0",
     "@expo/vector-icons": "^14.0.2",
     "@react-native-picker/picker": "^2.9.0",
     "@react-navigation/bottom-tabs": "^7.0.0",
     "@react-navigation/drawer": "^7.0.2",
     "@react-navigation/native": "^7.0.1",
     "@shopify/react-native-skia": "^1.7.2",
+    "aws-amplify": "^6.11.0",
     "expo": "~52.0.5",
     "expo-blur": "~14.0.1",
     "expo-constants": "~17.0.2",

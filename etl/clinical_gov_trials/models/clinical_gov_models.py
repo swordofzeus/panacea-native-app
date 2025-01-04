@@ -10,7 +10,8 @@ from sqlalchemy import (
     Float,
     PrimaryKeyConstraint,
     ForeignKeyConstraint,
-    DateTime
+    DateTime,
+    UniqueConstraint
 )
 from sqlalchemy.orm import relationship, sessionmaker, declarative_base
 
@@ -66,6 +67,10 @@ class Study(Base):
     adverse_event_groups = relationship(
         "AdverseEventGroup", back_populates="study", cascade="all, delete-orphan"
     )
+    outcome_measures = relationship("OutcomeMeasure", back_populates="study")
+    outcome_groups = relationship("OutcomeGroup", back_populates="study")
+
+
 
 
 class Group(Base):
@@ -345,6 +350,59 @@ class BaselineCharacteristics(Base):
     study_id = Column(String, ForeignKey("studies.study_id"))
     population_description = Column(Text)  # Description of the population
 
+
+class OutcomeGroup(Base):  # Added size
+    __tablename__ = "outcome_groups"
+
+    study_id = Column(String, ForeignKey("studies.study_id"), primary_key=True)
+    id = Column(String, primary_key=True)  # Outcome group ID (e.g., OG000)
+    title = Column(String, nullable=False)
+    description = Column(Text, nullable=True)
+    size = Column(Integer, nullable=True)  # New field for size
+
+    # Relationships
+    study = relationship("Study", back_populates="outcome_groups")
+    outcome_measures = relationship("OutcomeMeasure", back_populates="outcome_group")
+
+    __table_args__ = (
+        PrimaryKeyConstraint("study_id", "id"),  # Composite primary key
+    )
+
+class OutcomeMeasure(Base):
+    __tablename__ = "outcome_measures"
+
+    study_id = Column(String, ForeignKey("studies.study_id"), nullable=False, primary_key=True)
+    group_study_id = Column(String, nullable=False, primary_key=True)  # Composite FK part 1 and PK
+    group_id = Column(String, nullable=False, primary_key=True)  # Composite FK part 2 and PK
+    measure_title = Column(String, nullable=False, primary_key=True)  # Part of composite PK
+    description = Column(Text, nullable=True)
+    time_frame = Column(String, nullable=True)
+    type = Column(String, nullable=False)
+    population_description = Column(Text, nullable=True)
+    reporting_status = Column(String, nullable=True)
+    param_type = Column(String, nullable=True)
+    dispersion_type = Column(String, nullable=True)
+    unit_of_measure = Column(String, nullable=True)
+    value = Column(Float, nullable=True)
+    spread = Column(Float, nullable=True)
+    lower_limit = Column(Float, nullable=True)
+    upper_limit = Column(Float, nullable=True)
+
+    # Foreign key relationship
+    outcome_group = relationship(
+        "OutcomeGroup",
+        back_populates="outcome_measures",
+        primaryjoin="and_(OutcomeMeasure.group_study_id == OutcomeGroup.study_id, "
+                    "OutcomeMeasure.group_id == OutcomeGroup.id)"
+    )
+    study = relationship("Study", back_populates="outcome_measures")
+
+    __table_args__ = (
+        ForeignKeyConstraint(
+            ["group_study_id", "group_id"],
+            ["outcome_groups.study_id", "outcome_groups.id"],
+        ),
+    )
 
 # Database connection
 DATABASE_URL = "sqlite:///clinical_trials.db"  # Replace with your DB URL for local host
