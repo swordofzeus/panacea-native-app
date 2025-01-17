@@ -1,0 +1,5 @@
+fastapi
+ariadne
+sqlalchemy
+databases
+uvicorn

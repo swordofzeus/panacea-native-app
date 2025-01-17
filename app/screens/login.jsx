@@ -24,14 +24,19 @@ export default function LoginScreen(onLogin) {
 
   const handleLogin = async () => {
     try {
-      const { isSignedIn, nextStep } = await signIn({ username: email, password });
+      const { isSignedIn, nextStep } = await signIn({
+        username: email, password, options: {
+          authFlowType: "USER_PASSWORD_AUTH",
+        }
+      });
       console.log(isSignedIn, nextStep);
       Alert.alert('Success', 'Login successful');
       onLogin()
       // Navigate to the authenticated route
     } catch (error) {
       console.log({ error });
-      Alert.alert('Error', error.message || 'An error occurred during login');
+      Alert.alert('Error', error.message.underlyingError || 'An error occurred during login');
+      throw error
     }
   };
 
@@ -46,6 +51,8 @@ export default function LoginScreen(onLogin) {
     } catch (error) {
       console.log({ error });
       Alert.alert('Error', error.message || 'An error occurred during sign-up');
+      console.log((error).underlyingError);
+      throw error
     }
   };
 
@@ -53,10 +60,10 @@ export default function LoginScreen(onLogin) {
     try {
       const username = email;
       const confirmationCode = verificationCode;
-      console.log({username, confirmationCode})
-      result = await confirmSignUp({username, confirmationCode});
+      console.log({ username, confirmationCode })
+      result = await confirmSignUp({ username, confirmationCode });
       console.log("Email verified")
-      console.log({result})
+      console.log({ result })
       Alert.alert('Success', 'Email verified! Please log in.');
       setIsVerifying(false);
       setIsLogin(true); // Switch to login after verification

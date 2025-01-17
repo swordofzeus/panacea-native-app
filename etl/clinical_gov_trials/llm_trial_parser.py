@@ -114,6 +114,8 @@ def call_llm(prompt):
             content.pop("study_id")
         return content  # Ensure the response is a dictionary
     except Exception as e:
+        print(prompt)
+        print(content)
         print(f"Error calling LLM: {e}")
         return None
 
@@ -267,6 +269,7 @@ class LLMStudyParser:
                     session.merge(group_obj)
                 except Exception as e:
                     print(f"Error processing adverse event group: {e}")
+                    input()
                     raise e
 
     def transform_adverse_events(self, data, session, study_id):
@@ -307,6 +310,7 @@ class LLMStudyParser:
                             session.merge(adverse_event_obj)
                         except Exception as e:
                             print(f"Error processing adverse event: {e}")
+                            input()
                             raise e
 
     def transform_participant_statistics(self, data, session, study_id):
@@ -336,7 +340,7 @@ class LLMStudyParser:
                         response = call_llm(prompt)
                         if response:
                             response["study_id"] = study_id
-                            response["group_id"] = response.get("group_id")
+                            response["group_id"] = response.get("group_id") if response.get("group_id") else fragment.get("group_id")
                             try:
                                 statistic_obj = ParticipantStatistic(**response)
                                 session.merge(statistic_obj)
@@ -538,21 +542,24 @@ class LLMStudyParser:
                 dispersion_type = outcome.get("dispersionType")
                 unit_of_measure = outcome.get("unitOfMeasure")
 
-                # Parse and save measurements
+                # Parse and save measurements with class_title
                 for class_data in outcome.get("classes", []):
+                    class_title = class_data.get("title")  # Extract class title
                     for category in class_data.get("categories", []):
                         for measurement in category.get("measurements", []):
                             group_id = measurement.get("groupId")
                             value = measurement.get("value")
+                            spread = measurement.get("spread")
                             lower_limit = measurement.get("lowerLimit")
                             upper_limit = measurement.get("upperLimit")
 
-                            # Create OutcomeMeasure object with the new field
+                            # Create OutcomeMeasure object
                             outcome_measure_obj = OutcomeMeasure(
                                 study_id=study_id,
-                                group_study_id=study_id,  # Set group_study_id to the same value as study_id
+                                group_study_id=study_id,
                                 group_id=group_id,
                                 measure_title=measure_title,
+                                class_title=class_title if class_title else measure_title,  # Include class title
                                 description=description,
                                 time_frame=time_frame,
                                 type=type_,
@@ -562,6 +569,7 @@ class LLMStudyParser:
                                 dispersion_type=dispersion_type,
                                 unit_of_measure=unit_of_measure,
                                 value=value,
+                                spread=spread,
                                 lower_limit=lower_limit,
                                 upper_limit=upper_limit,
                             )
@@ -571,25 +579,26 @@ class LLMStudyParser:
                 print(f"Error processing outcome measure: {e}")
                 session.rollback()
 
+
     def transform_and_load(self, data, study_id, session):
         """
         Transforms JSON data and loads it into the database.
         """
         try:
-            # self.transform_interventions(data, session, study_id)
-            # self.transform_conditions(data, session, study_id)
-            # self.transform_keywords(data, session, study_id)
-            # self.transform_phases(data, session, study_id)
-            # self.transform_arms(data, session, study_id)
-            # self.transform_outcomes(data, session, study_id)
-            # self.transform_contacts(data, session, study_id)
-            # self.transform_participant_groups(data, session, study_id)  # Groups must come first
-            # self.transform_participant_demographics(data, session, study_id)
-            # self.transform_participant_statistics(data, session, study_id)
-            # self.transform_participant_denoms(data, session, study_id)
-            # self.transform_adverse_event_groups(data, session,study_id)
-            # self.transform_adverse_events(data, session, study_id)  # Adverse Events come last
-            # self.transform_outcome_groups(data,session,study_id)
+            self.transform_interventions(data, session, study_id)
+            self.transform_conditions(data, session, study_id)
+            self.transform_keywords(data, session, study_id)
+            self.transform_phases(data, session, study_id)
+            self.transform_arms(data, session, study_id)
+            self.transform_outcomes(data, session, study_id)
+            self.transform_contacts(data, session, study_id)
+            self.transform_participant_groups(data, session, study_id)  # Groups must come first
+            self.transform_participant_demographics(data, session, study_id)
+            self.transform_participant_statistics(data, session, study_id)
+            self.transform_participant_denoms(data, session, study_id)
+            self.transform_adverse_event_groups(data, session,study_id)
+            self.transform_adverse_events(data, session, study_id)  # Adverse Events come last
+            self.transform_outcome_groups(data,session,study_id)
             self.transform_outcome_measures(data, session, study_id)
             session.commit()
             print("finished commit")
@@ -607,7 +616,7 @@ class LLMStudyParser:
             # Fetch all studies once
             studies = base_session.query(
                 Study
-            ).all()  # .filter(Study.processed_at == None).all()
+            ).filter(Study.processed_at == None).all()
         except Exception as e:
             print(f"Error fetching studies: {e}")
             return
@@ -624,7 +633,7 @@ class LLMStudyParser:
                     if not data or not data.get("hasResults"):
                         print(f"Skipping study {study.study_id}: No results found.")
                         continue
-
+                    print(data.get("hasResults"))
                     # Transform and load
                     self.transform_and_load(data, study.study_id, session)
 

@@ -10,9 +10,15 @@ import MedicationDetailsScreen from './screens/medicationDetailsScreen';
 import { fetchAuthSession, signIn, signUp, confirmSignUp, getCurrentUser } from 'aws-amplify/auth'; // Adjusted import for getCurrentUser
 import awsconfig from './aws-exports';
 import { Amplify } from 'aws-amplify';
+import { ConsoleLogger } from 'aws-amplify/utils';
+import { ApolloProvider } from "@apollo/client";
+import client from "./apollo-client"; // Adjust the path if the file is in a different location
+
 
 Amplify.configure(awsconfig);
+ConsoleLogger.LOG_LEVEL = 'DEBUG';
 
+console.log("configured!")
 const Drawer = createDrawerNavigator();
 
 export default function Layout() {
@@ -64,6 +70,7 @@ export default function Layout() {
   }
 
   return (
+    <ApolloProvider client={client}>
     <PaperProvider theme={DefaultTheme}>
       <Drawer.Navigator initialRouteName="index">
         <Drawer.Screen name="index" options={{ title: 'Home' }}>
@@ -87,5 +94,6 @@ export default function Layout() {
         />
       </Drawer.Navigator>
     </PaperProvider>
+    </ApolloProvider>
   );
 }

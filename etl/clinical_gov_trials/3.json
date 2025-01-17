@@ -1,0 +1,2114 @@
+{
+  "protocolSection": {
+    "identificationModule": {
+      "nctId": "NCT00555750",
+      "orgStudyIdInfo": {
+        "id": "BWH-HRC-2005-P-001997"
+      },
+      "secondaryIdInfos": [
+        {
+          "id": "ESRC0004",
+          "type": "OTHER_GRANT",
+          "domain": "Sunovion previously Sepracor Inc"
+        },
+        {
+          "id": "M01RR002635",
+          "type": "NIH",
+          "link": "https://reporter.nih.gov/quickSearch/M01RR002635"
+        }
+      ],
+      "organization": {
+        "fullName": "Brigham and Women's Hospital",
+        "class": "OTHER"
+      },
+      "briefTitle": "Sleep Loss and Mechanisms of Impaired Glucose Metabolism",
+      "officialTitle": "The Effects of Eszopiclone Treatment (3mg for Two Months) to Counteract the Adverse Metabolic Consequences of Primary Insomnia"
+    },
+    "statusModule": {
+      "statusVerifiedDate": "2013-11",
+      "overallStatus": "COMPLETED",
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "startDateStruct": {
+        "date": "2006-03"
+      },
+      "primaryCompletionDateStruct": {
+        "date": "2008-07",
+        "type": "ACTUAL"
+      },
+      "completionDateStruct": {
+        "date": "2008-08",
+        "type": "ACTUAL"
+      },
+      "studyFirstSubmitDate": "2007-11-07",
+      "studyFirstSubmitQcDate": "2007-11-08",
+      "studyFirstPostDateStruct": {
+        "date": "2007-11-09",
+        "type": "ESTIMATED"
+      },
+      "resultsFirstSubmitDate": "2013-05-21",
+      "resultsFirstSubmitQcDate": "2013-07-21",
+      "resultsFirstPostDateStruct": {
+        "date": "2013-09-25",
+        "type": "ESTIMATED"
+      },
+      "lastUpdateSubmitDate": "2013-11-15",
+      "lastUpdatePostDateStruct": {
+        "date": "2013-12-10",
+        "type": "ESTIMATED"
+      }
+    },
+    "sponsorCollaboratorsModule": {
+      "responsibleParty": {
+        "type": "PRINCIPAL_INVESTIGATOR",
+        "investigatorFullName": "John W. Winkelman, MD, PhD",
+        "investigatorTitle": "Associate Professor of Psychiatry",
+        "investigatorAffiliation": "Brigham and Women's Hospital"
+      },
+      "leadSponsor": {
+        "name": "Brigham and Women's Hospital",
+        "class": "OTHER"
+      },
+      "collaborators": [
+        {
+          "name": "Sumitomo Pharma America, Inc.",
+          "class": "INDUSTRY"
+        },
+        {
+          "name": "Mclean Hospital",
+          "class": "OTHER"
+        },
+        {
+          "name": "National Center for Research Resources (NCRR)",
+          "class": "NIH"
+        }
+      ]
+    },
+    "oversightModule": {
+      "oversightHasDmc": false
+    },
+    "descriptionModule": {
+      "briefSummary": "The purpose of this study is to test the effects of sleep and eszopiclone, a drug that helps people sleep, on how the body processes glucose (sugar). Eszopiclone is approved by the U.S. Food and Drug Administration (FDA) for sale for the treatment of insomnia. It is marketed in the United States as LUNESTA.\n\nMain Hypothesis: Primary insomnia is associated with impairments of glucose metabolism that can be reversed by two months of eszopiclone for the primary insomnia",
+      "detailedDescription": "Insomnia is the most common sleep disorder, affecting nearly one-third of all adults in any given year, and chronically affecting 10-15% of the adult population. Reduced sleep time, independent of insomnia, has been associated with a variety of deleterious long term effects, including an increased risk of incident myocardial infarction and symptomatic diabetes. Chronic partial sleep loss or insomnia may impair glucose metabolism in the short term and are associated with the development of diabetes in the long term. Although the extent of sleep loss is more acute in the laboratory-based 'sleep debt' studies of healthy volunteers, chronic primary insomnia patients exhibit 'hyperarousal' (hypercortisolemia in the afternoon and evening, accelerated metabolism) similar to that seen with acute sleep deprivation. In addition, degradations of sleep quantity and quality in primary insomnia have been attributed to cognitive and somatic hyperarousal in the sleep setting. study examines and quantifies in adult men and women the link between primary insomnia and impaired glucose tolerance. This study examines the extent which adequate treatment of primary insomnia reverses impairments of glucose metabolism. If abnormalities of glucose metabolism are reversible, this study will demonstrate the importance of treatment of chronic primary insomnia."
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Primary Insomnia"
+      ],
+      "keywords": [
+        "sleep",
+        "metabolism",
+        "insulin",
+        "glucose",
+        "actigraphy",
+        "diary",
+        "volumetry",
+        "GABA"
+      ]
+    },
+    "designModule": {
+      "studyType": "INTERVENTIONAL",
+      "phases": [
+        "NA"
+      ],
+      "designInfo": {
+        "allocation": "RANDOMIZED",
+        "interventionModel": "PARALLEL",
+        "primaryPurpose": "BASIC_SCIENCE",
+        "maskingInfo": {
+          "masking": "QUADRUPLE",
+          "whoMasked": [
+            "PARTICIPANT",
+            "CARE_PROVIDER",
+            "INVESTIGATOR",
+            "OUTCOMES_ASSESSOR"
+          ]
+        }
+      },
+      "enrollmentInfo": {
+        "count": 20,
+        "type": "ACTUAL"
+      }
+    },
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "label": "eszopiclone (3mg)",
+          "type": "EXPERIMENTAL",
+          "description": "active medication (eszopiclone 3mg tablet) by mouth nightly 30 min before bed",
+          "interventionNames": [
+            "Drug: eszopiclone"
+          ]
+        },
+        {
+          "label": "placebo",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "identical placebo tablet by mouth nightly 30 min before bed",
+          "interventionNames": [
+            "Drug: placebo"
+          ]
+        }
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "eszopiclone",
+          "description": "3mg tablet, by mouth nightly 30 min before bed, for two months",
+          "armGroupLabels": [
+            "eszopiclone (3mg)"
+          ],
+          "otherNames": [
+            "Lunesta"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "placebo",
+          "description": "inactive placebo tablet, by mouth nightly 30 minutes before bed, for two months",
+          "armGroupLabels": [
+            "placebo"
+          ]
+        }
+      ]
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "measure": "Change in Glucose Tolerance (Kg) in Response to Insulin-modified Intravenous Glucose Tolerance Test",
+          "description": "Difference in glucose tolerance (Kg) in response to insulin-modified intravenous glucose tolerance test. Glucose tolerance was calculated as the slope of the natural log of declining glucose values from minute 5 to minute 19 post-infusion. By convention, this negative slope is multiplied by -1, in other words, expressed as a rate of disposal.",
+          "timeFrame": "baseline and 2 months post-treatment"
+        }
+      ],
+      "secondaryOutcomes": [
+        {
+          "measure": "Acute Insulin Response to Glucose (AIRg)",
+          "description": "Change over two months in 1st phase Insulin secretion",
+          "timeFrame": "baseline and 2 months post-treatment"
+        },
+        {
+          "measure": "Change in Insulin Sensitivity (SI)",
+          "description": "Insulin sensitivity index (SI) \"was defined in quantitative terms as the effect of insulin to catalyse the disappearance of glucose from plasma.\" \\[R. Bergman, Horm Res 2005;64(suppl 3):8-15\\].\n\nSI calculated using Bergman's Minimal model analyses (Minmod Millennium 2000; R. Bergman, University of South- ern California, Los Angeles, CA)",
+          "timeFrame": "baseline and 2 months post-treatment"
+        },
+        {
+          "measure": "Change in Glucose Effectiveness (SG)",
+          "description": "Glucose effectiveness was defined as \"the ability of glucose itself to enhance its own disappearance independent of an increment in insulin.\" \\[R. Bergman, Horm Res 2005;64(suppl 3):8-15\\].\n\nSG calculated using Bergman's Minimal model analyses (Minmod Millennium 2000; R. Bergman, University of South- ern California, Los Angeles, CA)",
+          "timeFrame": "baseline and 2 months post-treatment"
+        },
+        {
+          "measure": "Change in HbA1c Levels",
+          "description": "Difference in HbA1c levels following two months treatment with eszopiclone versus placebo",
+          "timeFrame": "baseline and 2 months post-treatment"
+        },
+        {
+          "measure": "Pre-Treatment Leptin Levels",
+          "description": "Leptin Levels prior to two months treatment with eszopiclone or placebo, measure after an overnight fast",
+          "timeFrame": "baseline"
+        },
+        {
+          "measure": "Post-treatment Leptin Levels",
+          "description": "Leptin levels following two months treatment with 3mg eszopiclone or placebo, measured after an overnight fast",
+          "timeFrame": "two months post-treatment"
+        },
+        {
+          "measure": "Pre-treatment Ghrelin Levels",
+          "description": "Ghrelin levels prior to two months treatment with 3mg eszopiclone or placebo, measured after an overnight fast",
+          "timeFrame": "baseline"
+        },
+        {
+          "measure": "Post-treatment Ghrelin Levels",
+          "description": "Ghrelin levels following two months treatment with 3mg eszopiclone or placebo, measured after an overnight fast",
+          "timeFrame": "2 months post-treatment"
+        },
+        {
+          "measure": "Change in Subjective Sleepiness as Measured on the Karolinska Sleepiness Scale (KSS)",
+          "description": "At visits before and after two months treatment with 3mg eszopiclone or placebo, subjects completed a short test battery including the Karolinska Sleepiness Scale (KSS) every three hours during wake periods. KSS is a single-item scale of sleepiness on a scale from 1 (\"very alert\") to 9 (\"very sleepy, fighting sleep, an effort to keep awake\"). Subjective sleepiness was defined as mean deviation from baseline KSS.",
+          "timeFrame": "baseline and 2 months post-treatment"
+        },
+        {
+          "measure": "Change in Mean Lapses of Attention",
+          "description": "At visits before and after two months treatment with 3mg eszopiclone or placebo, subjects completed a short test battery every three hours during wake periods. The battery included the Psychomotor Vigilance Task (PVT). The PVT involved a 10-minute visual reaction time (RT) performance test in which the subject was instructed to maintain the fastest possible RT to a simple visual stimulus. Lapses of attention refer to the number of times the subject failed to respond to the signal within 500ms. Mean lapses per test across 6 tests given a 4 hour intervals during normal waking hours (and not during the IVGTT) during the 30-hr were compared for the post-treatment visit as the absolute deviation from the baseline mean lapses/test.",
+          "timeFrame": "baseline and 2 months post-treatment"
+        },
+        {
+          "measure": "Change in Total Sleep Time as Reported in Sleep Diaries",
+          "description": "Total sleep time reported on sleep diaries prior to treatment with 3mg eszopiclone or placebo. Change defined as baseline minus post-treatment).",
+          "timeFrame": "baseline and 2 months post-treatment"
+        },
+        {
+          "measure": "Change in Total Sleep Time Measured by PSG",
+          "description": "Change (baseline minus post-treatment) in total sleep time measured by polysomnography after two months treatment with 3mg eszopiclone or placebo",
+          "timeFrame": "baseline and 2 months post-treatment"
+        }
+      ]
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\n* Age 25-55\n* Complaint of insomnia of at least 6 months duration\n* DSM-IV diagnosis of Primary Insomnia\n* Sleep diary: mean Total Sleep Time \\< 6 hours and a mean total wake time (sleep latency + wake after sleep onset) of greater than 60 minutes (in previous 14 days as recorded on sleep diary)\n* A willingness to comply with study procedures\n* If of child-bearing potential, using a medically-accepted method of birth control, including abstinence, barrier method with spermicide, steroidal contraceptive (oral, transdermal, implanted, and injected) in conjunction with a barrier method, and intrauterine device \\[IUD\\])\n\nExclusion Criteria:\n\n* Current diagnosis of DSM-IV Axis I disorder other than Primary Insomnia\n* Regular treatment (more than 1 time/week) with CNS active medication within 1 month of fist inpatient visit\n* Treatment with medications that interfere with glucose metabolism including anti-diabetic medications or steroidal contraceptives\n* Uncontrolled medical illness that would interfere with participation in the study\n* Body Mass Index \\>32 or \\<19.8\n* Current symptoms or diagnosis of any moderate to severe sleep disorder other than insomnia\n* No menopausal or peri-menopausal symptoms that disrupt sleep\n* Pregnant, lactating or planning to become pregnant\n* Consumption of \\> 2 caffeinated beverages per day (including coffee, tea and/or other caffeine-containing beverages or food) during 3 weeks prior to the start of the study",
+      "healthyVolunteers": false,
+      "sex": "ALL",
+      "minimumAge": "25 Years",
+      "maximumAge": "55 Years",
+      "stdAges": [
+        "ADULT"
+      ]
+    },
+    "contactsLocationsModule": {
+      "overallOfficials": [
+        {
+          "name": "John W Winkelman, MD, PhD",
+          "affiliation": "Brigham and Women's Hospital",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        }
+      ],
+      "locations": [
+        {
+          "facility": "Brigham and Women's Hospital, Division of Sleep Medicine",
+          "city": "Boston",
+          "state": "Massachusetts",
+          "zip": "02115",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 42.35843,
+            "lon": -71.05977
+          }
+        }
+      ]
+    },
+    "referencesModule": {
+      "references": [
+        {
+          "pmid": "12547866",
+          "type": "BACKGROUND",
+          "citation": "Ayas NT, White DP, Al-Delaimy WK, Manson JE, Stampfer MJ, Speizer FE, Patel S, Hu FB. A prospective study of self-reported sleep duration and incident diabetes in women. Diabetes Care. 2003 Feb;26(2):380-4. doi: 10.2337/diacare.26.2.380."
+        },
+        {
+          "pmid": "12546611",
+          "type": "BACKGROUND",
+          "citation": "Ayas NT, White DP, Manson JE, Stampfer MJ, Speizer FE, Malhotra A, Hu FB. A prospective study of sleep duration and coronary heart disease in women. Arch Intern Med. 2003 Jan 27;163(2):205-9. doi: 10.1001/archinte.163.2.205."
+        },
+        {
+          "pmid": "8894487",
+          "type": "BACKGROUND",
+          "citation": "Beck-Nielsen H, Henriksen JE, Alford F, Hother-Nielson O. In vivo glucose metabolism, insulin secretion and, insulin action in Europids with non-insulin-dependent diabetes mellitus (NIDDM) and their first-degree relatives. Diabet Med. 1996 Sep;13(9 Suppl 6):S78-84."
+        },
+        {
+          "pmid": "12603781",
+          "type": "BACKGROUND",
+          "citation": "Belenky G, Wesensten NJ, Thorne DR, Thomas ML, Sing HC, Redmond DP, Russo MB, Balkin TJ. Patterns of performance degradation and restoration during sleep restriction and subsequent recovery: a sleep dose-response study. J Sleep Res. 2003 Mar;12(1):1-12. doi: 10.1046/j.1365-2869.2003.00337.x."
+        },
+        {
+          "pmid": "10189562",
+          "type": "BACKGROUND",
+          "citation": "Boyne MS, Saudek CD. Effect of insulin therapy on macrovascular risk factors in type 2 diabetes. Diabetes Care. 1999 Apr;22 Suppl 3:C45-53."
+        },
+        {
+          "type": "BACKGROUND",
+          "citation": "Buxton OM, Spiegel K and Van Cauter E. Modulation of endocrine function and metabolism by sleep and sleep loss. In: Sleep Medicine, edited by Lee-Chiong M, Carskadon M and Sateia M. Philadelphia: Hanley & Belfus, Inc., 2002, p. 59-69."
+        },
+        {
+          "pmid": "2268693",
+          "type": "BACKGROUND",
+          "citation": "Buysse DJ, Jarrett DB, Miewald JM, Kupfer DJ, Greenhouse JB. Minute-by-minute analysis of REM sleep timing in major depression. Biol Psychiatry. 1990 Nov 15;28(10):911-25. doi: 10.1016/0006-3223(90)90571-i."
+        },
+        {
+          "type": "BACKGROUND",
+          "citation": "Czeisler CA, Winkelman JW and Richardson GS. Disorders of sleep and circadian rhythms. In: Harrison's Principles of Internal Medicine, edited by Braunwald E, Fauci AS, Kasper DL, Hauser SL, Longo DL and Jameson JL. New York: McGraw-Hill,Inc., 2000, p. 1-78."
+        },
+        {
+          "pmid": "10607036",
+          "type": "BACKGROUND",
+          "citation": "Dijk DJ, Duffy JF, Czeisler CA. Circadian and sleep/wake dependent aspects of subjective alertness and cognitive performance. J Sleep Res. 1992 Jun;1(2):112-7. doi: 10.1111/j.1365-2869.1992.tb00021.x."
+        },
+        {
+          "type": "BACKGROUND",
+          "citation": "Dinges DF, Kribbs NB, Bates BL and Carlin MM. A very brief probed-recall memory task: Sensitivity to sleep loss. Sleep Res 22: 330, 1993."
+        },
+        {
+          "type": "BACKGROUND",
+          "citation": "Dinges DF and Powell JW. Microcomputer analyses of performance on a portable, simple visual RT task during sustained operations. Behavior Research Methods, Instruments & Computers 17: 652-655, 1985."
+        },
+        {
+          "pmid": "7939123",
+          "type": "BACKGROUND",
+          "citation": "Gillberg M, Kecklund G, Akerstedt T. Relations between performance and subjective ratings of sleepiness during a night awake. Sleep. 1994 Apr;17(3):236-41. doi: 10.1093/sleep/17.3.236."
+        },
+        {
+          "pmid": "15851636",
+          "type": "BACKGROUND",
+          "citation": "Gottlieb DJ, Punjabi NM, Newman AB, Resnick HE, Redline S, Baldwin CM, Nieto FJ. Association of sleep time with diabetes mellitus and impaired glucose tolerance. Arch Intern Med. 2005 Apr 25;165(8):863-7. doi: 10.1001/archinte.165.8.863."
+        },
+        {
+          "type": "BACKGROUND",
+          "citation": "Hoddes E, Dement WC and Zarcone V. The development and use of the Stanford Sleepiness Scale (SSS). Psychophysiol 9: 150, 1971."
+        },
+        {
+          "pmid": "9727886",
+          "type": "BACKGROUND",
+          "citation": "King H, Aubert RE, Herman WH. Global burden of diabetes, 1995-2025: prevalence, numerical estimates, and projections. Diabetes Care. 1998 Sep;21(9):1414-31. doi: 10.2337/diacare.21.9.1414."
+        },
+        {
+          "pmid": "2466380",
+          "type": "BACKGROUND",
+          "citation": "King H, Zimmet P. Trends in the prevalence and incidence of diabetes: non-insulin-dependent diabetes mellitus. World Health Stat Q. 1988;41(3-4):190-6."
+        },
+        {
+          "pmid": "12460094",
+          "type": "BACKGROUND",
+          "citation": "Lakka HM, Laaksonen DE, Lakka TA, Niskanen LK, Kumpusalo E, Tuomilehto J, Salonen JT. The metabolic syndrome and total and cardiovascular disease mortality in middle-aged men. JAMA. 2002 Dec 4;288(21):2709-16. doi: 10.1001/jama.288.21.2709."
+        },
+        {
+          "pmid": "15451917",
+          "type": "BACKGROUND",
+          "citation": "Nilsson PM, Roost M, Engstrom G, Hedblad B, Berglund G. Incidence of diabetes in middle-aged men is related to sleep disturbances. Diabetes Care. 2004 Oct;27(10):2464-9. doi: 10.2337/diacare.27.10.2464."
+        },
+        {
+          "pmid": "9326825",
+          "type": "BACKGROUND",
+          "citation": "Simon GE, VonKorff M. Prevalence, burden, and treatment of insomnia in primary care. Am J Psychiatry. 1997 Oct;154(10):1417-23. doi: 10.1176/ajp.154.10.1417."
+        },
+        {
+          "pmid": "10543671",
+          "type": "BACKGROUND",
+          "citation": "Spiegel K, Leproult R, Van Cauter E. Impact of sleep debt on metabolic and endocrine function. Lancet. 1999 Oct 23;354(9188):1435-9. doi: 10.1016/S0140-6736(99)01376-8."
+        },
+        {
+          "pmid": "15583226",
+          "type": "BACKGROUND",
+          "citation": "Spiegel K, Tasali E, Penev P, Van Cauter E. Brief communication: Sleep curtailment in healthy young men is associated with decreased leptin levels, elevated ghrelin levels, and increased hunger and appetite. Ann Intern Med. 2004 Dec 7;141(11):846-50. doi: 10.7326/0003-4819-141-11-200412070-00008."
+        },
+        {
+          "pmid": "12683469",
+          "type": "BACKGROUND",
+          "citation": "Van Dongen HP, Maislin G, Mullington JM, Dinges DF. The cumulative cost of additional wakefulness: dose-response effects on neurobehavioral functions and sleep physiology from chronic sleep restriction and total sleep deprivation. Sleep. 2003 Mar 15;26(2):117-26. doi: 10.1093/sleep/26.2.117. Erratum In: Sleep. 2004 Jun 15;27(4):600."
+        }
+      ]
+    }
+  },
+  "resultsSection": {
+    "participantFlowModule": {
+      "groups": [
+        {
+          "id": "FG000",
+          "title": "Eszopiclone",
+          "description": "nightly active medication (eszopiclone, 3 mg tablet) oral administration \\~30 min before bed"
+        },
+        {
+          "id": "FG001",
+          "title": "Placebo",
+          "description": "nightly placebo (identical tablet to active medication) oral administration \\~30 min before bed"
+        }
+      ],
+      "periods": [
+        {
+          "title": "Overall Study",
+          "milestones": [
+            {
+              "type": "STARTED",
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "10"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "10"
+                }
+              ]
+            },
+            {
+              "type": "COMPLETED",
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "10"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "10"
+                }
+              ]
+            },
+            {
+              "type": "NOT COMPLETED",
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "0"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "baselineCharacteristicsModule": {
+      "groups": [
+        {
+          "id": "BG000",
+          "title": "Active",
+          "description": "active medication administration nightly before bed"
+        },
+        {
+          "id": "BG001",
+          "title": "Placebo",
+          "description": "nightly administration of placebo before bed"
+        },
+        {
+          "id": "BG002",
+          "title": "Total",
+          "description": "Total of all reporting groups"
+        }
+      ],
+      "denoms": [
+        {
+          "units": "Participants",
+          "counts": [
+            {
+              "groupId": "BG000",
+              "value": "10"
+            },
+            {
+              "groupId": "BG001",
+              "value": "10"
+            },
+            {
+              "groupId": "BG002",
+              "value": "20"
+            }
+          ]
+        }
+      ],
+      "measures": [
+        {
+          "title": "Age, Categorical",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "classes": [
+            {
+              "categories": [
+                {
+                  "title": "<=18 years",
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "0"
+                    }
+                  ]
+                },
+                {
+                  "title": "Between 18 and 65 years",
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "10"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "10"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "20"
+                    }
+                  ]
+                },
+                {
+                  "title": ">=65 years",
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sex: Female, Male",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "classes": [
+            {
+              "categories": [
+                {
+                  "title": "Female",
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "2"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "7"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "9"
+                    }
+                  ]
+                },
+                {
+                  "title": "Male",
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "8"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "3"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "11"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Region of Enrollment",
+          "paramType": "NUMBER",
+          "unitOfMeasure": "participants",
+          "classes": [
+            {
+              "title": "United States",
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "10"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "10"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "20"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "outcomeMeasuresModule": {
+      "outcomeMeasures": [
+        {
+          "type": "PRIMARY",
+          "title": "Change in Glucose Tolerance (Kg) in Response to Insulin-modified Intravenous Glucose Tolerance Test",
+          "description": "Difference in glucose tolerance (Kg) in response to insulin-modified intravenous glucose tolerance test. Glucose tolerance was calculated as the slope of the natural log of declining glucose values from minute 5 to minute 19 post-infusion. By convention, this negative slope is multiplied by -1, in other words, expressed as a rate of disposal.",
+          "reportingStatus": "POSTED",
+          "paramType": "MEAN",
+          "dispersionType": "Standard Deviation",
+          "unitOfMeasure": "%/min, slope of natural log glucose",
+          "timeFrame": "baseline and 2 months post-treatment",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Active",
+              "description": "active medication administration nightly before bed"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo",
+              "description": "nightly administration of placebo before bed"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "10"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": ".33",
+                      "spread": ".94"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "-0.10",
+                      "spread": ".42"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "SECONDARY",
+          "title": "Acute Insulin Response to Glucose (AIRg)",
+          "description": "Change over two months in 1st phase Insulin secretion",
+          "reportingStatus": "POSTED",
+          "paramType": "MEAN",
+          "dispersionType": "Standard Deviation",
+          "unitOfMeasure": "mU*l^-1*min",
+          "timeFrame": "baseline and 2 months post-treatment",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Active",
+              "description": "active medication administration nightly before bed"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo",
+              "description": "nightly administration of placebo before bed"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "10"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "94.0",
+                      "spread": "269.0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "25.1",
+                      "spread": "74.7"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "SECONDARY",
+          "title": "Change in Insulin Sensitivity (SI)",
+          "description": "Insulin sensitivity index (SI) \"was defined in quantitative terms as the effect of insulin to catalyse the disappearance of glucose from plasma.\" \\[R. Bergman, Horm Res 2005;64(suppl 3):8-15\\].\n\nSI calculated using Bergman's Minimal model analyses (Minmod Millennium 2000; R. Bergman, University of South- ern California, Los Angeles, CA)",
+          "reportingStatus": "POSTED",
+          "paramType": "MEAN",
+          "dispersionType": "Standard Deviation",
+          "unitOfMeasure": "mU/l)^-1*min^-1",
+          "timeFrame": "baseline and 2 months post-treatment",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Active",
+              "description": "active medication administration nightly before bed"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo",
+              "description": "nightly administration of placebo before bed"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "10"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "-1.19",
+                      "spread": "2.57"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0.05",
+                      "spread": "3.43"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "SECONDARY",
+          "title": "Change in Glucose Effectiveness (SG)",
+          "description": "Glucose effectiveness was defined as \"the ability of glucose itself to enhance its own disappearance independent of an increment in insulin.\" \\[R. Bergman, Horm Res 2005;64(suppl 3):8-15\\].\n\nSG calculated using Bergman's Minimal model analyses (Minmod Millennium 2000; R. Bergman, University of South- ern California, Los Angeles, CA)",
+          "reportingStatus": "POSTED",
+          "paramType": "MEAN",
+          "dispersionType": "Standard Deviation",
+          "unitOfMeasure": "min^-1",
+          "timeFrame": "baseline and 2 months post-treatment",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Active",
+              "description": "active medication administration nightly before bed"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo",
+              "description": "nightly administration of placebo before bed"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "10"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0.001",
+                      "spread": "0.004"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0.001",
+                      "spread": "0.009"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "SECONDARY",
+          "title": "Change in HbA1c Levels",
+          "description": "Difference in HbA1c levels following two months treatment with eszopiclone versus placebo",
+          "reportingStatus": "POSTED",
+          "paramType": "MEAN",
+          "dispersionType": "Standard Error",
+          "unitOfMeasure": "percentage of glycosylation",
+          "timeFrame": "baseline and 2 months post-treatment",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Active",
+              "description": "active medication administration nightly before bed"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo",
+              "description": "nightly administration of placebo before bed"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "10"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": ".03",
+                      "spread": ".11"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "-.09",
+                      "spread": ".06"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "SECONDARY",
+          "title": "Pre-Treatment Leptin Levels",
+          "description": "Leptin Levels prior to two months treatment with eszopiclone or placebo, measure after an overnight fast",
+          "reportingStatus": "POSTED",
+          "paramType": "MEAN",
+          "dispersionType": "Standard Deviation",
+          "unitOfMeasure": "ng/mL",
+          "timeFrame": "baseline",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Active",
+              "description": "active medication administration nightly before bed"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo",
+              "description": "nightly administration of placebo before bed"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "10"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "4.99",
+                      "spread": "3.63"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "16.53",
+                      "spread": "11.37"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "SECONDARY",
+          "title": "Post-treatment Leptin Levels",
+          "description": "Leptin levels following two months treatment with 3mg eszopiclone or placebo, measured after an overnight fast",
+          "reportingStatus": "POSTED",
+          "paramType": "MEAN",
+          "dispersionType": "Standard Deviation",
+          "unitOfMeasure": "ng/mL",
+          "timeFrame": "two months post-treatment",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Active",
+              "description": "active medication administration nightly before bed"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo",
+              "description": "nightly administration of placebo before bed"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "9"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "5.49",
+                      "spread": "4.33"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "15.28",
+                      "spread": "9.94"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "SECONDARY",
+          "title": "Pre-treatment Ghrelin Levels",
+          "description": "Ghrelin levels prior to two months treatment with 3mg eszopiclone or placebo, measured after an overnight fast",
+          "reportingStatus": "POSTED",
+          "paramType": "MEAN",
+          "dispersionType": "Standard Deviation",
+          "unitOfMeasure": "ng/mL",
+          "timeFrame": "baseline",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Active",
+              "description": "active medication administration nightly before bed"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo",
+              "description": "nightly administration of placebo before bed"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "10"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "573.14",
+                      "spread": "336.50"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "648.41",
+                      "spread": "230.95"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "SECONDARY",
+          "title": "Post-treatment Ghrelin Levels",
+          "description": "Ghrelin levels following two months treatment with 3mg eszopiclone or placebo, measured after an overnight fast",
+          "reportingStatus": "POSTED",
+          "paramType": "MEAN",
+          "dispersionType": "Standard Deviation",
+          "unitOfMeasure": "ng/mL",
+          "timeFrame": "2 months post-treatment",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Active",
+              "description": "active medication administration nightly before bed"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo",
+              "description": "nightly administration of placebo before bed"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "9"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "544.95",
+                      "spread": "273.65"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "670.94",
+                      "spread": "180.36"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "SECONDARY",
+          "title": "Change in Subjective Sleepiness as Measured on the Karolinska Sleepiness Scale (KSS)",
+          "description": "At visits before and after two months treatment with 3mg eszopiclone or placebo, subjects completed a short test battery including the Karolinska Sleepiness Scale (KSS) every three hours during wake periods. KSS is a single-item scale of sleepiness on a scale from 1 (\"very alert\") to 9 (\"very sleepy, fighting sleep, an effort to keep awake\"). Subjective sleepiness was defined as mean deviation from baseline KSS.",
+          "reportingStatus": "POSTED",
+          "paramType": "MEAN",
+          "dispersionType": "Standard Error",
+          "unitOfMeasure": "units on a scale",
+          "timeFrame": "baseline and 2 months post-treatment",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Active",
+              "description": "active medication administration nightly before bed"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo",
+              "description": "nightly administration of placebo before bed"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "10"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0.53",
+                      "spread": "0.42"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0.38",
+                      "spread": "0.38"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "SECONDARY",
+          "title": "Change in Mean Lapses of Attention",
+          "description": "At visits before and after two months treatment with 3mg eszopiclone or placebo, subjects completed a short test battery every three hours during wake periods. The battery included the Psychomotor Vigilance Task (PVT). The PVT involved a 10-minute visual reaction time (RT) performance test in which the subject was instructed to maintain the fastest possible RT to a simple visual stimulus. Lapses of attention refer to the number of times the subject failed to respond to the signal within 500ms. Mean lapses per test across 6 tests given a 4 hour intervals during normal waking hours (and not during the IVGTT) during the 30-hr were compared for the post-treatment visit as the absolute deviation from the baseline mean lapses/test.",
+          "reportingStatus": "POSTED",
+          "paramType": "MEAN",
+          "dispersionType": "Standard Error",
+          "unitOfMeasure": "lapses of attention",
+          "timeFrame": "baseline and 2 months post-treatment",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Active",
+              "description": "active medication administration nightly before bed"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo",
+              "description": "nightly administration of placebo before bed"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "10"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "-0.04",
+                      "spread": "0.49"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0.07",
+                      "spread": "0.29"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "SECONDARY",
+          "title": "Change in Total Sleep Time as Reported in Sleep Diaries",
+          "description": "Total sleep time reported on sleep diaries prior to treatment with 3mg eszopiclone or placebo. Change defined as baseline minus post-treatment).",
+          "reportingStatus": "POSTED",
+          "paramType": "MEAN",
+          "dispersionType": "Standard Deviation",
+          "unitOfMeasure": "hours",
+          "timeFrame": "baseline and 2 months post-treatment",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Active",
+              "description": "active medication administration nightly before bed"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo",
+              "description": "nightly administration of placebo before bed"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "9"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": ".58",
+                      "spread": ".36"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": ".09",
+                      "spread": ".01"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "SECONDARY",
+          "title": "Change in Total Sleep Time Measured by PSG",
+          "description": "Change (baseline minus post-treatment) in total sleep time measured by polysomnography after two months treatment with 3mg eszopiclone or placebo",
+          "reportingStatus": "POSTED",
+          "paramType": "MEAN",
+          "dispersionType": "Standard Deviation",
+          "unitOfMeasure": "minutes",
+          "timeFrame": "baseline and 2 months post-treatment",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Active",
+              "description": "active medication administration nightly before bed"
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo",
+              "description": "nightly administration of placebo before bed"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "10"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "10"
+                }
+              ]
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "2.9",
+                      "spread": "25.5"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "-6.4",
+                      "spread": "30.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "adverseEventsModule": {
+      "frequencyThreshold": "5",
+      "eventGroups": [
+        {
+          "id": "EG000",
+          "title": "Active",
+          "description": "active medication administration nightly before bed",
+          "seriousNumAffected": 0,
+          "seriousNumAtRisk": 10,
+          "otherNumAffected": 10,
+          "otherNumAtRisk": 10
+        },
+        {
+          "id": "EG001",
+          "title": "Placebo",
+          "description": "nightly administration of placebo before bed",
+          "seriousNumAffected": 0,
+          "seriousNumAtRisk": 10,
+          "otherNumAffected": 10,
+          "otherNumAtRisk": 10
+        }
+      ],
+      "otherEvents": [
+        {
+          "term": "Abdominal Discomfort",
+          "organSystem": "Gastrointestinal disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 3,
+              "numAffected": 1,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Back Pain",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Unpleasant Taste",
+          "organSystem": "General disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 5,
+              "numAffected": 4,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Burning at infusion site",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Burning sensation",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 3,
+              "numAffected": 1,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Constipation",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Decreased appetite",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 3,
+              "numAffected": 2,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Dizziness",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 3,
+              "numAffected": 3,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 3,
+              "numAffected": 2,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Dry Mouth",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Rash",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 4,
+              "numAffected": 3,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Eye irritation",
+          "organSystem": "Eye disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Feeling Hot",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 5,
+              "numAffected": 4,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 7,
+              "numAffected": 6,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Respiratory tract infection",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Headache",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 3,
+              "numAffected": 2,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 6,
+              "numAffected": 5,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Injection pressure sensation",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Laceration",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Menstruation with increased bleeding",
+          "organSystem": "Reproductive system and breast disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Musculoskeletal pain",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Nausea",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Nervousness",
+          "organSystem": "Psychiatric disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Pain in extremity",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Paraesthesia",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 4,
+              "numAffected": 3,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Plantar fasciitis",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Puncture Site Pain",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 3,
+              "numAffected": 3,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Somnolence",
+          "organSystem": "Psychiatric disorders",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 3,
+              "numAffected": 2,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Vasovagal reaction",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Vasovagal syncope",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 10
+            }
+          ]
+        },
+        {
+          "term": "Venipuncture site bruising",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "sourceVocabulary": "MedDRA (12.0)",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 10
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 4,
+              "numAffected": 3,
+              "numAtRisk": 10
+            }
+          ]
+        }
+      ]
+    },
+    "moreInfoModule": {
+      "certainAgreement": {
+        "piSponsorEmployee": true
+      },
+      "pointOfContact": {
+        "title": "Dr. John Winkelman, MD, PhD",
+        "organization": "Brigham and Women's Hospital",
+        "email": "jwwinkelman@partners.org",
+        "phone": "617-278-0061"
+      }
+    }
+  },
+  "derivedSection": {
+    "miscInfoModule": {
+      "versionHolder": "2025-01-06"
+    },
+    "conditionBrowseModule": {
+      "meshes": [
+        {
+          "id": "D007319",
+          "term": "Sleep Initiation and Maintenance Disorders"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "D020919",
+          "term": "Sleep Disorders, Intrinsic"
+        },
+        {
+          "id": "D020920",
+          "term": "Dyssomnias"
+        },
+        {
+          "id": "D012893",
+          "term": "Sleep Wake Disorders"
+        },
+        {
+          "id": "D009422",
+          "term": "Nervous System Diseases"
+        },
+        {
+          "id": "D001523",
+          "term": "Mental Disorders"
+        }
+      ],
+      "browseLeaves": [
+        {
+          "id": "M10356",
+          "name": "Sleep Initiation and Maintenance Disorders",
+          "asFound": "Primary Insomnia",
+          "relevance": "HIGH"
+        },
+        {
+          "id": "M22242",
+          "name": "Parasomnias",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M22654",
+          "name": "Sleep Disorders, Intrinsic",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M22655",
+          "name": "Dyssomnias",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M15696",
+          "name": "Sleep Wake Disorders",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M4815",
+          "name": "Mental Disorders",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M14473",
+          "name": "Psychotic Disorders",
+          "relevance": "LOW"
+        }
+      ],
+      "browseBranches": [
+        {
+          "abbrev": "BC10",
+          "name": "Nervous System Diseases"
+        },
+        {
+          "abbrev": "BXM",
+          "name": "Behaviors and Mental Disorders"
+        },
+        {
+          "abbrev": "All",
+          "name": "All Conditions"
+        },
+        {
+          "abbrev": "BC23",
+          "name": "Symptoms and General Pathology"
+        }
+      ]
+    },
+    "interventionBrowseModule": {
+      "meshes": [
+        {
+          "id": "D000069582",
+          "term": "Eszopiclone"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "D006993",
+          "term": "Hypnotics and Sedatives"
+        },
+        {
+          "id": "D002492",
+          "term": "Central Nervous System Depressants"
+        },
+        {
+          "id": "D045505",
+          "term": "Physiological Effects of Drugs"
+        }
+      ],
+      "browseLeaves": [
+        {
+          "id": "M10365",
+          "name": "Insulin",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M173166",
+          "name": "Insulin, Globin Zinc",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M475",
+          "name": "Eszopiclone",
+          "asFound": "MabThera",
+          "relevance": "HIGH"
+        },
+        {
+          "id": "M10043",
+          "name": "Hypnotics and Sedatives",
+          "relevance": "LOW"
+        }
+      ],
+      "browseBranches": [
+        {
+          "abbrev": "Hypo",
+          "name": "Hypoglycemic Agents"
+        },
+        {
+          "abbrev": "All",
+          "name": "All Drugs and Chemicals"
+        },
+        {
+          "abbrev": "CNSDep",
+          "name": "Central Nervous System Depressants"
+        }
+      ]
+    }
+  },
+  "hasResults": true
+}

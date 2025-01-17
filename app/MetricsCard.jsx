@@ -4,43 +4,66 @@ import { BarChart, XAxis, YAxis } from "react-native-svg-charts";
 import * as scale from "d3-scale";
 import Card from "./Card";
 
-const MetricsCard = ({ metrics }) => {
-  const [selectedMetric, setSelectedMetric] = useState(metrics[0]?.name || "");
-  console.log({metrics})
-  console.log(selectedMetric)
-  // Extract the selected metric's data
-  const metric = metrics.find((m) => m.name === selectedMetric);
+const MetricsCard = ({ outcomes }) => {
+  const [selectedMetric, setSelectedMetric] = useState(outcomes[0]?.metric_name || "");
+  console.log({selectedMetric})
+  console.log({outcomes})
+  const colors = [
+    "#8e44ad", // Dark Purple
+    "#6c5ce7", // Light Indigo
+    "#4834d4", // Deep Blue
+    "#74b9ff", // Light Blue
+    "#00cec9", // Teal
+    "#a29bfe", // Lavender
+    "#dfe6e9", // Soft Grey-Blue
+    "#2d3436", // Charcoal
+    "#b2bec3", // Light Slate
+    "#636e72", // Dark Slate
+  ];
+
+  const metric = outcomes.find((outcome) => outcome.metric_name === selectedMetric);
 
   if (!metric) {
     return <Text style={styles.noDataText}>No data available for this metric</Text>;
   }
 
-  // Prepare chart data
-  const { groups } = metric;
-  console.log({groups})
-  const dosageLabels = groups.map((group) => group.label);
-  const categories = Object.keys(groups[0].data); // Get all categories dynamically
-  console.log({categories})
+  const { data, yAxis, xAxis } = metric;
+  const dosageLabels = data.map((group) => group.label);
+  const categories = Array.from(
+    new Set(data.flatMap((group) => group.values.map((item) => item.group)))
+  );
 
-  const colors = ["#ADD8E6", "#DDA0DD", "#FFD700", "#FF6347", "#90EE90"]; // Add as many as needed
   const barData = categories.map((category, index) => ({
-    data: groups.map((group) => group.data[category]),
-    svg: { fill: colors[index % colors.length] }, // Cycle through colors
+    data: data.map((group) =>
+      group.values.find((value) => value.group === category)?.value || 0
+    ),
+    svg: { fill: colors[index % colors.length] },
     label: category,
   }));
 
   const renderTabs = () => (
     <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.tabContainer}>
-      {metrics.map((metric) => (
+      {outcomes.map((outcome) => (
         <Text
-          key={metric.name}
-          style={[styles.tab, selectedMetric === metric.name && styles.selectedTab]}
-          onPress={() => setSelectedMetric(metric.name)}
+          key={outcome.metric_name}
+          style={[styles.tab, selectedMetric === outcome.metric_name && styles.selectedTab]}
+          onPress={() => setSelectedMetric(outcome.metric_name)}
         >
-          {metric.name}
+          {outcome.metric_name}
         </Text>
       ))}
     </ScrollView>
+  );
+
+  const renderLegend = () => (
+    <View style={styles.legendContainer}>
+      {barData.map((group, index) => (
+        <View key={index} style={styles.legendItem}>
+          <View style={[styles.legendColorBox, { backgroundColor: group.svg.fill }]} />
+          <Text style={styles.legendText}>{group.label}</Text>
+        </View>
+      ))}
+    </View>
   );
 
   return (
@@ -48,7 +71,7 @@ const MetricsCard = ({ metrics }) => {
       <View style={styles.container}>
         {renderTabs()}
         <Text style={styles.chartTitle}>
-          {selectedMetric} ({metric.units})
+          {selectedMetric} ({yAxis.unit})
         </Text>
         <View style={{ flexDirection: "row", height: 300, paddingHorizontal: 10 }}>
           <YAxis
@@ -56,33 +79,34 @@ const MetricsCard = ({ metrics }) => {
             contentInset={{ top: 10, bottom: 10 }}
             svg={{ fontSize: 12, fill: "gray" }}
           />
-          <View style={{ flex: 1, marginLeft: 10 }}>
-            <BarChart
-              style={{ flex: 1 }}
-              data={barData}
-              yAccessor={({ item }) => item}
-              contentInset={{ top: 10, bottom: 10 }}
-              spacingInner={0.2}
-              groupMode="grouped"
-            />
-            <XAxis
-              style={{ marginTop: 10 }}
-              data={dosageLabels}
-              formatLabel={(value, index) => dosageLabels[index]}
-              scale={scale.scaleBand}
-              svg={{ fontSize: 12, fill: "gray" }}
-            />
-          </View>
-        </View>
-        <View style={styles.legendContainer}>
-          {barData.map((group, index) => (
-            <View key={index} style={styles.legendItem}>
-              <View style={[styles.legendColorBox, { backgroundColor: group.svg.fill }]} />
-              <Text style={styles.legendText}>{group.label}</Text>
+          <ScrollView horizontal showsHorizontalScrollIndicator={true} style={{ flex: 1 }}>
+            <View
+              style={{
+                flexDirection: "column",
+                minWidth: Math.max(dosageLabels.length * 80, 400), // Adjusts width dynamically
+              }}
+            >
+              <BarChart
+                style={{ height: 250 }}
+                data={barData}
+                yAccessor={({ item }) => item}
+                contentInset={{ top: 10, bottom: 10 }}
+                spacingInner={0.4} // Adjusted for narrower bars within groups
+                spacingOuter={0.1} // Reduced space between groups
+                groupMode="grouped"
+              />
+              <XAxis
+                style={{ marginTop: 10 }}
+                data={dosageLabels}
+                formatLabel={(value, index) => dosageLabels[index]}
+                scale={scale.scaleBand}
+                svg={{ fontSize: 12, fill: "gray" }}
+              />
             </View>
-          ))}
+          </ScrollView>
         </View>
-        <Text style={styles.description}>{metric.description}</Text>
+        {renderLegend()}
+        <Text style={styles.description}>{metric.yAxis.label}</Text>
       </View>
     </Card>
   );
@@ -122,13 +146,14 @@ const styles = StyleSheet.create({
   },
   legendContainer: {
     flexDirection: "row",
+    flexWrap: "wrap",
     justifyContent: "center",
     marginTop: 10,
   },
   legendItem: {
     flexDirection: "row",
     alignItems: "center",
-    marginHorizontal: 10,
+    margin: 5,
   },
   legendColorBox: {
     width: 12,

@@ -1,12 +1,27 @@
+from pprint import pprint
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from models.clinical_gov_models import ParticipantStatistic, Study,ParticipantGroup, Participant,ParticipantDemographic
+from models.clinical_gov_models import (
+    AdverseEvent,
+    Outcome,
+    OutcomeGroup,
+    OutcomeMeasure,
+    ParticipantStatistic,
+    Study,
+    ParticipantGroup,
+    Participant,
+    ParticipantDemographic,
+    VisualizationData,
+)
+
+OutcomeGroup, Outcome, OutcomeMeasure, VisualizationData
 import openai
+import logging
+import os
 
 # OpenAI API configuration
-OPENAI_API_KEY = "OPEN_AI_APIKEY"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 openai.api_key = OPENAI_API_KEY
-
 
 
 def call_llm(prompt):
@@ -25,9 +40,11 @@ def call_llm(prompt):
             ],
         )
         import json
+
         content = json.loads(response.choices[0].message.content)
         return content  # Ensure the response is a dictionary
     except Exception as e:
+        print(response.choices[0].message.content)
         print(f"Error calling LLM: {e}")
         return None
 
@@ -68,24 +85,12 @@ class ClinicalDataVisualizer:
         )
         if not participant_groups:
             print("no participants")
-            input()
             return
         groups_prompt = self.prompt_groups(participant_groups, participant_demographics)
-        print(groups_prompt)
-        input()
+
         groups = call_llm(groups_prompt)
-        print("groups")
-        print(groups)
-        input()
-
-        # gender_demographics_prompt = prompt_gender_demographics(participant_demographics)
-        # gender_demographics = call_llm(gender_demographics_prompt)
-
-        # dropout_rate_prompt = prompt_dropout_rate(participant_demographics)
-        # dropout_rate = call_llm(dropout_rate_prompt)
-
-        # Construct the participants JSON structure
         return groups
+
     def extract_dosage_from_group(self, group_name):
         """
         Helper function to infer dosage from group name.
@@ -121,6 +126,74 @@ class ClinicalDataVisualizer:
 
         return round(dropouts / total_participants, 2) if total_participants > 0 else 0
 
+    def transform_adverse_events(self, study_id):
+        """
+        Transforms adverse events data into a summary suitable for visualization.
+
+        Args:
+            study_id (str): The study ID to process.
+
+        Returns:
+            dict: A dictionary containing the summarized adverse events data.
+        """
+        try:
+            # Query adverse events for the given study ID
+            adverse_events = (
+                self.session.query(AdverseEvent)
+                .filter(AdverseEvent.study_id == study_id)
+                .all()
+            )
+
+            if not adverse_events:
+                logging.info(f"No adverse events found for study {study_id}.")
+                return {
+                    "summary": "No adverse events reported.",
+                    "common": [],
+                }
+
+            # Aggregate and process data
+            events_summary = {}
+            for event in adverse_events:
+                if event.term not in events_summary:
+                    events_summary[event.term] = 0
+                events_summary[event.term] += event.num_affected or 0
+
+            # Calculate percentages
+            total_affected = sum(events_summary.values())
+            common_events = [
+                {"event": term, "percentage": round((count / total_affected) * 100, 2)}
+                for term, count in sorted(
+                    events_summary.items(), key=lambda x: x[1], reverse=True
+                )
+            ]
+
+            # Generate summary text
+            top_events = common_events[:3]  # Get the top 3 events
+            top_events_summary = ", ".join(
+                [f"{event['event']} ({event['percentage']}%)" for event in top_events]
+            )
+            summary_text = (
+                f"The most common side effects reported were {top_events_summary}."
+            )
+
+            # Format the result
+            adverse_events_data = {
+                "summary": summary_text,
+                "common": common_events,
+            }
+
+            print(adverse_events_data)
+
+            return adverse_events_data
+
+        except Exception as e:
+            logging.error(
+                f"Error transforming adverse events for study {study_id}: {e}"
+            )
+            return {
+                "summary": "An error occurred while processing adverse events.",
+                "common": [],
+            }
 
     def extract_studies(self):
         """
@@ -131,6 +204,7 @@ class ClinicalDataVisualizer:
         """
         studies = self.session.query(Study).filter(Study.processed_at != None).all()
         return studies
+
     def format_study_info(self, study):
         """
         Formats the study information into the expected JSON structure for studyInfo.
@@ -145,7 +219,9 @@ class ClinicalDataVisualizer:
         title = study.brief_title if hasattr(study, "brief_title") else study.title
         institution = study.organization
         start_date = study.start_date.strftime("%Y-%m") if study.start_date else None
-        completion_date = study.completion_date.strftime("%Y-%m") if study.completion_date else None
+        completion_date = (
+            study.completion_date.strftime("%Y-%m") if study.completion_date else None
+        )
         summary = study.description  # Assuming description serves as the summary
 
         # Format the JSON structure
@@ -162,17 +238,17 @@ class ClinicalDataVisualizer:
         return study_info
 
     def prompt_groups(self, participant_groups, participant_demographics):
-            """
-            Generates a prompt for the LLM to construct the groups part of the JSON.
+        """
+        Generates a prompt for the LLM to construct the groups part of the JSON.
 
-            Args:
-                participant_groups (list): List of ParticipantGroup records.
-                participant_demographics (list): List of ParticipantDemographic records. Use study id to match records to group.
+        Args:
+            participant_groups (list): List of ParticipantGroup records.
+            participant_demographics (list): List of ParticipantDemographic records. Use study id to match records to group.
 
-            Returns:
-                str: The LLM prompt.
-            """
-            return f"""
+        Returns:
+            str: The LLM prompt.
+        """
+        return f"""
                 You are analyzing information regarding a healthcare study to build a bar graph. The x axis will be dosage
                 and there will likely in some studies be groups of bars next to each other for each x axis element to compare
                 how different groups did on the same dosage (ex: Male/Female, <18 Years/20-40 Years) etc. Some studies could just have
@@ -199,8 +275,122 @@ class ClinicalDataVisualizer:
             prefix it with ```JSON or add a \n new lines.
             """
 
+    def preprocess_grouped_bar_data(self, grouped_outcomes):
+        """
+        Preprocesses outcome data into a format suitable for a grouped bar graph.
 
-    def generate_visualization_data(self):
+        Args:
+            grouped_outcomes (dict): Outcome data grouped as metric -> group -> data.
+
+        Returns:
+            dict: JSON structure for grouped bar graph.
+        """
+        visualization_data = []
+        for metric, groups in grouped_outcomes.items():
+            chart_data = {
+                'metric_name': metric,
+                "data": [],
+                "yAxis": {
+                    "label": "Value",
+                    "unit": next(iter(next(iter(groups.values()))))["units"],
+                },
+                "xAxis": {"label": "Time Period"},
+            }
+
+            # Collect unique labels
+            all_labels = set()
+            for group_data in groups.values():
+                for item in group_data:
+                    label = (
+                        item.get("class_title") or item.get("time_frame") or "Week 12"
+                    )
+                    all_labels.add(label)
+
+            # Normalize labels across all groups
+            for label in all_labels:
+                label_entry = {"label": label, "values": []}
+                for group, data in groups.items():
+                    # Find the value for this label in the group
+                    value_entry = next(
+                        (
+                            item["value"]
+                            for item in data
+                            if (item.get("class_title") or item.get("time_frame"))
+                            == label
+                        ),
+                        None,
+                    )
+                    if value_entry is not None:
+                        label_entry["values"].append(
+                            {"group": group, "value": value_entry}
+                        )
+
+                chart_data["data"].append(label_entry)
+
+            visualization_data.append(chart_data)
+
+        return visualization_data
+
+    def transform_patient_outcomes(self, study_id):
+        """
+        Transforms outcome data into grouped bar graph data.
+
+        Args:
+            study_id (str): The study ID to process.
+
+        Returns:
+            list: A list of grouped bar graph data dictionaries.
+        """
+        try:
+            # Query OutcomeMeasures and OutcomeGroups for the study
+            outcomes = (
+                self.session.query(OutcomeMeasure, OutcomeGroup)
+                .join(
+                    OutcomeGroup,
+                    (OutcomeMeasure.group_study_id == OutcomeGroup.study_id)
+                    & (OutcomeMeasure.group_id == OutcomeGroup.id),
+                )
+                .filter(OutcomeMeasure.study_id == study_id)
+                .all()
+            )
+
+            if not outcomes:
+                logging.info(f"No outcomes found for study {study_id}.")
+                return []
+
+            # Group outcomes by measure title
+            grouped_outcomes = {}
+            for outcome, group in outcomes:
+                metric = outcome.measure_title or "Unknown Metric"
+                group_title = group.title or "Unknown Group"
+
+                if metric not in grouped_outcomes:
+                    grouped_outcomes[metric] = {}
+                if group_title not in grouped_outcomes[metric]:
+                    grouped_outcomes[metric][group_title] = []
+
+                grouped_outcomes[metric][group_title].append(
+                    {
+                        "class_title": outcome.class_title,
+                        "time_frame": outcome.time_frame,
+                        "value": outcome.value,
+                        "units": outcome.unit_of_measure,
+                    }
+                )
+
+            # Preprocess the grouped outcomes into graph data
+            visualization_data = self.preprocess_grouped_bar_data(grouped_outcomes)
+            import pprint
+
+            return visualization_data
+
+        except Exception as e:
+            logging.error(
+                f"Error transforming patient outcomes for study {study_id}: {e}"
+            )
+            return []
+
+    def generate_visualization_data(self, session):
         """
         Process all studies and generate visualization data.
 
@@ -213,11 +403,32 @@ class ClinicalDataVisualizer:
         for study in studies:
             print(f"parsing study {study.study_id}")
             try:
+                # metrics = self.transform_patient_outcomes(study.study_id)
+                # print("# of metrics : " + str(len(metrics)))
                 study_info = self.format_study_info(study)
                 participants = self.format_participants(study)
-                visualization_data.append({"studyInfo": study_info, "participants": participants})
-                print(visualization_data)
-                input()
+                adverse_events = self.transform_adverse_events(study.study_id)
+                outcomes = self.transform_patient_outcomes(study.study_id)
+                json_data = {
+                    "studyInfo": study_info,
+                    "participants": participants,
+                    "outcomes": outcomes,
+                    "adverse_events": adverse_events,
+
+                }
+                visualization_data.append(
+                    {
+                        "studyInfo": study_info,
+                        "participants": participants,
+                        "outcomes": outcomes,
+                        "adverse_events": adverse_events,
+                    }
+                )
+                vd = VisualizationData(study_id=study.study_id, data=json_data)
+                session.merge(vd)
+                session.commit()
+                with open("visualization_data.json", "w") as f:
+                    json.dump(visualization_data, f)
             except Exception as e:
                 print(f"Error processing study {study.study_id}: {e}")
 
@@ -226,7 +437,6 @@ class ClinicalDataVisualizer:
 
 if __name__ == "__main__":
 
-
     # Database setup
     DATABASE_URL = "postgresql://testuser:testpwd@localhost:5432/panacea"
     engine = create_engine(DATABASE_URL)
@@ -234,10 +444,11 @@ if __name__ == "__main__":
 
     # Create session and process data
     import json
+
     with Session() as session:
         visualizer = ClinicalDataVisualizer(session)
-        visualization_data = visualizer.generate_visualization_data()
-        with open('data.json', 'w') as f:
+        visualization_data = visualizer.generate_visualization_data(session)
+        with open("data.json", "w") as f:
             json.dump(visualization_data, f)
 
         # Print or process the generated visualization data

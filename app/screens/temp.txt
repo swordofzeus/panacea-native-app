@@ -1,0 +1,23 @@
+
+        {
+          name: "Sleep Latency",
+          type: "bar",
+          description: "Mean change in sleep latency.",
+          units: "minutes",
+          groups: [
+            { label: "1 mg", data: { Elderly: 33.4, "Non-elderly": 31.2 } },
+            { label: "2 mg", data: { Elderly: 35.1, "Non-elderly": 33.7 } },
+          ],
+        },
+        {
+          name: "Wake Time After Sleep Onset (WASO)",
+          type: "bar",
+          description:
+            "Mean change in the total time spent awake after falling asleep (measured in minutes) from baseline to the end of the 4-week treatment period.",
+          units: "minutes",
+          groups: [
+            { label: "1 mg", data: { Elderly: 30.8, "Non-elderly": 28.4 } },
+            { label: "2 mg", data: { Elderly: 32.5, "Non-elderly": 29.7 } },
+            { label: "3 mg", data: { Elderly: 31.0, "Non-elderly": 30.2 } },
+          ],
+        }

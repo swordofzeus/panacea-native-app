@@ -1,0 +1,3227 @@
+
+{
+    "protocolSection": {
+      "identificationModule": {
+        "nctId": "NCT00857220",
+        "orgStudyIdInfo": {
+          "id": "190-247"
+        },
+        "organization": {
+          "fullName": "Sumitomo Pharma America, Inc.",
+          "class": "INDUSTRY"
+        },
+        "briefTitle": "Long Term Safety Study of Study Drug (Eszopiclone) in Children and Adolescents With ADHD -Associated Insomnia",
+        "officialTitle": "A Long Term, Open-Label, Safety Study of Eszopiclone in Children (6 to 11 Years) and Adolescents (12 to 17 Years) With Attention Deficit/Hyperactivity Disorder Associated Insomnia"
+      },
+      "statusModule": {
+        "statusVerifiedDate": "2017-09",
+        "overallStatus": "COMPLETED",
+        "expandedAccessInfo": {
+          "hasExpandedAccess": false
+        },
+        "startDateStruct": {
+          "date": "2009-05"
+        },
+        "primaryCompletionDateStruct": {
+          "date": "2011-10",
+          "type": "ACTUAL"
+        },
+        "completionDateStruct": {
+          "date": "2011-10",
+          "type": "ACTUAL"
+        },
+        "studyFirstSubmitDate": "2009-03-04",
+        "studyFirstSubmitQcDate": "2009-03-05",
+        "studyFirstPostDateStruct": {
+          "date": "2009-03-06",
+          "type": "ESTIMATED"
+        },
+        "resultsFirstSubmitDate": "2012-11-02",
+        "resultsFirstSubmitQcDate": "2013-06-18",
+        "resultsFirstPostDateStruct": {
+          "date": "2013-07-22",
+          "type": "ESTIMATED"
+        },
+        "dispFirstSubmitDate": "2012-05-01",
+        "dispFirstSubmitQcDate": "2012-05-03",
+        "dispFirstPostDateStruct": {
+          "date": "2012-05-08",
+          "type": "ESTIMATED"
+        },
+        "lastUpdateSubmitDate": "2017-09-25",
+        "lastUpdatePostDateStruct": {
+          "date": "2017-10-26",
+          "type": "ACTUAL"
+        }
+      },
+      "sponsorCollaboratorsModule": {
+        "responsibleParty": {
+          "type": "SPONSOR"
+        },
+        "leadSponsor": {
+          "name": "Sumitomo Pharma America, Inc.",
+          "class": "INDUSTRY"
+        }
+      },
+      "oversightModule": {
+        "oversightHasDmc": true
+      },
+      "descriptionModule": {
+        "briefSummary": "A multicenter study to evaluate the safety of eszopiclone in children (6 11 years of age, inclusive) and adolescents (12 17 years of age, inclusive) with attention deficit/hyperactivity disorder (ADHD) associated insomnia.",
+        "detailedDescription": "This is a multi center, open label, long term safety study in pediatric subjects 6 through 17 years of age, inclusive, with a diagnosis of ADHD associated insomnia. Subjects who complete Study 190 246 (Rollover subjects) and meet the study enrollment criteria will be allowed to participate in this long term safety study. Additionally, Treatment naïve subjects will be enrolled in this long term safety study in order to meet the overall subject enrollment objective of obtaining 100 subjects with 12 months of treatment. This study was previously posted by Sepracor Inc. In October 2009, Sepracor Inc. was acquired by Dainippon Sumitomo Pharma., and in October 2010, Sepracor Inc's name was changed to Sunovion Pharmaceuticals Inc."
+      },
+      "conditionsModule": {
+        "conditions": [
+          "Insomnia",
+          "Attention Deficit Hyperactivity Disorder"
+        ],
+        "keywords": [
+          "Hypnotic",
+          "Eszopiclone",
+          "Attention Deficit Hyperactivity Disorder",
+          "Insomnia",
+          "Children",
+          "Adolescent"
+        ]
+      },
+      "designModule": {
+        "studyType": "INTERVENTIONAL",
+        "phases": [
+          "PHASE3"
+        ],
+        "designInfo": {
+          "allocation": "NA",
+          "interventionModel": "SINGLE_GROUP",
+          "primaryPurpose": "TREATMENT",
+          "maskingInfo": {
+            "masking": "NONE"
+          }
+        },
+        "enrollmentInfo": {
+          "count": 304,
+          "type": "ACTUAL"
+        }
+      },
+      "armsInterventionsModule": {
+        "armGroups": [
+          {
+            "label": "2mg eszopiclone (6-11yrs), 3mg eszopiclone (12-17yrs)",
+            "type": "EXPERIMENTAL",
+            "interventionNames": [
+              "Drug: eszopiclone"
+            ]
+          }
+        ],
+        "interventions": [
+          {
+            "type": "DRUG",
+            "name": "eszopiclone",
+            "description": "One 2 mg tablet per day for 12 months",
+            "armGroupLabels": [
+              "2mg eszopiclone (6-11yrs), 3mg eszopiclone (12-17yrs)"
+            ]
+          },
+          {
+            "type": "DRUG",
+            "name": "eszopiclone",
+            "description": "one 3mg tablet per day for 12 months",
+            "armGroupLabels": [
+              "2mg eszopiclone (6-11yrs), 3mg eszopiclone (12-17yrs)"
+            ]
+          }
+        ]
+      },
+      "outcomesModule": {
+        "primaryOutcomes": [
+          {
+            "measure": "Overall Incidence of Adverse Events",
+            "timeFrame": "12 Months (from the 1st dose to the end of study)"
+          }
+        ],
+        "secondaryOutcomes": [
+          {
+            "measure": "Overall Incidence of Skin Reactions: Number of Events",
+            "timeFrame": "12 Months (from the 1st dose to the end of study)"
+          },
+          {
+            "measure": "Overall Incidence of Skin Reactions: Number of Participant Affected",
+            "timeFrame": "12 Months (from the 1st dose to the end of study)"
+          },
+          {
+            "measure": "Columbia-Suicide Severity Rating Scale (C-SSRS) Item Responses",
+            "description": "The C-SSRS is a physician-completed scale to assess any suicidal ideation and suicidal behavior. The C-SSRS contained questions about suicidal behavior and suicidal ideation. Subjects were placed into categories for suicidal behavior and for suicidal ideation based on their responses to various questions. Any suicidality was defined as suicidal behavior or suicidal ideation. The suicidal behavior categories were determined based on the response to the questions under suicidal behavior (Completed Suicide, Actual Attempt, Interrupted Attempt, Aborted Attempt, Preparatory Acts or Behavior).The suicidal ideation categories were determined by examining the response to 5 questions under suicidal ideation (Wish to be Dead, Nonspecific Active Suicidal Thoughts, Active Suicidal Ideation with Any Methods (Not Plan) without Intent to Act, Active Suicidal Ideation with Some Intent to Act, without Specific Plan, Active Suicidal Ideation with Specific Plan and Intent).",
+            "timeFrame": "12 Months"
+          },
+          {
+            "measure": "Change From Baseline in Coding Copy Subtest A or B, or Digit Symbol Substitution Test (DSST)at Month 12",
+            "description": "These tests are standardized information processing tasks to assess recognition and recoding of sensory information. The subject was given 90 seconds to complete as many substitutions of symbols as possible according to a code provided on top of the sheet. The Coding Copy Subtest A was used for subjects 6 to 7 years of age, the Coding Copy Subtest B was used for subjects 8 to 16 years of age, and the DSST was used for subjects 17 years of age. The DSST consists of rows containing small blank squares, each paired with a randomly assigned numbers 1-9. Above the rows is a key that pairs each number with a symbol. The subject must fill in the blank spaces with the matching symbol that is in the key. For the Subcopy tests the subject simply copies the symbol above each empty square. Scaled scores are used to account for age differences among test takers. Scaled scores range from 1 to 19, and higher scores indicate higher cognitive function.",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)"
+          },
+          {
+            "measure": "Clinical Global Impression (CGI) Improvement Score as Assessed by Parent/Caregiver or Child at Month 12",
+            "description": "A 7-point scale was used for improvement with numeric values assigned to each of the responses: very much improved (1), much improved (2), minimally improved (3), no change (4), minimally worse (5), much worse (6), and very much worse (7).",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)"
+          },
+          {
+            "measure": "Change From Baseline at Month 12 in Subjective Sleep Latency (SL)",
+            "description": "Sleep latency is the amount of time it takes to fall asleep after the lights have been turned off.",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)"
+          },
+          {
+            "measure": "Change From Baseline in Child Behavior Checklist (CBCL)",
+            "description": "CBCL was completed by parents or guardians who saw the child in home-like settings. It includes several competence items, open-ended items for describing the child's illnesses, disabilities, concerns about the child, best things about the child, and several items to rate behavioral, emotional, and social problems. Responses are recorded on a Likert scale: 0 = Not True, 1 = Somewhat or Sometimes True, 2 = Very True or Often True. The checklist contains 120 questions. The standardized score is computed by determining the z-score by subtracting the mean for the subject's age group and gender from the raw score and then dividing this by the standard deviation for the subject's age group and gender. Next, multiply the zscore by 15 and then add 100. For activities scale, social scale, school scale, and total competence scale, higher values indicate higher competencies. For Internalizing problems, externalizing problems, and total problems, higher values indicate more problems.",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)"
+          },
+          {
+            "measure": "Change From Baseline in Pediatric Daytime Sleepiness Scale (PDSS)at Month 12",
+            "description": "The PDSS total score ranges from a low of 0 where the individual is endorsing each item at the lowest level of daytime sleepiness to a high of 32 where the individual is endorsing each item at the highest level of daytime sleepiness.",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)"
+          },
+          {
+            "measure": "Change From Baseline in Conners' Continuous Performance Test II (CCPT II)",
+            "description": "The CCPT-II is a computer-based 14-minute, visual-performance task. During an administration, respondents were required to press the space bar or click the mouse whenever any letter except the target letter appears on the screen. The speed at which the letters were presented varied during the administration. There were 6 blocks, with 3 sub-blocks, each containing 20 trials (letter presentations). The interstimulus intervals (ISIs) were 1, 2, and 4 seconds with a display time of 250 milliseconds. The order in which the different ISIs were presented varied between blocks. Conners' CCPT-II provides the following measures:% Omissions,% Commissions, Hit Reaction Time, Hit Reaction Time Standard Error,Variability of Standard Error, Detectability (d'), Response Style (beta), Perseverations, Hit Reaction Time Block Change (Vigilance Measure), Hit Standard Error Block Change (Vigilance Measure), Hit Reaction Time ISI change, and Hit Standard Error ISI Change, Confidence Index.",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)"
+          },
+          {
+            "measure": "Change From Baseline at Month 12 in Subjective Wake Time After Sleep Onset (WASO)",
+            "description": "The sleep questionnaire, a Sponsor produced questionnaire used in previous eszopiclone studies, asked the subject or parent/guardian to report information about the subject's sleep and daytime functioning since the last visit. This questionnaire provided a subjective assessment of the subject's sleep over a predefined time period. WASO was assessed based on the responses to the sleep questionnaire.",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)"
+          },
+          {
+            "measure": "Change From Baseline at Month 12 in Subjective Number of Awakening After Sleep Onset (NAASO)",
+            "description": "The sleep questionnaire, a Sponsor produced questionnaire used in previous eszopiclone studies, asked the subject or parent/guardian to report information about the subject's sleep and daytime functioning since the last visit. This questionnaire provided a subjective assessment of the subject's sleep over a predefined time period. NAASO was assessed based on the responses to the sleep questionnaire.",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)"
+          },
+          {
+            "measure": "Change From Baseline at Month 12 in Subjective Total Sleep Time (TST).",
+            "description": "The sleep questionnaire, a Sponsor produced questionnaire used in previous eszopiclone studies, asked the subject or parent/guardian to report information about the subject's sleep and daytime functioning since the last visit. This questionnaire provided a subjective assessment of the subject's sleep over a predefined time period. TST was assessed based on the responses to the sleep questionnaire.",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)"
+          },
+          {
+            "measure": "Change From Baseline in Pediatric Quality of Life Scale",
+            "description": "The SF-10™ Health Survey for Children is a 10-item care-giver completed assessment designed to measure children's health-related quality of life. The scale asked questions about the child's physical wellness, feelings, behavior, and activities at school and with family and friends. The SF-10 physical and psychosocial summary measures were scored such that higher scores indicated more favorable functioning. The Physical Summary Score is computed by summing values for questions 1, 2a, 2b, 3 and 5 and standardizing scores by normalizing to a total possible score of 0-100 with higher scores representing more positive indications. The Psychosocial Summary Score is computed by summing questions 4, 6, 7, 8, and 9 and standardizing scores by normalizing to a total possible score of 0-100 with higher scores representing more positive indications.",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)"
+          }
+        ]
+      },
+      "eligibilityModule": {
+        "eligibilityCriteria": "Inclusion Criteria:\n\nInclusion Criteria:\n\n* Subject is male or female 6 17 years of age, inclusive, at the time of consent.\n* Subject must have a diagnosis of ADHD as defined by DSM-IV criteria • The diagnosis for Rollover subjects will be taken from the Screening visit of Study 190 246. Treatment naïve subjects will have these assessments performed at the Screening visit.\n* Subject must have documented ADHD associated insomnia, defined as the subject or subject's parent/legal guardian having reported repeated difficulty with sleep initiation (sleep latency \\>30 minutes) or consolidation (wake time after sleep onset \\> 45 minutes),\\>despite adequate age appropriate time and opportunity for sleep.\n* Subject has either \\>30 minutes latency to persistent sleep (LPS) or \\>45 minutes wake time after sleep onset (WASO) demonstrated by PSG.\n* Subject or subject's parent/legal guardian should have reported daytime functional impairment as a result of sleep problems.\n* Subject or subject's parent/legal guardian should have reported attempted and failed behavioral interventions for sleep problems, including a regular bedtime and rise time.\n* Subject's sleep disturbance must not be attributable to either the direct physiologic effect of a drug of abuse or misuse of a prescribed medication whether it is being used as intended or in an illicit manner.\n* Female subjects ≥8 years of age must have a negative serum pregnancy test at screening\n* Subject must be in good general health.\n* Subject must be able to swallow tablets.\n* If subjects are currently taking medication for ADHD, they must be on a stable dose and regimen for at least one month, and preferably for at least 3 months prior to the time of consent\n\nExclusion Criteria:\n\n* Subject with weight \\<10th percentile for age and gender\n* Subject has any clinically significant or unstable medical abnormality/illness\n* Subject has a documented history of Bipolar I or II Disorder, major depression, conduct disorder, generalized anxiety disorder (other than obsessive-compulsive disorder) or any history of psychosis, as determined by medical or psychiatric history or as determined by clinical interview using the MINI-Kid at Visit 1.\n* Subject has periodic limb movement \\>5 times per hour, as demonstrated on PSG.\n* Subject has sleep disordered breathing, as demonstrated on PSG.\n* Subject has another primary sleep disorder (or secondary sleep disorder that is causing clinical impairment or any other known or suspected medical or psychiatric condition that has affected or may affect sleep\n* Subject has a history of circadian rhythm disorder or will travel across ≥3 time zones more than once during the study.\n* Subject has organic brain disease, or a history of febrile seizures.\n* Subject is, in the opinion of the investigator, at suicidal or homicidal risk.\n* Female subject who is pregnant, lactating or planning to become pregnant.\n* Subject is taking any psychotropic or disallowed medications,\n* Subject has a history of severe allergies to more than 1 class of medications or multiple adverse drug reactions.\n* Subject has a history of allergic reaction or has a known or suspected sensitivity to racemic zopiclone, eszopiclone, or any substance that is contained in the formulation.\n* Subject has a history of alcohol or substance abuse within 3 months of study participation\n* Subject has participated in any investigational study within 30 days prior to study entry or is currently participating in another clinical trial, except Study 190 246.",
+        "healthyVolunteers": false,
+        "sex": "ALL",
+        "minimumAge": "6 Years",
+        "maximumAge": "17 Years",
+        "stdAges": [
+          "CHILD"
+        ]
+      },
+      "contactsLocationsModule": {
+        "locations": [
+          {
+            "facility": "REM Medical Clinical Research",
+            "city": "Tucson",
+            "state": "Arizona",
+            "zip": "85712",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.22174,
+              "lon": -110.92648
+            }
+          },
+          {
+            "facility": "Clinical Study Centers, LLC",
+            "city": "Little Rock",
+            "state": "Arkansas",
+            "zip": "72205",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.74648,
+              "lon": -92.28959
+            }
+          },
+          {
+            "facility": "AV Institute, Inc.",
+            "city": "Carson",
+            "state": "California",
+            "zip": "90746",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.83141,
+              "lon": -118.28202
+            }
+          },
+          {
+            "facility": "Clinical Innovations, Inc.",
+            "city": "Costa Mesa",
+            "state": "California",
+            "zip": "92626",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.64113,
+              "lon": -117.91867
+            }
+          },
+          {
+            "facility": "Behavioral Research Specialists, LLC",
+            "city": "Glendale",
+            "state": "California",
+            "zip": "91204",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.14251,
+              "lon": -118.25508
+            }
+          },
+          {
+            "facility": "Sun Valley Research Center",
+            "city": "Imperial",
+            "state": "California",
+            "zip": "92251",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.84755,
+              "lon": -115.56944
+            }
+          },
+          {
+            "facility": "Excell Research, Inc.",
+            "city": "Oceanside",
+            "state": "California",
+            "zip": "92056",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.19587,
+              "lon": -117.37948
+            }
+          },
+          {
+            "facility": "North County Clinical Research (NCCR)",
+            "city": "Oceanside",
+            "state": "California",
+            "zip": "92056",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.19587,
+              "lon": -117.37948
+            }
+          },
+          {
+            "facility": "Pacific Clinical Research Medical Group",
+            "city": "Orange",
+            "state": "California",
+            "zip": "92868",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.78779,
+              "lon": -117.85311
+            }
+          },
+          {
+            "facility": "SDS Clinical Trials, Inc.",
+            "city": "Orange",
+            "state": "California",
+            "zip": "92868",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.78779,
+              "lon": -117.85311
+            }
+          },
+          {
+            "facility": "Clinical Innovations, Inc.",
+            "city": "Riverside",
+            "state": "California",
+            "zip": "92506",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.95335,
+              "lon": -117.39616
+            }
+          },
+          {
+            "facility": "Artemis Institute for Clinical Research",
+            "city": "San Diego",
+            "state": "California",
+            "zip": "92123",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.71533,
+              "lon": -117.15726
+            }
+          },
+          {
+            "facility": "Clinical Innovations",
+            "city": "San Diego",
+            "state": "California",
+            "zip": "92128",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.71533,
+              "lon": -117.15726
+            }
+          },
+          {
+            "facility": "Neuropsychiatric Research Center of Orange County",
+            "city": "Santa Ana",
+            "state": "California",
+            "zip": "92701",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.74557,
+              "lon": -117.86783
+            }
+          },
+          {
+            "facility": "Apex Research Institute",
+            "city": "Santa Ana",
+            "state": "California",
+            "zip": "92705",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.74557,
+              "lon": -117.86783
+            }
+          },
+          {
+            "facility": "Clinical Innovations, Inc.",
+            "city": "Santa Ana",
+            "state": "California",
+            "zip": "92705",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.74557,
+              "lon": -117.86783
+            }
+          },
+          {
+            "facility": "Elite Clinical Trials, Inc.",
+            "city": "Wildomar",
+            "state": "California",
+            "zip": "92595",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.59891,
+              "lon": -117.28004
+            }
+          },
+          {
+            "facility": "Delta Waves, Inc.",
+            "city": "Colorado Springs",
+            "state": "Colorado",
+            "zip": "80918",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 38.83388,
+              "lon": -104.82136
+            }
+          },
+          {
+            "facility": "Sarkis Clinical Trials",
+            "city": "Gainesville",
+            "state": "Florida",
+            "zip": "32607",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.65163,
+              "lon": -82.32483
+            }
+          },
+          {
+            "facility": "MD Clinical",
+            "city": "Hallandale Beach",
+            "state": "Florida",
+            "zip": "3309",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 25.9812,
+              "lon": -80.14838
+            }
+          },
+          {
+            "facility": "Amedica Research Institute, Inc.",
+            "city": "Hialeah",
+            "state": "Florida",
+            "zip": "33013",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 25.8576,
+              "lon": -80.27811
+            }
+          },
+          {
+            "facility": "Behavioral Clinical Research Inc.",
+            "city": "Lauderhill",
+            "state": "Florida",
+            "zip": "33319",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 26.14036,
+              "lon": -80.21338
+            }
+          },
+          {
+            "facility": "Behavioral Clinical Research, Inc.",
+            "city": "Lauderhill",
+            "state": "Florida",
+            "zip": "33319",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 26.14036,
+              "lon": -80.21338
+            }
+          },
+          {
+            "facility": "Pediatric Neurology and Epilepsy Center",
+            "city": "Loxahatchee Groves",
+            "state": "Florida",
+            "zip": "33470",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 26.68368,
+              "lon": -80.27977
+            }
+          },
+          {
+            "facility": "Florida Clinical Research Center, LLC",
+            "city": "Maitland",
+            "state": "Florida",
+            "zip": "32751",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 28.62778,
+              "lon": -81.36312
+            }
+          },
+          {
+            "facility": "Scientific Clinical Research Inc.",
+            "city": "North Miami",
+            "state": "Florida",
+            "zip": "33161",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 25.89009,
+              "lon": -80.18671
+            }
+          },
+          {
+            "facility": "Medical Research Group of Central Florida",
+            "city": "Orange City",
+            "state": "Florida",
+            "zip": "32763",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 28.94888,
+              "lon": -81.29867
+            }
+          },
+          {
+            "facility": "Florida Institute for Clinical Research, LLC",
+            "city": "Orlando",
+            "state": "Florida",
+            "zip": "32822",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 28.53834,
+              "lon": -81.37924
+            }
+          },
+          {
+            "facility": "DMI Research Inc.",
+            "city": "Pinellas Park",
+            "state": "Florida",
+            "zip": "33782",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 27.8428,
+              "lon": -82.69954
+            }
+          },
+          {
+            "facility": "Florida Sleep Institute",
+            "city": "Spring Hill",
+            "state": "Florida",
+            "zip": "34609",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 28.47688,
+              "lon": -82.52546
+            }
+          },
+          {
+            "facility": "SomnoMedics, LLC",
+            "city": "Tampa",
+            "state": "Florida",
+            "zip": "33607",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 27.94752,
+              "lon": -82.45843
+            }
+          },
+          {
+            "facility": "Sleep Disorders Center of Georgia",
+            "city": "Atlanta",
+            "state": "Georgia",
+            "zip": "30342",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.749,
+              "lon": -84.38798
+            }
+          },
+          {
+            "facility": "Northwest Behavioral Research Center",
+            "city": "Roswell",
+            "state": "Georgia",
+            "zip": "30076",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 34.02316,
+              "lon": -84.36159
+            }
+          },
+          {
+            "facility": "Mountain West Clinical Trials",
+            "city": "Eagle",
+            "state": "Idaho",
+            "zip": "83616",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 43.69544,
+              "lon": -116.35401
+            }
+          },
+          {
+            "facility": "Suburban Lung Associates, SC",
+            "city": "Elk Grove Village",
+            "state": "Illinois",
+            "zip": "60007",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.00392,
+              "lon": -87.97035
+            }
+          },
+          {
+            "facility": "Capstone Clinical Research",
+            "city": "Libertyville",
+            "state": "Illinois",
+            "zip": "601048",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.28308,
+              "lon": -87.95313
+            }
+          },
+          {
+            "facility": "AMR Baber Research, Inc.",
+            "city": "Naperville",
+            "state": "Illinois",
+            "zip": "60563",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.78586,
+              "lon": -88.14729
+            }
+          },
+          {
+            "facility": "Sleep and Behavior Medicine Institute",
+            "city": "Vernon Hills",
+            "state": "Illinois",
+            "zip": "60061",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.21947,
+              "lon": -87.97952
+            }
+          },
+          {
+            "facility": "Davis Clinic",
+            "city": "Indianapolis",
+            "state": "Indiana",
+            "zip": "46260",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.76838,
+              "lon": -86.15804
+            }
+          },
+          {
+            "facility": "Goldpoint Clinical Research, LLC",
+            "city": "Indianapolis",
+            "state": "Indiana",
+            "zip": "46260",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.76838,
+              "lon": -86.15804
+            }
+          },
+          {
+            "facility": "Nassim, McMonigle, Mescia & Associates",
+            "city": "New Albany",
+            "state": "Indiana",
+            "zip": "47150",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 38.28562,
+              "lon": -85.82413
+            }
+          },
+          {
+            "facility": "Psychiatric Associates",
+            "city": "Overland Park",
+            "state": "Kansas",
+            "zip": "66211",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 38.98223,
+              "lon": -94.67079
+            }
+          },
+          {
+            "facility": "Brownsboro Park Pediatrics",
+            "city": "Louisville",
+            "state": "Kentucky",
+            "zip": "40207",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 38.25424,
+              "lon": -85.75941
+            }
+          },
+          {
+            "facility": "Pedia Research, LLC",
+            "city": "Owensboro",
+            "state": "Kentucky",
+            "zip": "42301",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 37.77422,
+              "lon": -87.11333
+            }
+          },
+          {
+            "facility": "Lake Charles Clinical Trials",
+            "city": "Lake Charles",
+            "state": "Louisiana",
+            "zip": "70601",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 30.21309,
+              "lon": -93.2044
+            }
+          },
+          {
+            "facility": "Louisiana Research Associates, Inc.",
+            "city": "New Orleans",
+            "state": "Louisiana",
+            "zip": "70114",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.95465,
+              "lon": -90.07507
+            }
+          },
+          {
+            "facility": "MD",
+            "city": "Chevy Chase",
+            "state": "Maryland",
+            "zip": "20815",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.00287,
+              "lon": -77.07115
+            }
+          },
+          {
+            "facility": "ActivMed Practices and Research",
+            "city": "Haverhill",
+            "state": "Massachusetts",
+            "zip": "01830",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.7762,
+              "lon": -71.07728
+            }
+          },
+          {
+            "facility": "Neurocare, Inc.",
+            "city": "Newton",
+            "state": "Massachusetts",
+            "zip": "02459",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.33704,
+              "lon": -71.20922
+            }
+          },
+          {
+            "facility": "ActivMed Practices and Research",
+            "city": "North Andover",
+            "state": "Massachusetts",
+            "zip": "01845",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.6987,
+              "lon": -71.13506
+            }
+          },
+          {
+            "facility": "Neurobehavioral Medicine Group",
+            "city": "Bloomfield Hills",
+            "state": "Michigan",
+            "zip": "48302",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.58364,
+              "lon": -83.24549
+            }
+          },
+          {
+            "facility": "Clinical Nuerophysiology Services, PC",
+            "city": "Sterling Heights",
+            "state": "Michigan",
+            "zip": "48314",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 42.58031,
+              "lon": -83.0302
+            }
+          },
+          {
+            "facility": "Precise Research Centers",
+            "city": "Flowood",
+            "state": "Mississippi",
+            "zip": "39232",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.30959,
+              "lon": -90.13898
+            }
+          },
+          {
+            "facility": "Premier Psychicatric Research Institute, LLC",
+            "city": "Lincoln",
+            "state": "Nebraska",
+            "zip": "68510",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.8,
+              "lon": -96.66696
+            }
+          },
+          {
+            "facility": "Midwest Children's Health Research Institute",
+            "city": "Lincoln",
+            "state": "Nebraska",
+            "zip": "68516",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.8,
+              "lon": -96.66696
+            }
+          },
+          {
+            "facility": "Clinical Research Center of Nevada",
+            "city": "Henderson",
+            "state": "Nevada",
+            "zip": "89015",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.0397,
+              "lon": -114.98194
+            }
+          },
+          {
+            "facility": "Center for Psychiatry and Behavioral Medicine, Inc.",
+            "city": "Las Vegas",
+            "state": "Nevada",
+            "zip": "89128",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.17497,
+              "lon": -115.13722
+            }
+          },
+          {
+            "facility": "Global Medical Institutes, LLC",
+            "city": "Princeton",
+            "state": "New Jersey",
+            "zip": "08540",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.34872,
+              "lon": -74.65905
+            }
+          },
+          {
+            "facility": "CRI Worldwide, LLC",
+            "city": "Willingboro",
+            "state": "New Jersey",
+            "zip": "08046",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.02789,
+              "lon": -74.86905
+            }
+          },
+          {
+            "facility": "NorthCoast Clinical Trials, Inc.",
+            "city": "Beachwood",
+            "state": "Ohio",
+            "zip": "44122",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.4645,
+              "lon": -81.50873
+            }
+          },
+          {
+            "facility": "Neuro-Behavioral Clnical Research",
+            "city": "Canton",
+            "state": "Ohio",
+            "zip": "44718",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.79895,
+              "lon": -81.37845
+            }
+          },
+          {
+            "facility": "Cleveland Sleep Research Center",
+            "city": "Middleburg Heights",
+            "state": "Ohio",
+            "zip": "44130",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.36144,
+              "lon": -81.81291
+            }
+          },
+          {
+            "facility": "North Star Medical Research, LLC",
+            "city": "Middleburg Heights",
+            "state": "Ohio",
+            "zip": "44130",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.36144,
+              "lon": -81.81291
+            }
+          },
+          {
+            "facility": "Cutting Edge Research of Enid",
+            "city": "Enid",
+            "state": "Oklahoma",
+            "zip": "72703",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.39559,
+              "lon": -97.87839
+            }
+          },
+          {
+            "facility": "IPS Research Company",
+            "city": "Oklahoma City",
+            "state": "Oklahoma",
+            "zip": "73103",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.46756,
+              "lon": -97.51643
+            }
+          },
+          {
+            "facility": "Pahl Pharmaceutical Professionals, LLC",
+            "city": "Oklahoma City",
+            "state": "Oklahoma",
+            "zip": "73112",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.46756,
+              "lon": -97.51643
+            }
+          },
+          {
+            "facility": "SP Research",
+            "city": "Oklahoma City",
+            "state": "Oklahoma",
+            "zip": "73112",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.46756,
+              "lon": -97.51643
+            }
+          },
+          {
+            "facility": "Cutting Edge Research Group",
+            "city": "Oklahoma City",
+            "state": "Oklahoma",
+            "zip": "73116",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.46756,
+              "lon": -97.51643
+            }
+          },
+          {
+            "facility": "Eminence Research LLC",
+            "city": "Oklahoma City",
+            "state": "Oklahoma",
+            "zip": "73139",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 35.46756,
+              "lon": -97.51643
+            }
+          },
+          {
+            "facility": "Paradigm Research Professonals, LLP",
+            "city": "Tulsa",
+            "state": "Oklahoma",
+            "zip": "74103",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.15398,
+              "lon": -95.99277
+            }
+          },
+          {
+            "facility": "Tulsa Clinical Research",
+            "city": "Tulsa",
+            "state": "Oklahoma",
+            "zip": "74104",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.15398,
+              "lon": -95.99277
+            }
+          },
+          {
+            "facility": "Cyn3rgy Research",
+            "city": "Gresham",
+            "state": "Oregon",
+            "zip": "97030",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 45.49818,
+              "lon": -122.43148
+            }
+          },
+          {
+            "facility": "Oregon Center for Clinical Investigations, Inc.",
+            "city": "Portland",
+            "state": "Oregon",
+            "zip": "97210",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 45.52345,
+              "lon": -122.67621
+            }
+          },
+          {
+            "facility": "Oregon Center for Clinical Investigations, Inc. (OCCI, Inc.)",
+            "city": "Salem",
+            "state": "Oregon",
+            "zip": "97301",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 44.9429,
+              "lon": -123.0351
+            }
+          },
+          {
+            "facility": "CRI Worldwide",
+            "city": "Philadelphia",
+            "state": "Pennsylvania",
+            "zip": "19139",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 39.95233,
+              "lon": -75.16379
+            }
+          },
+          {
+            "facility": "Omega Medical Research",
+            "city": "Warwick",
+            "state": "Rhode Island",
+            "zip": "02886",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 41.7001,
+              "lon": -71.41617
+            }
+          },
+          {
+            "facility": "Holston Medical Group",
+            "city": "Kingsport",
+            "state": "Tennessee",
+            "zip": "37660",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.54843,
+              "lon": -82.56182
+            }
+          },
+          {
+            "facility": "Academy of Clinical Research",
+            "city": "Arlington",
+            "state": "Texas",
+            "zip": "76011",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.73569,
+              "lon": -97.10807
+            }
+          },
+          {
+            "facility": "Pillar Clinical Research, LLC",
+            "city": "Dallas",
+            "state": "Texas",
+            "zip": "75243",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.78306,
+              "lon": -96.80667
+            }
+          },
+          {
+            "facility": "InSite Clinical Research",
+            "city": "DeSoto",
+            "state": "Texas",
+            "zip": "75115",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 32.58986,
+              "lon": -96.85695
+            }
+          },
+          {
+            "facility": "Claghorn-Lesem Research Clinic, Ltd.",
+            "city": "Houston",
+            "state": "Texas",
+            "zip": "77008",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.76328,
+              "lon": -95.36327
+            }
+          },
+          {
+            "facility": "Allegiant Clinical Research",
+            "city": "Houston",
+            "state": "Texas",
+            "zip": "77024",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.76328,
+              "lon": -95.36327
+            }
+          },
+          {
+            "facility": "MD",
+            "city": "Houston",
+            "state": "Texas",
+            "zip": "77042",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.76328,
+              "lon": -95.36327
+            }
+          },
+          {
+            "facility": "The Mech Center",
+            "city": "Plano",
+            "state": "Texas",
+            "zip": "75024",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 33.01984,
+              "lon": -96.69889
+            }
+          },
+          {
+            "facility": "Road Runner Research",
+            "city": "San Antonio",
+            "state": "Texas",
+            "zip": "78258",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 29.42412,
+              "lon": -98.49363
+            }
+          },
+          {
+            "facility": "Aspen Clinical Research, LLC",
+            "city": "Orem",
+            "state": "Utah",
+            "zip": "84058",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 40.2969,
+              "lon": -111.69465
+            }
+          },
+          {
+            "facility": "Alliance Research Group",
+            "city": "Richmond",
+            "state": "Virginia",
+            "zip": "23230",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 37.55376,
+              "lon": -77.46026
+            }
+          },
+          {
+            "facility": "Brighton Research Group, LLC",
+            "city": "Virginia Beach",
+            "state": "Virginia",
+            "zip": "23452",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 36.85293,
+              "lon": -75.97799
+            }
+          },
+          {
+            "facility": "Eastside Therapeutic Resource",
+            "city": "Kirkland",
+            "state": "Washington",
+            "zip": "98033",
+            "country": "United States",
+            "geoPoint": {
+              "lat": 47.68149,
+              "lon": -122.20874
+            }
+          }
+        ]
+      },
+      "referencesModule": {
+        "references": [
+          {
+            "pmid": "25266438",
+            "type": "DERIVED",
+            "citation": "Sangal RB, Blumer JL, Lankford DA, Grinnell TA, Huang H. Eszopiclone for insomnia associated with attention-deficit/hyperactivity disorder. Pediatrics. 2014 Oct;134(4):e1095-103. doi: 10.1542/peds.2013-4221."
+          }
+        ]
+      }
+    },
+    "resultsSection": {
+      "participantFlowModule": {
+        "preAssignmentDetails": "The participant flow section includes all subjects randomized. The intent-to-treat (ITT) population consisted of all randomized subjects who had taken any study medication. One subject did not receive study medication.",
+        "groups": [
+          {
+            "id": "FG000",
+            "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+            "description": "Eszopiclone Overall"
+          }
+        ],
+        "periods": [
+          {
+            "title": "Overall Study",
+            "milestones": [
+              {
+                "type": "STARTED",
+                "achievements": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "304"
+                  }
+                ]
+              },
+              {
+                "type": "COMPLETED",
+                "achievements": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "121"
+                  }
+                ]
+              },
+              {
+                "type": "NOT COMPLETED",
+                "achievements": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "183"
+                  }
+                ]
+              }
+            ],
+            "dropWithdraws": [
+              {
+                "type": "Adverse Event",
+                "reasons": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "35"
+                  }
+                ]
+              },
+              {
+                "type": "Death",
+                "reasons": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "1"
+                  }
+                ]
+              },
+              {
+                "type": "Lack of Efficacy",
+                "reasons": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "11"
+                  }
+                ]
+              },
+              {
+                "type": "Lost to Follow-up",
+                "reasons": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "30"
+                  }
+                ]
+              },
+              {
+                "type": "Physician Decision",
+                "reasons": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "4"
+                  }
+                ]
+              },
+              {
+                "type": "Protocol Violation",
+                "reasons": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "16"
+                  }
+                ]
+              },
+              {
+                "type": "Withdrawal by Subject",
+                "reasons": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "67"
+                  }
+                ]
+              },
+              {
+                "type": "Clinical Hold",
+                "reasons": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "6"
+                  }
+                ]
+              },
+              {
+                "type": "Site Closed",
+                "reasons": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "5"
+                  }
+                ]
+              },
+              {
+                "type": "Miscellaneous",
+                "reasons": [
+                  {
+                    "groupId": "FG000",
+                    "numSubjects": "8"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "baselineCharacteristicsModule": {
+        "groups": [
+          {
+            "id": "BG000",
+            "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+            "description": "Eszopiclone Overall"
+          }
+        ],
+        "denoms": [
+          {
+            "units": "Participants",
+            "counts": [
+              {
+                "groupId": "BG000",
+                "value": "303"
+              }
+            ]
+          }
+        ],
+        "measures": [
+          {
+            "title": "Age, Categorical",
+            "paramType": "COUNT_OF_PARTICIPANTS",
+            "unitOfMeasure": "Participants",
+            "classes": [
+              {
+                "categories": [
+                  {
+                    "title": "<=18 years",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "303"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Between 18 and 65 years",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "title": ">=65 years",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Age, Continuous",
+            "paramType": "MEAN",
+            "dispersionType": "STANDARD_DEVIATION",
+            "unitOfMeasure": "years",
+            "classes": [
+              {
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "11.2",
+                        "spread": "3.2"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Sex: Female, Male",
+            "paramType": "COUNT_OF_PARTICIPANTS",
+            "unitOfMeasure": "Participants",
+            "classes": [
+              {
+                "categories": [
+                  {
+                    "title": "Female",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "119"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Male",
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "184"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Region of Enrollment",
+            "paramType": "NUMBER",
+            "unitOfMeasure": "participants",
+            "classes": [
+              {
+                "title": "United States",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "BG000",
+                        "value": "303"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "outcomeMeasuresModule": {
+        "outcomeMeasures": [
+          {
+            "type": "PRIMARY",
+            "title": "Overall Incidence of Adverse Events",
+            "populationDescription": "The intent-to-treat (ITT) population consisted of all enrolled subjects who had taken any study medication. One subject did not receive study medication",
+            "reportingStatus": "POSTED",
+            "paramType": "NUMBER",
+            "unitOfMeasure": "participants",
+            "timeFrame": "12 Months (from the 1st dose to the end of study)",
+            "groups": [
+              {
+                "id": "OG000",
+                "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+                "description": "Eszopiclone Overall"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "OG000",
+                    "value": "303"
+                  }
+                ]
+              }
+            ],
+            "classes": [
+              {
+                "title": "Subjects with at least 1 TEAE",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "212"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Potentially-related TEAE",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "138"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Severe TEAE",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "10"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Serious TEAE",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "4"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Fatal TEAE",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Discontinued study due to TEAE",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "34"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "SECONDARY",
+            "title": "Overall Incidence of Skin Reactions: Number of Events",
+            "populationDescription": "Intent to treat population",
+            "reportingStatus": "POSTED",
+            "paramType": "NUMBER",
+            "unitOfMeasure": "Events",
+            "timeFrame": "12 Months (from the 1st dose to the end of study)",
+            "groups": [
+              {
+                "id": "OG000",
+                "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+                "description": "Eszopiclone Overall"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "OG000",
+                    "value": "303"
+                  }
+                ]
+              }
+            ],
+            "classes": [
+              {
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "17"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "SECONDARY",
+            "title": "Overall Incidence of Skin Reactions: Number of Participant Affected",
+            "populationDescription": "Intent to treat population",
+            "reportingStatus": "POSTED",
+            "paramType": "NUMBER",
+            "unitOfMeasure": "participants",
+            "timeFrame": "12 Months (from the 1st dose to the end of study)",
+            "groups": [
+              {
+                "id": "OG000",
+                "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+                "description": "Eszopiclone Overall"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "OG000",
+                    "value": "303"
+                  }
+                ]
+              }
+            ],
+            "classes": [
+              {
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "13"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "SECONDARY",
+            "title": "Columbia-Suicide Severity Rating Scale (C-SSRS) Item Responses",
+            "description": "The C-SSRS is a physician-completed scale to assess any suicidal ideation and suicidal behavior. The C-SSRS contained questions about suicidal behavior and suicidal ideation. Subjects were placed into categories for suicidal behavior and for suicidal ideation based on their responses to various questions. Any suicidality was defined as suicidal behavior or suicidal ideation. The suicidal behavior categories were determined based on the response to the questions under suicidal behavior (Completed Suicide, Actual Attempt, Interrupted Attempt, Aborted Attempt, Preparatory Acts or Behavior).The suicidal ideation categories were determined by examining the response to 5 questions under suicidal ideation (Wish to be Dead, Nonspecific Active Suicidal Thoughts, Active Suicidal Ideation with Any Methods (Not Plan) without Intent to Act, Active Suicidal Ideation with Some Intent to Act, without Specific Plan, Active Suicidal Ideation with Specific Plan and Intent).",
+            "populationDescription": "Intent to treat population",
+            "reportingStatus": "POSTED",
+            "paramType": "NUMBER",
+            "unitOfMeasure": "Subjects",
+            "timeFrame": "12 Months",
+            "groups": [
+              {
+                "id": "OG000",
+                "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+                "description": "Eszopiclone Overall"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "OG000",
+                    "value": "303"
+                  }
+                ]
+              }
+            ],
+            "classes": [
+              {
+                "title": "Any Suicidality",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "4",
+                        "spread": "1.3"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Any Suicidal Behavior",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1",
+                        "spread": "0.3"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Completed Suicide",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "0",
+                        "spread": "0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Actual Attempt",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "0",
+                        "spread": "0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Interrupted Attempt",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "0",
+                        "spread": "0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Aborted Attempt",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1",
+                        "spread": "0.3"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Preparatory Acts or Behavior",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "0",
+                        "spread": "0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Any Suicidal Ideation",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "4",
+                        "spread": "1.3"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Wish to be Dead",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "0",
+                        "spread": "0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Non-specific Active Suicidal Thoughts",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "3",
+                        "spread": "1.0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Active Suicidal Ideation without Intent to Act",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "0",
+                        "spread": "0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Active Suicidal Ideation w/ Some Intent to Act",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "0",
+                        "spread": "0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Active Suicidal Ideation w/ Specific Plan",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1",
+                        "spread": "0.3"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "SECONDARY",
+            "title": "Change From Baseline in Coding Copy Subtest A or B, or Digit Symbol Substitution Test (DSST)at Month 12",
+            "description": "These tests are standardized information processing tasks to assess recognition and recoding of sensory information. The subject was given 90 seconds to complete as many substitutions of symbols as possible according to a code provided on top of the sheet. The Coding Copy Subtest A was used for subjects 6 to 7 years of age, the Coding Copy Subtest B was used for subjects 8 to 16 years of age, and the DSST was used for subjects 17 years of age. The DSST consists of rows containing small blank squares, each paired with a randomly assigned numbers 1-9. Above the rows is a key that pairs each number with a symbol. The subject must fill in the blank spaces with the matching symbol that is in the key. For the Subcopy tests the subject simply copies the symbol above each empty square. Scaled scores are used to account for age differences among test takers. Scaled scores range from 1 to 19, and higher scores indicate higher cognitive function.",
+            "populationDescription": "Intent to Treat Population",
+            "reportingStatus": "POSTED",
+            "paramType": "MEAN",
+            "dispersionType": "Standard Deviation",
+            "unitOfMeasure": "score",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)",
+            "groups": [
+              {
+                "id": "OG000",
+                "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+                "description": "Eszopiclone Overall"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "OG000",
+                    "value": "303"
+                  }
+                ]
+              }
+            ],
+            "classes": [
+              {
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1.1",
+                        "spread": "6.1"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "SECONDARY",
+            "title": "Clinical Global Impression (CGI) Improvement Score as Assessed by Parent/Caregiver or Child at Month 12",
+            "description": "A 7-point scale was used for improvement with numeric values assigned to each of the responses: very much improved (1), much improved (2), minimally improved (3), no change (4), minimally worse (5), much worse (6), and very much worse (7).",
+            "populationDescription": "Intent to treat population",
+            "reportingStatus": "POSTED",
+            "paramType": "MEAN",
+            "dispersionType": "Standard Deviation",
+            "unitOfMeasure": "units on a scale",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)",
+            "groups": [
+              {
+                "id": "OG000",
+                "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+                "description": "Eszopiclone Overall"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "OG000",
+                    "value": "303"
+                  }
+                ]
+              }
+            ],
+            "classes": [
+              {
+                "title": "From Parent",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "2.6",
+                        "spread": "1.4"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "From Child",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "2.6",
+                        "spread": "1.5"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "SECONDARY",
+            "title": "Change From Baseline at Month 12 in Subjective Sleep Latency (SL)",
+            "description": "Sleep latency is the amount of time it takes to fall asleep after the lights have been turned off.",
+            "populationDescription": "Intent to treat population",
+            "reportingStatus": "POSTED",
+            "paramType": "MEAN",
+            "dispersionType": "Standard Deviation",
+            "unitOfMeasure": "Minutes",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)",
+            "groups": [
+              {
+                "id": "OG000",
+                "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+                "description": "Eszopiclone Overall"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "OG000",
+                    "value": "303"
+                  }
+                ]
+              }
+            ],
+            "classes": [
+              {
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "-18.1",
+                        "spread": "87.3"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "SECONDARY",
+            "title": "Change From Baseline in Child Behavior Checklist (CBCL)",
+            "description": "CBCL was completed by parents or guardians who saw the child in home-like settings. It includes several competence items, open-ended items for describing the child's illnesses, disabilities, concerns about the child, best things about the child, and several items to rate behavioral, emotional, and social problems. Responses are recorded on a Likert scale: 0 = Not True, 1 = Somewhat or Sometimes True, 2 = Very True or Often True. The checklist contains 120 questions. The standardized score is computed by determining the z-score by subtracting the mean for the subject's age group and gender from the raw score and then dividing this by the standard deviation for the subject's age group and gender. Next, multiply the zscore by 15 and then add 100. For activities scale, social scale, school scale, and total competence scale, higher values indicate higher competencies. For Internalizing problems, externalizing problems, and total problems, higher values indicate more problems.",
+            "populationDescription": "Intent to treat population",
+            "reportingStatus": "POSTED",
+            "paramType": "MEAN",
+            "dispersionType": "Standard Deviation",
+            "unitOfMeasure": "units on a scale",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)",
+            "groups": [
+              {
+                "id": "OG000",
+                "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+                "description": "Eszopiclone Overall"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "OG000",
+                    "value": "303"
+                  }
+                ]
+              }
+            ],
+            "classes": [
+              {
+                "title": "Activities scale standardized score",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1.04",
+                        "spread": "13.83"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Social scale standardized score",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "0.94",
+                        "spread": "14.29"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "School scale standardized score",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "0.02",
+                        "spread": "11.49"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Total competence standardized score",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1.02",
+                        "spread": "13.34"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Internalizing problems standardized score",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "0.19",
+                        "spread": "15.13"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Externalizing problems standardized score",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "0.29",
+                        "spread": "12.33"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Total problems standardized score",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "0.19",
+                        "spread": "14.16"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "SECONDARY",
+            "title": "Change From Baseline in Pediatric Daytime Sleepiness Scale (PDSS)at Month 12",
+            "description": "The PDSS total score ranges from a low of 0 where the individual is endorsing each item at the lowest level of daytime sleepiness to a high of 32 where the individual is endorsing each item at the highest level of daytime sleepiness.",
+            "populationDescription": "Intent to Treat Population",
+            "reportingStatus": "POSTED",
+            "paramType": "MEAN",
+            "dispersionType": "Standard Deviation",
+            "unitOfMeasure": "units on a scale",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)",
+            "groups": [
+              {
+                "id": "OG000",
+                "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+                "description": "Eszopiclone Overall"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "OG000",
+                    "value": "303"
+                  }
+                ]
+              }
+            ],
+            "classes": [
+              {
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "-3.9",
+                        "spread": "6.0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "SECONDARY",
+            "title": "Change From Baseline in Conners' Continuous Performance Test II (CCPT II)",
+            "description": "The CCPT-II is a computer-based 14-minute, visual-performance task. During an administration, respondents were required to press the space bar or click the mouse whenever any letter except the target letter appears on the screen. The speed at which the letters were presented varied during the administration. There were 6 blocks, with 3 sub-blocks, each containing 20 trials (letter presentations). The interstimulus intervals (ISIs) were 1, 2, and 4 seconds with a display time of 250 milliseconds. The order in which the different ISIs were presented varied between blocks. Conners' CCPT-II provides the following measures:% Omissions,% Commissions, Hit Reaction Time, Hit Reaction Time Standard Error,Variability of Standard Error, Detectability (d'), Response Style (beta), Perseverations, Hit Reaction Time Block Change (Vigilance Measure), Hit Standard Error Block Change (Vigilance Measure), Hit Reaction Time ISI change, and Hit Standard Error ISI Change, Confidence Index.",
+            "populationDescription": "Intent to treat population",
+            "reportingStatus": "POSTED",
+            "paramType": "MEAN",
+            "dispersionType": "Standard Deviation",
+            "unitOfMeasure": "percentage of score",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)",
+            "groups": [
+              {
+                "id": "OG000",
+                "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+                "description": "Eszopiclone Overall"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "OG000",
+                    "value": "303"
+                  }
+                ]
+              }
+            ],
+            "classes": [
+              {
+                "title": "Omissions % Percentile",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "10.285",
+                        "spread": "29.390"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Commissions % Percentile",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "-5.980",
+                        "spread": "29.332"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Hit RT Percentile",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "5.933",
+                        "spread": "27.606"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Hit RT Std Error Percentile",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "8.747",
+                        "spread": "30.776"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Variability Percentile",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "8.781",
+                        "spread": "32.543"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Detectability (d') Percentile",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "-3.614",
+                        "spread": "33.471"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Responsive Style (beta) Percentile",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "-3.614",
+                        "spread": "33.471"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Perseverations % Percentile",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "4.807",
+                        "spread": "25.389"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Hit RT Block Change Percentile",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "0.213",
+                        "spread": "33.614"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Hit SE Block Change Percentile",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "-2.919",
+                        "spread": "36.037"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Hit RT ISI Change Percentile",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "8.070",
+                        "spread": "30.364"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Hit SE ISI Change Percentile",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "8.270",
+                        "spread": "35.780"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Confidence Index",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "8.471",
+                        "spread": "23.889"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "SECONDARY",
+            "title": "Change From Baseline at Month 12 in Subjective Wake Time After Sleep Onset (WASO)",
+            "description": "The sleep questionnaire, a Sponsor produced questionnaire used in previous eszopiclone studies, asked the subject or parent/guardian to report information about the subject's sleep and daytime functioning since the last visit. This questionnaire provided a subjective assessment of the subject's sleep over a predefined time period. WASO was assessed based on the responses to the sleep questionnaire.",
+            "populationDescription": "Intent to treat population",
+            "reportingStatus": "POSTED",
+            "paramType": "MEAN",
+            "dispersionType": "Standard Deviation",
+            "unitOfMeasure": "Minutes",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)",
+            "groups": [
+              {
+                "id": "OG000",
+                "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+                "description": "Eszopiclone Overall"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "OG000",
+                    "value": "303"
+                  }
+                ]
+              }
+            ],
+            "classes": [
+              {
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "-22.7",
+                        "spread": "70.5"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "SECONDARY",
+            "title": "Change From Baseline at Month 12 in Subjective Number of Awakening After Sleep Onset (NAASO)",
+            "description": "The sleep questionnaire, a Sponsor produced questionnaire used in previous eszopiclone studies, asked the subject or parent/guardian to report information about the subject's sleep and daytime functioning since the last visit. This questionnaire provided a subjective assessment of the subject's sleep over a predefined time period. NAASO was assessed based on the responses to the sleep questionnaire.",
+            "populationDescription": "Intent to treat population",
+            "reportingStatus": "POSTED",
+            "paramType": "MEAN",
+            "dispersionType": "Standard Deviation",
+            "unitOfMeasure": "Number of Awakenings",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)",
+            "groups": [
+              {
+                "id": "OG000",
+                "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+                "description": "Eszopiclone Overall"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "OG000",
+                    "value": "303"
+                  }
+                ]
+              }
+            ],
+            "classes": [
+              {
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "-0.8",
+                        "spread": "1.6"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "SECONDARY",
+            "title": "Change From Baseline at Month 12 in Subjective Total Sleep Time (TST).",
+            "description": "The sleep questionnaire, a Sponsor produced questionnaire used in previous eszopiclone studies, asked the subject or parent/guardian to report information about the subject's sleep and daytime functioning since the last visit. This questionnaire provided a subjective assessment of the subject's sleep over a predefined time period. TST was assessed based on the responses to the sleep questionnaire.",
+            "populationDescription": "Intent to treat population",
+            "reportingStatus": "POSTED",
+            "paramType": "MEAN",
+            "dispersionType": "Standard Deviation",
+            "unitOfMeasure": "Minutes",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)",
+            "groups": [
+              {
+                "id": "OG000",
+                "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+                "description": "Eszopiclone Overall"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "OG000",
+                    "value": "303"
+                  }
+                ]
+              }
+            ],
+            "classes": [
+              {
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "45.3",
+                        "spread": "119.8"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "SECONDARY",
+            "title": "Change From Baseline in Pediatric Quality of Life Scale",
+            "description": "The SF-10™ Health Survey for Children is a 10-item care-giver completed assessment designed to measure children's health-related quality of life. The scale asked questions about the child's physical wellness, feelings, behavior, and activities at school and with family and friends. The SF-10 physical and psychosocial summary measures were scored such that higher scores indicated more favorable functioning. The Physical Summary Score is computed by summing values for questions 1, 2a, 2b, 3 and 5 and standardizing scores by normalizing to a total possible score of 0-100 with higher scores representing more positive indications. The Psychosocial Summary Score is computed by summing questions 4, 6, 7, 8, and 9 and standardizing scores by normalizing to a total possible score of 0-100 with higher scores representing more positive indications.",
+            "populationDescription": "Intent to treat population",
+            "reportingStatus": "POSTED",
+            "paramType": "MEAN",
+            "dispersionType": "Standard Deviation",
+            "unitOfMeasure": "units on a scale",
+            "timeFrame": "Baseline and 12 Months (from the 1st dose to the end of study)",
+            "groups": [
+              {
+                "id": "OG000",
+                "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+                "description": "Eszopiclone Overall"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "OG000",
+                    "value": "303"
+                  }
+                ]
+              }
+            ],
+            "classes": [
+              {
+                "title": "Physical Summary Score",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "-1.31",
+                        "spread": "11.15"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Psychosocial Summary Score",
+                "categories": [
+                  {
+                    "measurements": [
+                      {
+                        "groupId": "OG000",
+                        "value": "2.14",
+                        "spread": "10.37"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "adverseEventsModule": {
+        "frequencyThreshold": "2",
+        "timeFrame": "12 Months",
+        "description": "The intent-to-treat (ITT) population consisted of all randomized subjects who had taken any study medication. The ITT population was used for all safety analyses.",
+        "eventGroups": [
+          {
+            "id": "EG000",
+            "title": "2mg Eszopiclone (6-11yrs), 3mg Eszopiclone (12-17yrs)",
+            "description": "Eszopiclone Overall",
+            "seriousNumAffected": 4,
+            "seriousNumAtRisk": 303,
+            "otherNumAffected": 179,
+            "otherNumAtRisk": 303
+          }
+        ],
+        "seriousEvents": [
+          {
+            "term": "Drowning",
+            "organSystem": "General disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 1,
+                "numAffected": 1,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Viral Infection",
+            "organSystem": "Infections and infestations",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 1,
+                "numAffected": 1,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Upper limb fracture",
+            "organSystem": "Injury, poisoning and procedural complications",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 1,
+                "numAffected": 1,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Delirium",
+            "organSystem": "Psychiatric disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 1,
+                "numAffected": 1,
+                "numAtRisk": 303
+              }
+            ]
+          }
+        ],
+        "otherEvents": [
+          {
+            "term": "Headache",
+            "organSystem": "Nervous system disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 123,
+                "numAffected": 65,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Dysgeusia",
+            "organSystem": "Nervous system disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 46,
+                "numAffected": 42,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Dizziness",
+            "organSystem": "Nervous system disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 35,
+                "numAffected": 30,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Somnolence",
+            "organSystem": "Nervous system disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 17,
+                "numAffected": 15,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Abdominal Pain Upper",
+            "organSystem": "Gastrointestinal disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 19,
+                "numAffected": 19,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Vomiting",
+            "organSystem": "Gastrointestinal disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 18,
+                "numAffected": 15,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Diarrhoea",
+            "organSystem": "Gastrointestinal disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 16,
+                "numAffected": 13,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Nausea",
+            "organSystem": "Gastrointestinal disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 14,
+                "numAffected": 13,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Toothache",
+            "organSystem": "Gastrointestinal disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 13,
+                "numAffected": 9,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Abdominal discomfort",
+            "organSystem": "Gastrointestinal disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 7,
+                "numAffected": 7,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Nasopharyngitis",
+            "organSystem": "Infections and infestations",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 27,
+                "numAffected": 20,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Upper respiratory infection",
+            "organSystem": "Infections and infestations",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 16,
+                "numAffected": 12,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Sinusitis",
+            "organSystem": "Respiratory, thoracic and mediastinal disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 14,
+                "numAffected": 11,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Influenza",
+            "organSystem": "Infections and infestations",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 11,
+                "numAffected": 10,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Pharyngitis streptococcal",
+            "organSystem": "Infections and infestations",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 8,
+                "numAffected": 8,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Urinary tract infection",
+            "organSystem": "Infections and infestations",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 7,
+                "numAffected": 6,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Cough",
+            "organSystem": "Respiratory, thoracic and mediastinal disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 18,
+                "numAffected": 16,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Oropharyngeal pain",
+            "organSystem": "Respiratory, thoracic and mediastinal disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 18,
+                "numAffected": 13,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Nasal congestion",
+            "organSystem": "Respiratory, thoracic and mediastinal disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 14,
+                "numAffected": 12,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Pyrexia",
+            "organSystem": "General disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 20,
+                "numAffected": 16,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Influenza like illness",
+            "organSystem": "General disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 7,
+                "numAffected": 6,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Insomnia",
+            "organSystem": "Psychiatric disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 10,
+                "numAffected": 10,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Hallucination, visual",
+            "organSystem": "Psychiatric disorders",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 8,
+                "numAffected": 7,
+                "numAtRisk": 303
+              }
+            ]
+          },
+          {
+            "term": "Contusion",
+            "organSystem": "Injury, poisoning and procedural complications",
+            "sourceVocabulary": "MedDRA (12.0)",
+            "assessmentType": "SYSTEMATIC_ASSESSMENT",
+            "stats": [
+              {
+                "groupId": "EG000",
+                "numEvents": 6,
+                "numAffected": 6,
+                "numAtRisk": 303
+              }
+            ]
+          }
+        ]
+      },
+      "moreInfoModule": {
+        "limitationsAndCaveats": {
+          "description": "Designed to assess safety/tolerability. Efficacy endpoints evaluated w/ descriptive stats only, w/ no placebo group against which to assess the impact of therapy. \\~40% completion rate typical for one year studies but limits interpretation of results."
+        },
+        "certainAgreement": {
+          "piSponsorEmployee": false,
+          "restrictionType": "OTHER",
+          "restrictiveAgreement": true
+        },
+        "pointOfContact": {
+          "title": "CNS Medical Director",
+          "organization": "Sunovion",
+          "phone": "866-503-6357"
+        }
+      }
+    },
+    "derivedSection": {
+      "miscInfoModule": {
+        "versionHolder": "2025-01-07"
+      },
+      "conditionBrowseModule": {
+        "meshes": [
+          {
+            "id": "D007319",
+            "term": "Sleep Initiation and Maintenance Disorders"
+          },
+          {
+            "id": "D006948",
+            "term": "Hyperkinesis"
+          },
+          {
+            "id": "D001289",
+            "term": "Attention Deficit Disorder with Hyperactivity"
+          }
+        ],
+        "ancestors": [
+          {
+            "id": "D020919",
+            "term": "Sleep Disorders, Intrinsic"
+          },
+          {
+            "id": "D020920",
+            "term": "Dyssomnias"
+          },
+          {
+            "id": "D012893",
+            "term": "Sleep Wake Disorders"
+          },
+          {
+            "id": "D009422",
+            "term": "Nervous System Diseases"
+          },
+          {
+            "id": "D001523",
+            "term": "Mental Disorders"
+          },
+          {
+            "id": "D019958",
+            "term": "Attention Deficit and Disruptive Behavior Disorders"
+          },
+          {
+            "id": "D065886",
+            "term": "Neurodevelopmental Disorders"
+          },
+          {
+            "id": "D020820",
+            "term": "Dyskinesias"
+          },
+          {
+            "id": "D009461",
+            "term": "Neurologic Manifestations"
+          }
+        ],
+        "browseLeaves": [
+          {
+            "id": "M9999",
+            "name": "Hyperkinesis",
+            "asFound": "Hyperactivity",
+            "relevance": "HIGH"
+          },
+          {
+            "id": "M4594",
+            "name": "Attention Deficit Disorder with Hyperactivity",
+            "asFound": "Attention Deficit Hyperactivity Disorder",
+            "relevance": "HIGH"
+          },
+          {
+            "id": "M10356",
+            "name": "Sleep Initiation and Maintenance Disorders",
+            "asFound": "Insomnia",
+            "relevance": "HIGH"
+          },
+          {
+            "id": "M22242",
+            "name": "Parasomnias",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M22654",
+            "name": "Sleep Disorders, Intrinsic",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M22655",
+            "name": "Dyssomnias",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M15696",
+            "name": "Sleep Wake Disorders",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M4815",
+            "name": "Mental Disorders",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M14473",
+            "name": "Psychotic Disorders",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M21830",
+            "name": "Attention Deficit and Disruptive Behavior Disorders",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M30644",
+            "name": "Neurodevelopmental Disorders",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M22574",
+            "name": "Dyskinesias",
+            "relevance": "LOW"
+          },
+          {
+            "id": "M12404",
+            "name": "Neurologic Manifestations",
+            "relevance": "LOW"
+          }
+        ],
+        "browseBranches": [
+          {
+            "abbrev": "BC10",
+            "name": "Nervous System Diseases"
+          },
+          {
+            "abbrev": "BC23",
+            "name": "Symptoms and General Pathology"
+          },
+          {
+            "abbrev": "All",
+            "name": "All Conditions"
+          },
+          {
+            "abbrev": "BXM",
+            "name": "Behaviors and Mental Disorders"
+          }
+        ]
+      },
+      "interventionBrowseModule": {
+        "meshes": [
+          {
+            "id": "D000069582",
+            "term": "Eszopiclone"
+          }
+        ],
+        "ancestors": [
+          {
+            "id": "D006993",
+            "term": "Hypnotics and Sedatives"
+          },
+          {
+            "id": "D002492",
+            "term": "Central Nervous System Depressants"
+          },
+          {
+            "id": "D045505",
+            "term": "Physiological Effects of Drugs"
+          }
+        ],
+        "browseLeaves": [
+          {
+            "id": "M475",
+            "name": "Eszopiclone",
+            "asFound": "Dystonia",
+            "relevance": "HIGH"
+          },
+          {
+            "id": "M10043",
+            "name": "Hypnotics and Sedatives",
+            "relevance": "LOW"
+          }
+        ],
+        "browseBranches": [
+          {
+            "abbrev": "CNSDep",
+            "name": "Central Nervous System Depressants"
+          },
+          {
+            "abbrev": "All",
+            "name": "All Drugs and Chemicals"
+          }
+        ]
+      }
+    },
+    "hasResults": true
+  }

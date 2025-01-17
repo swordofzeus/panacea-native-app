@@ -1,0 +1,58 @@
+scalar JSON
+
+type Query {
+    studies(searchTerm: String!): [Study]
+}
+
+type Study {
+    studyInfo: StudyInfo
+    participants: [Participant]
+    outcomes: JSON
+    adverseEvents: JSON
+}
+
+type StudyInfo {
+    title: String
+    organization: String
+    dates: StudyDates
+    summary: String
+}
+
+type StudyDates {
+    start: String
+    completion: String
+}
+
+type Participant {
+    groupName: String
+    dosage: String
+    medicationName: String
+    size: Int
+    description: String
+}
+
+type Outcome {
+    metric_name: String
+    data: [OutcomeData]
+    yAxis: YAxis
+    xAxis: XAxis
+}
+
+type OutcomeData {
+    label: String
+    values: [GroupValue]
+}
+
+type GroupValue {
+    group: String
+    value: Float
+}
+
+type YAxis {
+    label: String
+    unit: String
+}
+
+type XAxis {
+    label: String
+}
