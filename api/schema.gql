@@ -2,6 +2,8 @@ scalar JSON
 
 type Query {
     studies(searchTerm: String!): [Study]
+    medications: [Medication!]!
+
 }
 
 type Study {
@@ -55,4 +57,9 @@ type YAxis {
 
 type XAxis {
     label: String
+}
+
+type Medication {
+  name: String!
+  conditions: [String!]!
 }

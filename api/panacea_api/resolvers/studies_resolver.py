@@ -39,7 +39,7 @@ def resolve_studies(obj, info, searchTerm: str):
             {
                 "studyInfo": {
                     "title": study.brief_title,
-                    "institution": study.organization,
+                    "organization": study.organization,
                     "dates": {
                         "start": study.start_date.strftime("%Y-%m") if study.start_date else None,
                         "completion": study.completion_date.strftime("%Y-%m")
@@ -58,6 +58,7 @@ def resolve_studies(obj, info, searchTerm: str):
                     for group in study.participant_groups
                 ],
                 "outcomes": visualization_data.data['outcomes'] if visualization_data else [],
+                "adverseEvents": visualization_data.data['adverse_events'] if visualization_data else []
             }
         )
 

@@ -45,6 +45,7 @@ const MedicationSearchScreen = () => {
 
   const handleSearch = () => {
     fetchStudies({ variables: { searchTerm: searchQuery } });
+    console.log({error})
   };
 
   useEffect(() => {
@@ -71,7 +72,7 @@ const MedicationSearchScreen = () => {
   const selectedStudy = selectedMedication ? selectedMedication[selectedStudyIndex] : null;
 
   return (
-    <ScrollView contentContainerStyle={styles.scrollContainer}>
+    <ScrollView contentContainerStyle={styles.scrollContainer} keyboardShouldPersistTaps="handled" >
       <View style={styles.searchContainer}>
         <Searchbar
           placeholder="Search Medications"
@@ -94,6 +95,16 @@ const MedicationSearchScreen = () => {
           <View style={styles.dropdownWrapper}>
             <Text style={styles.dropdownLabel}>Select Study</Text>
             <DropDownPicker
+              zIndex={1000}
+            dropDownContainerStyle={{
+              position: 'relative',
+              top: 0,
+              borderRadius: 10,
+              alignSelf: "center",
+
+          }}
+          flatListProps={{nestedScrollEnabled:true}}
+              listMode="SCROLLVIEW"
               open={dropdownOpen}
               value={selectedStudyIndex}
               items={dropdownItems}
@@ -110,7 +121,9 @@ const MedicationSearchScreen = () => {
                 alignSelf: "center",
                 borderRadius: 10,
                 borderColor: "#ccc",
-                marginTop: 5,
+                position: 'relative',
+                top:0
+
               }}
               textStyle={{
                 fontSize: 14,
@@ -127,6 +140,9 @@ const MedicationSearchScreen = () => {
                 fontSize: 14,
                 color: "#333",
               }}
+              scrollViewProps={{
+                nestedScrollEnabled: true,
+        }}
             />
           </View>
           {selectedStudy && (

@@ -1,6 +1,6 @@
 from ariadne import QueryType, make_executable_schema, load_schema_from_path
 from panacea_api.resolvers.studies_resolver import resolve_studies
-
+from panacea_api.resolvers.medications_resolver import medications_query
 
 from ariadne import ScalarType
 import json
@@ -28,5 +28,5 @@ query = QueryType()
 # Attach resolver for studies
 query.set_field("studies", resolve_studies)
 
-schema = make_executable_schema(type_defs, query, json_scalar)
+schema = make_executable_schema(type_defs, query, json_scalar, medications_query)
 print(schema)

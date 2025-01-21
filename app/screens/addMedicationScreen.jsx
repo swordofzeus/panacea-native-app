@@ -1,49 +1,115 @@
-import React, { useState } from "react";
-import { View, StyleSheet, ScrollView, Text, FlatList, TouchableOpacity } from "react-native";
-import { FAB, Dialog, Portal, TextInput, Button } from "react-native-paper";
+import React, { useState, useEffect } from "react";
+import {
+  View,
+  StyleSheet,
+  ScrollView,
+  Text,
+  FlatList,
+  TouchableOpacity,
+} from "react-native";
+import { FAB, Dialog, Portal, Button, TextInput } from "react-native-paper";
+import { gql, useLazyQuery } from "@apollo/client";
+import DropDownPicker from "react-native-dropdown-picker";
+
+const FETCH_MEDICATIONS = gql`
+  query GetMedications {
+    medications {
+      name
+      conditions
+    }
+  }
+`;
 
 const CurrentTreatmentsScreen = ({ navigation }) => {
   const [treatments, setTreatments] = useState([
     {
       title: "Lunesta",
-      description: "Used to treat Insomnia and other sleep disorders.",
+      description:
+        "Lunesta is a sedative medication that helps with sleep disorders such as insomnia. It works by calming the brain and aiding in maintaining a full night's sleep.",
       status: "Good",
+      startedAt: "2023-11-15",
+      tags: ["Sleep Duration", "Insomnia Severity"],
     },
     {
       title: "Amlodipine",
-      description: "Controlling high blood pressure.",
+      description:
+        "Amlodipine is a calcium channel blocker primarily used to treat high blood pressure and prevent angina. It helps relax and widen blood vessels for better blood flow.",
       status: "Needs Attention",
-    },
-    {
-      title: "Ventolin Inhaler",
-      description: "Relieving asthma symptoms.",
-      status: "Critical",
-    },
-    {
-      title: "Methotrexate",
-      description: "Treating rheumatoid arthritis.",
-      status: "Good",
+      startedAt: "2024-01-05",
+      tags: ["Blood Pressure", "Heart Health"],
     },
   ]);
 
   const [dialogVisible, setDialogVisible] = useState(false);
-  const [newMedication, setNewMedication] = useState("");
-  const [newCondition, setNewCondition] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedMedication, setSelectedMedication] = useState(null);
+  const [selectedCondition, setSelectedCondition] = useState(null);
+  const [conditionOpen, setConditionOpen] = useState(false); // Manage condition dropdown state
+  const [conditionItems, setConditionItems] = useState([]);
+  const [filteredMedications, setFilteredMedications] = useState([]);
+  const [fetchMedications, { data, loading, error }] = useLazyQuery(FETCH_MEDICATIONS);
+
+  useEffect(() => {
+    if (data && data.medications) {
+      setFilteredMedications(data.medications);
+    }
+  }, [data]);
+
+  useEffect(() => {
+    if (selectedMedication && data && data.medications) {
+      const medication = data.medications.find(
+        (med) => med.name === selectedMedication
+      );
+      if (medication) {
+        const items = medication.conditions.map((condition) => ({
+          label: condition,
+          value: condition,
+        }));
+        setConditionItems(items);
+        setSelectedCondition(null); // Reset the condition when a new medication is selected
+      }
+    }
+  }, [selectedMedication, data]);
+
+  const showDialog = () => {
+    fetchMedications(); // Fetch medications when opening the dialog
+    setDialogVisible(true);
+  };
 
   const hideDialog = () => {
     setDialogVisible(false);
-    setNewMedication("");
-    setNewCondition("");
+    setSearchQuery("");
+    setSelectedMedication(null);
+    setSelectedCondition(null);
+    setConditionOpen(false); // Close dropdown on dialog close
+  };
+
+  const handleSearch = (query) => {
+    setSearchQuery(query);
+    if (data && data.medications) {
+      const filtered = data.medications.filter((medication) =>
+        medication.name.toLowerCase().includes(query.toLowerCase())
+      );
+      setFilteredMedications(filtered);
+    }
+  };
+
+  const selectMedication = (medication) => {
+    setSelectedMedication(medication);
+    setSearchQuery(medication);
+    setFilteredMedications([]);
   };
 
   const addTreatment = () => {
-    if (newMedication && newCondition) {
+    if (selectedMedication && selectedCondition) {
       setTreatments((prev) => [
         ...prev,
         {
-          title: newMedication,
-          description: `For ${newCondition}`,
-          status: "Good", // Default status
+          title: selectedMedication,
+          description: `Used for ${selectedCondition}. This treatment monitors essential metrics for your condition.`,
+          status: "Good",
+          startedAt: new Date().toISOString().split("T")[0],
+          tags: ["Metric 1", "Metric 2"], // Example tags
         },
       ]);
       hideDialog();
@@ -65,13 +131,21 @@ const CurrentTreatmentsScreen = ({ navigation }) => {
   const renderTreatmentCard = ({ item }) => (
     <TouchableOpacity
       style={styles.treatmentCard}
-      onPress={() => navigation.navigate("MedicationDetails", { medication: item })}
+      onPress={() =>
+        navigation.navigate("MedicationDetails", { medication: item })
+      }
     >
-      <View style={styles.cardHeader}>
-        <Text style={styles.treatmentTitle}>{item.title}</Text>
-        {renderStatusTag(item.status)}
-      </View>
+      <Text style={styles.treatmentTitle}>{item.title}</Text>
+      {renderStatusTag(item.status)}
       <Text style={styles.treatmentDescription}>{item.description}</Text>
+      <Text style={styles.startedAtText}>Started at: {item.startedAt}</Text>
+      <View style={styles.tagsContainer}>
+        {item.tags.map((tag, index) => (
+          <Text key={index} style={styles.tag}>
+            {tag}
+          </Text>
+        ))}
+      </View>
     </TouchableOpacity>
   );
 
@@ -91,29 +165,65 @@ const CurrentTreatmentsScreen = ({ navigation }) => {
         style={styles.fab}
         small={false}
         icon="plus"
-        onPress={() => setDialogVisible(true)}
+        onPress={showDialog}
       />
 
       <Portal>
         <Dialog visible={dialogVisible} onDismiss={hideDialog}>
           <Dialog.Title>Add New Treatment</Dialog.Title>
           <Dialog.Content>
-            <TextInput
-              label="Medication Name"
-              value={newMedication}
-              onChangeText={setNewMedication}
-              style={styles.input}
-            />
-            <TextInput
-              label="Condition"
-              value={newCondition}
-              onChangeText={setNewCondition}
-              style={styles.input}
-            />
+            {loading ? (
+              <Text>Loading medications...</Text>
+            ) : (
+              <>
+                <TextInput
+                  label="Search Medication"
+                  value={searchQuery}
+                  onChangeText={handleSearch}
+                  style={styles.input}
+                  autoFocus={true}
+                />
+                {searchQuery.length > 0 && filteredMedications.length > 0 && (
+                  <View style={styles.suggestionsContainer}>
+                    {filteredMedications.map((medication) => (
+                      <TouchableOpacity
+                        key={medication.name}
+                        onPress={() => selectMedication(medication.name)}
+                        style={styles.suggestionItem}
+                      >
+                        <Text style={styles.suggestionText}>
+                          {medication.name}
+                        </Text>
+                      </TouchableOpacity>
+                    ))}
+                  </View>
+                )}
+                {selectedMedication && (
+                  <DropDownPicker
+                    open={conditionOpen}
+                    setOpen={setConditionOpen}
+                    value={selectedCondition}
+                    items={conditionItems}
+                    setValue={setSelectedCondition}
+                    placeholder="Select a condition"
+                    style={{ marginVertical: 10 }}
+                    dropDownContainerStyle={{ marginVertical: 10 }}
+                  />
+                )}
+              </>
+            )}
+            {error && (
+              <Text style={styles.errorText}>Error loading medications</Text>
+            )}
           </Dialog.Content>
           <Dialog.Actions>
             <Button onPress={hideDialog}>Cancel</Button>
-            <Button onPress={addTreatment}>Add</Button>
+            <Button
+              onPress={addTreatment}
+              disabled={!selectedMedication || !selectedCondition}
+            >
+              Add
+            </Button>
           </Dialog.Actions>
         </Dialog>
       </Portal>
@@ -122,6 +232,12 @@ const CurrentTreatmentsScreen = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
+  fab: {
+    position: "absolute", // Ensures the FAB is positioned relative to the screen
+    right: 16, // Adjusts the FAB position from the right edge
+    bottom: 16, // Adjusts the FAB position from the bottom edge
+    elevation: 4, // Adds shadow to make it look elevated
+  },
   container: {
     flex: 1,
     backgroundColor: "#f9f9f9",
@@ -151,11 +267,6 @@ const styles = StyleSheet.create({
     shadowRadius: 3,
     shadowOffset: { width: 0, height: 2 },
   },
-  cardHeader: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-  },
   treatmentTitle: {
     fontSize: 18,
     fontWeight: "bold",
@@ -165,28 +276,69 @@ const styles = StyleSheet.create({
   treatmentDescription: {
     fontSize: 14,
     color: "#666",
-    marginBottom: 10,
+    marginTop: 10,
   },
-  fab: {
-    position: "absolute",
-    margin: 16,
-    right: 0,
-    bottom: 0,
-    backgroundColor: "#6200EE",
+  startedAtText: {
+    fontSize: 12,
+    color: "#888",
+    marginTop: 5,
+    fontStyle: "italic",
   },
-  input: {
-    marginBottom: 10,
-    backgroundColor: "#fff",
+  tagsContainer: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    marginTop: 10,
+  },
+  tag: {
+    backgroundColor: "#E3F2FD",
+    color: "#1E88E5",
+    fontSize: 12,
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+    borderRadius: 16,
+    marginRight: 5,
+    marginBottom: 5,
   },
   statusTag: {
     paddingHorizontal: 10,
     paddingVertical: 4,
     borderRadius: 12,
+    alignSelf: "flex-start",
+    marginTop: 5,
   },
   statusText: {
     fontSize: 12,
     fontWeight: "bold",
     color: "#fff",
+  },
+  errorText: {
+    color: "red",
+    textAlign: "center",
+    marginVertical: 10,
+  },
+  input: {
+    marginBottom: 10,
+    backgroundColor: "#fff",
+  },
+  suggestionsContainer: {
+    backgroundColor: "#fff",
+    elevation: 3,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowRadius: 3,
+    shadowOffset: { width: 0, height: 2 },
+    borderRadius: 8,
+    marginTop: 5,
+    maxHeight: 150,
+  },
+  suggestionItem: {
+    padding: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: "#eee",
+  },
+  suggestionText: {
+    fontSize: 16,
+    color: "#333",
   },
 });
 

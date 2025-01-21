@@ -4,6 +4,7 @@ import CardComponent from "./Card";
 
 const StudyInfoCard = ({ studyInfo, participants }) => {
   if (!studyInfo) return null;
+  console.log({studyInfo})
 
   return (
     <CardComponent title="Study Information" description={studyInfo.summary || "No summary available"}>
@@ -12,10 +13,9 @@ const StudyInfoCard = ({ studyInfo, participants }) => {
           <Text style={styles.bold}>Title:</Text> {studyInfo.title}
         </Text>
         <Text style={styles.infoLine}>
-          <Text style={styles.bold}>Funding:</Text> {studyInfo.funding}
         </Text>
         <Text style={styles.infoLine}>
-          <Text style={styles.bold}>Institution:</Text> {studyInfo.institution}
+          <Text style={styles.bold}>Institution:</Text> {studyInfo.organization}
         </Text>
         <Text style={styles.infoLine}>
           <Text style={styles.bold}>Dates:</Text> {studyInfo.dates.start} - {studyInfo.dates.completion}

@@ -9,9 +9,11 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.swordofzeus.panacea"
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -40,10 +42,17 @@
     },
     "extra": {
       "router": {
-        "origin": false
+        "origin": false,
+        "eas": {
+          "projectId": "3b9ad5ad-7800-4f33-a567-baca5b7e698c"
+        }
       },
       "eas": {
         "projectId": "3b9ad5ad-7800-4f33-a567-baca5b7e698c"
+      },
+      "android": {
+        "package": "com.swordofzeus.panacea",
+        "googleServicesFile":"./android/app/google-services.json"
       }
     }
   }

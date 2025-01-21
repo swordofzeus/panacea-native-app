@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "687041678941",
+    "project_id": "panacea-7450a",
+    "storage_bucket": "panacea-7450a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687041678941:android:a058c03892e38bcf8f87b4",
+        "android_client_info": {
+          "package_name": "com.swordofzeus.panacea"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_oypW1Qr3yKv6wUT1yl5bnItiSfxBRUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

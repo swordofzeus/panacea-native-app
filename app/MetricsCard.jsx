@@ -27,7 +27,7 @@ const MetricsCard = ({ outcomes }) => {
     return <Text style={styles.noDataText}>No data available for this metric</Text>;
   }
 
-  const { data, yAxis, xAxis } = metric;
+  const { data, yAxis, xAxis, summary } = metric;
   const dosageLabels = data.map((group) => group.label);
   const categories = Array.from(
     new Set(data.flatMap((group) => group.values.map((item) => item.group)))
@@ -67,7 +67,7 @@ const MetricsCard = ({ outcomes }) => {
   );
 
   return (
-    <Card title="Metrics">
+    <Card title="Metrics" description={summary}>
       <View style={styles.container}>
         {renderTabs()}
         <Text style={styles.chartTitle}>
@@ -106,7 +106,6 @@ const MetricsCard = ({ outcomes }) => {
           </ScrollView>
         </View>
         {renderLegend()}
-        <Text style={styles.description}>{metric.yAxis.label}</Text>
       </View>
     </Card>
   );

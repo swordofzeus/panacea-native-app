@@ -6,8 +6,8 @@
     "eas-build-pre-install": "npm config set legacy-peer-deps true",
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web",
     "test": "jest --watchAll",
     "lint": "expo lint"
@@ -31,7 +31,7 @@
     "aws-amplify-react-native": "^7.0.8",
     "expo": "~52.0.5",
     "expo-blur": "~14.0.1",
-    "expo-constants": "~17.0.2",
+    "expo-constants": "~17.0.4",
     "expo-font": "~13.0.1",
     "expo-haptics": "~14.0.0",
     "expo-linear-gradient": "~14.0.1",
@@ -67,7 +67,9 @@
     "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.2",
     "victory": "^37.3.4",
-    "victory-native": "^41.12.5"
+    "victory-native": "^41.12.5",
+    "expo-notifications": "~0.29.12",
+    "expo-device": "~7.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

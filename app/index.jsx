@@ -2,6 +2,9 @@ import React from 'react';
 import { ScrollView, StyleSheet } from 'react-native';
 import LineChartCard from './LineChartCard'; // Adjust the path based on your folder structure
 import PieChartCard from './PieChartCard'; // Assuming PieChartCard is another separate component
+import { Button } from 'react-native';
+import router, { useRouter } from 'expo-router'
+import { useNavigation } from '@react-navigation/native';
 
 const metrics = {
   'Heart Rate': {
@@ -95,8 +98,14 @@ const pieChartData = [
 ];
 
 const HomeScreen = () => {
+  const navigator = useNavigation()
+  const router = useRouter()
   return (
     <ScrollView style={styles.container}>
+       <Button
+        title="Go to Questionnairee2"
+        onPress={() => navigator.navigate("Questionnaire")}
+      />
       <LineChartCard metrics={metrics} />
       <PieChartCard data={pieChartData} />
     </ScrollView>

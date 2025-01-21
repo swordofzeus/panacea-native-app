@@ -24,7 +24,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 openai.api_key = OPENAI_API_KEY
 
 
-def call_llm(prompt):
+def call_llm(prompt, expected_json=True):
     """
     Calls the OpenAI API to process the prompt and return a structured response.
     """
@@ -41,11 +41,17 @@ def call_llm(prompt):
         )
         import json
 
-        content = json.loads(response.choices[0].message.content)
+        content = (
+            json.loads(response.choices[0].message.content)
+            if expected_json
+            else response.choices[0].message.content
+        )
         return content  # Ensure the response is a dictionary
     except Exception as e:
+        print(prompt)
         print(response.choices[0].message.content)
         print(f"Error calling LLM: {e}")
+        input()
         return None
 
 
@@ -195,6 +201,55 @@ class ClinicalDataVisualizer:
                 "common": [],
             }
 
+    def prompt_shortened_metric_name(self, metric_name):
+        """
+        Generates a prompt for the LLM to create a shortened version of a metric name.
+
+        Args:
+            metric_name (str): The full metric name.
+
+        Returns:
+            str: The LLM prompt.
+        """
+        return f"""
+        You are tasked with creating concise metric names for healthcare data visualizations.
+        The goal is to keep all meaningful information while removing irrelevant details.
+
+        Original Metric Name: {metric_name}
+
+        Instructions:
+        - Shorten the metric name to no more than 5-7 words.
+        - Avoid technical jargon or redundant details.
+        - Ensure it conveys the same core meaning as the original.
+
+        Return only the shortened metric name as a string.
+        """
+
+    def prompt_metric_summary(self, metric_name, metric_data):
+        """
+        Generates a prompt for the LLM to create a summary for metric results.
+
+        Args:
+            metric_name (str): The name of the metric.
+            metric_data (list): Data for the metric, including group names and values.
+
+        Returns:
+            str: The LLM prompt.
+        """
+        return f"""
+        You are tasked with summarizing results from a healthcare study metric.
+
+        Metric Name: {metric_name}
+        Data:
+        {metric_data}
+
+        Instructions:
+        - Summarize the results in 2-3 sentences.
+        - Highlight key differences or trends among groups.
+        - Use plain language suitable for a non-technical audience.
+        Return the summary as plain text.
+        """
+
     def extract_studies(self):
         """
         Extract all studies from the database.
@@ -288,7 +343,7 @@ class ClinicalDataVisualizer:
         visualization_data = []
         for metric, groups in grouped_outcomes.items():
             chart_data = {
-                'metric_name': metric,
+                "metric_name": metric,
                 "data": [],
                 "yAxis": {
                     "label": "Value",
@@ -339,7 +394,7 @@ class ClinicalDataVisualizer:
             study_id (str): The study ID to process.
 
         Returns:
-            list: A list of grouped bar graph data dictionaries.
+            list: A list of grouped bar graph data dictionaries with additional fields.
         """
         try:
             # Query OutcomeMeasures and OutcomeGroups for the study
@@ -379,8 +434,71 @@ class ClinicalDataVisualizer:
                 )
 
             # Preprocess the grouped outcomes into graph data
-            visualization_data = self.preprocess_grouped_bar_data(grouped_outcomes)
-            import pprint
+            visualization_data = []
+            for full_metric_name, groups in grouped_outcomes.items():
+                # Use LLM to shorten the metric name
+                shortened_name_prompt = self.prompt_shortened_metric_name(
+                    full_metric_name
+                )
+                shortened_name = (
+                    call_llm(shortened_name_prompt, expected_json=False)
+                    or full_metric_name
+                )
+
+                # Use LLM to generate a summary of the results
+                metric_summary_prompt = self.prompt_metric_summary(
+                    full_metric_name, groups
+                )
+                metric_summary = (
+                    call_llm(metric_summary_prompt, expected_json=False)
+                    or "No summary available."
+                )
+
+                chart_data = {
+                    "full_metric_name": full_metric_name,  # Save the original full name
+                    "metric_name": shortened_name,  # Replace metric_name with shortened name
+                    "summary": metric_summary,  # Add a summary of results
+                    "data": [],
+                    "yAxis": {
+                        "label": "Value",
+                        "unit": next(iter(next(iter(groups.values()))))["units"],
+                    },
+                    "xAxis": {"label": "Time Period"},
+                }
+
+                # Collect unique labels
+                all_labels = set()
+                for group_data in groups.values():
+                    for item in group_data:
+                        label = (
+                            item.get("class_title")
+                            or item.get("time_frame")
+                            or "Week 12"
+                        )
+                        all_labels.add(label)
+
+                # Normalize labels across all groups
+                for label in all_labels:
+                    label_entry = {"label": label, "values": []}
+                    for group, data in groups.items():
+                        # Find the value for this label in the group
+                        value_entry = next(
+                            (
+                                item["value"]
+                                for item in data
+                                if (item.get("class_title") or item.get("time_frame"))
+                                == label
+                            ),
+                            None,
+                        )
+                        if value_entry is not None:
+                            label_entry["values"].append(
+                                {"group": group, "value": value_entry}
+                            )
+
+                    chart_data["data"].append(label_entry)
+
+                visualization_data.append(chart_data)
 
             return visualization_data
 
@@ -414,7 +532,6 @@ class ClinicalDataVisualizer:
                     "participants": participants,
                     "outcomes": outcomes,
                     "adverse_events": adverse_events,
-
                 }
                 visualization_data.append(
                     {
