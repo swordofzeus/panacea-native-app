@@ -1,0 +1,88 @@
+scalar JSON
+scalar DateTime
+
+type Query {
+    studies(searchTerm: String!): [Study]
+    medications: [Medication!]!
+
+}
+
+type Study {
+    studyInfo: StudyInfo
+    participants: [Participant]
+    outcomes: JSON
+    adverseEvents: JSON
+}
+
+type StudyInfo {
+    title: String
+    organization: String
+    dates: StudyDates
+    summary: String
+}
+
+type StudyDates {
+    start: String
+    completion: String
+}
+
+type Participant {
+    groupName: String
+    dosage: String
+    medicationName: String
+    size: Int
+    description: String
+}
+
+type Outcome {
+    metric_name: String
+    data: [OutcomeData]
+    yAxis: YAxis
+    xAxis: XAxis
+}
+
+type OutcomeData {
+    label: String
+    values: [GroupValue]
+}
+
+type GroupValue {
+    group: String
+    value: Float
+}
+
+type YAxis {
+    label: String
+    unit: String
+}
+
+type XAxis {
+    label: String
+}
+
+type Medication {
+  name: String!
+  conditions: [String!]!
+}
+
+type Mutation {
+  addResponses(input: AddResponsesInput!): ResponseResult!
+}
+
+input AddResponsesInput {
+  medicationId: String!
+  metricId: String
+  responses: [QuestionResponseInput!]!
+}
+
+input QuestionResponseInput {
+  questionId: String!
+  answer: String!
+  askedAt: DateTime!
+  respondedAt: DateTime!
+}
+
+type ResponseResult {
+  success: Boolean!
+  message: String
+}

@@ -9,18 +9,20 @@ const PieChartCard = ({ data = [] }) => {
   }
 
   return (
-    <CardComponent title="Side Effects">
+    <CardComponent title="Side Effects"
+      description="All side effects you experience are common for the medications you are taking. Consult your doctor for adjustments if they become too severe"
+    >
       <View style={styles.chartContainer}>
         <PieChart
           data={data}
           donut
           radius={100}
           innerRadius={60}
-          showText
+          // showText
           textSize={10}
           textColor="white"
           centerLabelComponent={() => (
-            <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#333' }}>Data</Text>
+            <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#333' }}>Side Effects</Text>
           )}
         />
       </View>

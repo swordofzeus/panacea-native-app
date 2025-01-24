@@ -1,16 +1,23 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const CardComponent = ({ title, children }) => {
+const CardComponent = ({ title, subheader, children, description }) => {
   return (
     <View style={styles.card}>
-      {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.cardTitle}>{title}</Text>
+        <Text style={styles.title}>{title}</Text>
+        {subheader && <Text style={styles.subheader}>{subheader}</Text>}
       </View>
+      <View style={styles.content}>
+        {children}
+        {/* Summary/Description Section */}
 
-      {/* Content */}
-      <View style={styles.content}>{children}</View>
+       {description && <View style={styles.summary}>
+          <Text style={styles.description}>
+            {description || ''}
+          </Text>
+        </View> }
+      </View>
     </View>
   );
 };
@@ -21,7 +28,6 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     marginHorizontal: 15,
     borderRadius: 10,
-    overflow: 'hidden',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
@@ -29,17 +35,35 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   header: {
-    backgroundColor: '#f0f0f0', // Light gray background for the header
+    backgroundColor: '#f5f5f5',
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
     paddingVertical: 10,
     paddingHorizontal: 15,
   },
-  cardTitle: {
+  title: {
     fontSize: 18,
     fontWeight: 'bold',
     color: '#333',
   },
+  subheader: {
+    fontSize: 14,
+    color: '#666',
+    marginTop: 5,
+  },
   content: {
-    padding: 15,
+    paddingVertical: 15,
+    paddingHorizontal: 15,
+  },
+  summary: {
+    marginTop: 15,
+    padding: 10,
+    backgroundColor: '#f9f9f9',
+    borderRadius: 8,
+  },
+  description: {
+    fontSize: 14,
+    color: '#555',
   },
 });
 

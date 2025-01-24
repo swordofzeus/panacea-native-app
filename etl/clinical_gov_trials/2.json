@@ -1,0 +1,1400 @@
+{
+  "protocolSection": {
+    "identificationModule": {
+      "nctId": "NCT00645944",
+      "orgStudyIdInfo": {
+        "id": "0702002331"
+      },
+      "secondaryIdInfos": [
+        {
+          "id": "ESRC131"
+        }
+      ],
+      "organization": {
+        "fullName": "Yale University",
+        "class": "OTHER"
+      },
+      "briefTitle": "Randomized, Controlled, Double Blind Trial of Eszopiclone for Insomnia Associated With Schizophrenia",
+      "officialTitle": "Randomized, Controlled, Double Blind Trial of Eszopiclone for Insomnia Associated With Schizophrenia"
+    },
+    "statusModule": {
+      "statusVerifiedDate": "2015-06",
+      "overallStatus": "COMPLETED",
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "startDateStruct": {
+        "date": "2008-04"
+      },
+      "primaryCompletionDateStruct": {
+        "date": "2011-04",
+        "type": "ACTUAL"
+      },
+      "completionDateStruct": {
+        "date": "2011-04",
+        "type": "ACTUAL"
+      },
+      "studyFirstSubmitDate": "2008-03-25",
+      "studyFirstSubmitQcDate": "2008-03-27",
+      "studyFirstPostDateStruct": {
+        "date": "2008-03-28",
+        "type": "ESTIMATED"
+      },
+      "resultsFirstSubmitDate": "2015-05-05",
+      "resultsFirstSubmitQcDate": "2015-06-22",
+      "resultsFirstPostDateStruct": {
+        "date": "2015-07-16",
+        "type": "ESTIMATED"
+      },
+      "dispFirstSubmitDate": "2012-07-17",
+      "dispFirstSubmitQcDate": "2012-07-17",
+      "dispFirstPostDateStruct": {
+        "date": "2012-08-01",
+        "type": "ESTIMATED"
+      },
+      "lastUpdateSubmitDate": "2015-06-22",
+      "lastUpdatePostDateStruct": {
+        "date": "2015-07-16",
+        "type": "ESTIMATED"
+      }
+    },
+    "sponsorCollaboratorsModule": {
+      "responsibleParty": {
+        "type": "PRINCIPAL_INVESTIGATOR",
+        "investigatorFullName": "Cenk Tek",
+        "investigatorTitle": "Associate Professor",
+        "investigatorAffiliation": "Yale University"
+      },
+      "leadSponsor": {
+        "name": "Yale University",
+        "class": "OTHER"
+      },
+      "collaborators": [
+        {
+          "name": "Sumitomo Pharma America, Inc.",
+          "class": "INDUSTRY"
+        }
+      ]
+    },
+    "oversightModule": {
+      "oversightHasDmc": false
+    },
+    "descriptionModule": {
+      "briefSummary": "The major goal of this project is to investigate established insomnia treatments in a schizophrenia population to see if the improved sleep leads to overall better quality of life. In addition, we hypothesize that the insomnia treatment may also lead to observed improvements in other symptoms associated with schizophrenia such as cognitive impairments, obesity, and negative symptoms.",
+      "detailedDescription": "The primary aim of this study is to investigate the clinical efficacy of eszopiclone for the treatment of schizophrenia-related insomnia over 8 weeks. A two-week, single-blind placebo phase followed the double-blind phase to evaluate rebound and withdrawal effects after abrupt discontinuation."
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Insomnia",
+        "Schizophrenia",
+        "Schizoaffective Disorder",
+        "Sleep Disorders"
+      ]
+    },
+    "designModule": {
+      "studyType": "INTERVENTIONAL",
+      "phases": [
+        "NA"
+      ],
+      "designInfo": {
+        "allocation": "RANDOMIZED",
+        "interventionModel": "PARALLEL",
+        "primaryPurpose": "TREATMENT",
+        "maskingInfo": {
+          "masking": "TRIPLE",
+          "whoMasked": [
+            "PARTICIPANT",
+            "INVESTIGATOR",
+            "OUTCOMES_ASSESSOR"
+          ]
+        }
+      },
+      "enrollmentInfo": {
+        "count": 39,
+        "type": "ACTUAL"
+      }
+    },
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "label": "Eszopiclone Group",
+          "type": "EXPERIMENTAL",
+          "description": "Participants assigned to this arm will receive Eszopiclone 2mg each night for the first week then Eszopiclone 3mg each night for the remaining weeks.",
+          "interventionNames": [
+            "Drug: Eszopiclone"
+          ]
+        },
+        {
+          "label": "Placebo Group",
+          "type": "PLACEBO_COMPARATOR",
+          "description": "Participants assigned to this arm will receive placebo (an inactive substance or a \"sugar pill\") to be taken each night for all weeks of the study.",
+          "interventionNames": [
+            "Drug: Placebo"
+          ]
+        }
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "Eszopiclone",
+          "description": "Eszopiclone 2mg each night for the first week then Eszopiclone 3mg each night for the remaining weeks.",
+          "armGroupLabels": [
+            "Eszopiclone Group"
+          ],
+          "otherNames": [
+            "Lunesta"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "Placebo",
+          "description": "Placebo or inactive substance (\"sugar pill\")taken each night for all weeks of the study",
+          "armGroupLabels": [
+            "Placebo Group"
+          ]
+        }
+      ]
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "measure": "Change in Insomnia Severity Index From Baseline.",
+          "description": "The Insomnia Severity Index (ISI) is a 7-item self-report questionnaire that provides a global measure of insomnia severity based on several indicators (e.g., difficulty falling or staying asleep, satisfaction with sleep, degree of impairment with daytime functioning). It has adequate internal consistency (Cronbach's alpha=0.91) and temporal stability (r=0.80), has been validated against sleep diary and polysomnography data and was sensitive to change in several insomnia treatment studies. The ISI scale range is: minimum = 0, maximum = 28. The interpretation is that lower is 'better sleep', while higher is considered 'worse sleep/more insomnia'.",
+          "timeFrame": "8 Weeks"
+        }
+      ]
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\n* Be between the ages of 18 to 64\n* Meet DSM-IV criteria for schizophrenia or schizoaffective disorder\n* Sleep difficulties at least 2x per week in the preceding month\n* Be on a stable dose of antipsychotic medication\n* Symptomatically stable in the last 2 months\n* English speaking.\n\nExclusion Criteria:\n\n* Meet criteria for current alcohol or other substance dependence\n* A history of dementia, mental retardation or other neurological disorder\n* Not capable of giving informed consent for participation in this study.\n* Ongoing pregnancy\n* Known sensitivity to zopiclone.\n* Insomnia associated with medical disorders likely to impair sleep.\n* Use of any medication that affects sleep/wake function (other than antipsychotic medication), within the past 2 weeks or within a time period that is less than 7 half-lives since last use of the medication.\n* Lack of sleep benefit from previous adequate eszopiclone treatment\n* History of clinically significant hepatic impairment.\n* Subject is taking a potent cytochrome p450 3A4 inhibitor medication (ritonavir, nelfinavir, indinavir, erythromycin, clarithromycin, troleandomycin, ketoconazole, itraconazole) and is unwilling or it is clinically contraindicated to stop the medication.",
+      "healthyVolunteers": false,
+      "sex": "ALL",
+      "minimumAge": "18 Years",
+      "maximumAge": "64 Years",
+      "stdAges": [
+        "ADULT"
+      ]
+    },
+    "contactsLocationsModule": {
+      "overallOfficials": [
+        {
+          "name": "Cenk Tek, M.D.",
+          "affiliation": "Yale University",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        }
+      ],
+      "locations": [
+        {
+          "facility": "Connecticut Mental Health Center",
+          "city": "New Haven",
+          "state": "Connecticut",
+          "zip": "06519",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 41.30815,
+            "lon": -72.92816
+          }
+        }
+      ]
+    }
+  },
+  "resultsSection": {
+    "participantFlowModule": {
+      "preAssignmentDetails": "179 outpatients were screened, 44 met initial eligibility criteria. Forty-three consented to participate and 4 were withdrawn prior to randomization. Of the remaining 39, 19 were randomized to placebo and 20 to eszopiclone 3mg. Two participants in the placebo arm and 1 participant in the eszopiclone arm withdrew before receiving study medication",
+      "recruitmentDetails": "The study was conducted between May 2008 and February 2011 at a community mental health center. Following screening and baseline assessment, eligible patients who continued to meet inclusion criteria were randomly assigned to either placebo or eszopiclone in a 1:1 ratio using a randomization procedure blind to both research team and subjects.",
+      "groups": [
+        {
+          "id": "FG000",
+          "title": "Eszopiclone Group",
+          "description": "Participants assigned to this arm will receive Eszopiclone 2mg each night for the first week then Eszopiclone 3mg each night for the remaining weeks.\n\nEszopiclone: Eszopiclone 2mg each night for the first week then Eszopiclone 3mg each night for the remaining weeks."
+        },
+        {
+          "id": "FG001",
+          "title": "Placebo Group",
+          "description": "Participants assigned to this arm will receive placebo (an inactive substance or a \"sugar pill\") to be taken each night for all weeks of the study.\n\nPlacebo: Placebo or inactive substance (\"sugar pill\")taken each night for all weeks of the study"
+        }
+      ],
+      "periods": [
+        {
+          "title": "Randomized",
+          "milestones": [
+            {
+              "type": "STARTED",
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "20"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "19"
+                }
+              ]
+            },
+            {
+              "type": "COMPLETED",
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "19"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "17"
+                }
+              ]
+            },
+            {
+              "type": "NOT COMPLETED",
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "2"
+                }
+              ]
+            }
+          ],
+          "dropWithdraws": [
+            {
+              "type": "Withdrawal by Subject",
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Received Medication",
+          "milestones": [
+            {
+              "type": "STARTED",
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "19"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "17"
+                }
+              ]
+            },
+            {
+              "type": "COMPLETED",
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "13"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "14"
+                }
+              ]
+            },
+            {
+              "type": "NOT COMPLETED",
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "6"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "3"
+                }
+              ]
+            }
+          ],
+          "dropWithdraws": [
+            {
+              "type": "Adverse Event",
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "2"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "1"
+                }
+              ]
+            },
+            {
+              "type": "Withdrawal by Subject",
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "1"
+                }
+              ]
+            },
+            {
+              "type": "Lost to Follow-up",
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "0"
+                }
+              ]
+            },
+            {
+              "type": "Protocol Violation",
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "2"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "baselineCharacteristicsModule": {
+      "populationDescription": "Of the remaining 39 randomized, 19 were randomized to placebo and 20 to eszopiclone 3mg. Two participants in the placebo arm and 1 participant in the eszopiclone arm withdrew before receiving study medication",
+      "groups": [
+        {
+          "id": "BG000",
+          "title": "Eszopiclone Group",
+          "description": "Participants assigned to this arm will receive Eszopiclone 2mg each night for the first week then Eszopiclone 3mg each night for the remaining weeks.\n\nEszopiclone: Eszopiclone 2mg each night for the first week then Eszopiclone 3mg each night for the remaining weeks."
+        },
+        {
+          "id": "BG001",
+          "title": "Placebo Group",
+          "description": "Participants assigned to this arm will receive placebo (an inactive substance or a \"sugar pill\") to be taken each night for all weeks of the study.\n\nPlacebo: Placebo or inactive substance (\"sugar pill\")taken each night for all weeks of the study"
+        },
+        {
+          "id": "BG002",
+          "title": "Total",
+          "description": "Total of all reporting groups"
+        }
+      ],
+      "denoms": [
+        {
+          "units": "Participants",
+          "counts": [
+            {
+              "groupId": "BG000",
+              "value": "19"
+            },
+            {
+              "groupId": "BG001",
+              "value": "17"
+            },
+            {
+              "groupId": "BG002",
+              "value": "36"
+            }
+          ]
+        }
+      ],
+      "measures": [
+        {
+          "title": "Age, Continuous",
+          "paramType": "MEAN",
+          "dispersionType": "STANDARD_DEVIATION",
+          "unitOfMeasure": "years",
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "45.7",
+                      "spread": "7.4"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "47.5",
+                      "spread": "10.2"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "46.5",
+                      "spread": "12.9"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sex: Female, Male",
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "unitOfMeasure": "Participants",
+          "classes": [
+            {
+              "categories": [
+                {
+                  "title": "Female",
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "9"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "9"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "18"
+                    }
+                  ]
+                },
+                {
+                  "title": "Male",
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "10"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "8"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "18"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "outcomeMeasuresModule": {
+      "outcomeMeasures": [
+        {
+          "type": "PRIMARY",
+          "title": "Change in Insomnia Severity Index From Baseline.",
+          "description": "The Insomnia Severity Index (ISI) is a 7-item self-report questionnaire that provides a global measure of insomnia severity based on several indicators (e.g., difficulty falling or staying asleep, satisfaction with sleep, degree of impairment with daytime functioning). It has adequate internal consistency (Cronbach's alpha=0.91) and temporal stability (r=0.80), has been validated against sleep diary and polysomnography data and was sensitive to change in several insomnia treatment studies. The ISI scale range is: minimum = 0, maximum = 28. The interpretation is that lower is 'better sleep', while higher is considered 'worse sleep/more insomnia'.",
+          "populationDescription": "Of 39 eligible participants, 19 were randomized to placebo and 20 to eszopiclone 3mg. Two participants in the placebo arm and 1 participant in the eszopiclone arm withdrew before receiving study medication. 36 participants were included in the modified ITT analysis",
+          "reportingStatus": "POSTED",
+          "paramType": "LEAST_SQUARES_MEAN",
+          "dispersionType": "95% Confidence Interval",
+          "unitOfMeasure": "units on a scale",
+          "timeFrame": "8 Weeks",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Eszopiclone Group",
+              "description": "Participants assigned to this arm will receive Eszopiclone 2mg each night for the first week then Eszopiclone 3mg each night for the remaining weeks.\n\nEszopiclone: Eszopiclone 2mg each night for the first week then Eszopiclone 3mg each night for the remaining weeks."
+            },
+            {
+              "id": "OG001",
+              "title": "Placebo Group",
+              "description": "Participants assigned to this arm will receive placebo (an inactive substance or a \"sugar pill\") to be taken each night for all weeks of the study.\n\nPlacebo: Placebo or inactive substance (\"sugar pill\")taken each night for all weeks of the study"
+            }
+          ],
+          "denoms": [
+            {
+              "units": "Participants",
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "19"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "17"
+                }
+              ]
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "-10.7",
+                      "lowerLimit": "-13.2",
+                      "upperLimit": "-8.2"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "-6.9",
+                      "lowerLimit": "-9.5",
+                      "upperLimit": "-4.3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "analyses": [
+            {
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "testedNonInferiority": false,
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.039",
+              "statisticalMethod": "Mixed Models Analysis",
+              "paramType": "Mean Difference (Final Values)",
+              "paramValue": "-3.8",
+              "ciPctValue": "95",
+              "ciNumSides": "TWO_SIDED",
+              "ciLowerLimit": "-7.5",
+              "ciUpperLimit": "-0.2"
+            }
+          ]
+        }
+      ]
+    },
+    "adverseEventsModule": {
+      "frequencyThreshold": "5",
+      "timeFrame": "8 Weeks",
+      "description": "Adverse events reported in either placebo or eszopiclone group during double blind phase at 8 weeks.",
+      "eventGroups": [
+        {
+          "id": "EG000",
+          "title": "Eszopiclone Group",
+          "description": "Participants assigned to this arm will receive Eszopiclone 2mg each night for the first week then Eszopiclone 3mg each night for the remaining weeks.\n\nEszopiclone: Eszopiclone 2mg each night for the first week then Eszopiclone 3mg each night for the remaining weeks.",
+          "seriousNumAffected": 3,
+          "seriousNumAtRisk": 19,
+          "otherNumAffected": 16,
+          "otherNumAtRisk": 19
+        },
+        {
+          "id": "EG001",
+          "title": "Placebo Group",
+          "description": "Participants assigned to this arm will receive placebo (an inactive substance or a \"sugar pill\") to be taken each night for all weeks of the study.\n\nPlacebo: Placebo or inactive substance (\"sugar pill\")taken each night for all weeks of the study",
+          "seriousNumAffected": 1,
+          "seriousNumAtRisk": 17,
+          "otherNumAffected": 13,
+          "otherNumAtRisk": 17
+        }
+      ],
+      "seriousEvents": [
+        {
+          "term": "Unpleasant Taste",
+          "organSystem": "General disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "notes": "Participants dropped out of the study due to the unpleasant taste of the intervention/placebo.",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Fatigue",
+          "organSystem": "General disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Memory Problems",
+          "organSystem": "Nervous system disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 17
+            }
+          ]
+        }
+      ],
+      "otherEvents": [
+        {
+          "term": "Sedation/drowsiness",
+          "organSystem": "General disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 8,
+              "numAffected": 8,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 7,
+              "numAffected": 7,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Fatigue/Weakness",
+          "organSystem": "General disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Irritability",
+          "organSystem": "General disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Headache",
+          "organSystem": "Nervous system disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 4,
+              "numAffected": 4,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Excitement/nervousness",
+          "organSystem": "Psychiatric disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Malaise",
+          "organSystem": "Psychiatric disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 3,
+              "numAffected": 3,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Memory Problems",
+          "organSystem": "Nervous system disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Delusions",
+          "organSystem": "Psychiatric disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Dizziness/faintness",
+          "organSystem": "Nervous system disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Vision Blurred",
+          "organSystem": "Eye disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Nasal Congestion",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Dry Mouth",
+          "organSystem": "General disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 5,
+              "numAffected": 5,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 4,
+              "numAffected": 4,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Increased Salivation",
+          "organSystem": "General disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Unpleasant Taste",
+          "organSystem": "General disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 7,
+              "numAffected": 7,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Tremor",
+          "organSystem": "Nervous system disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Ataxia",
+          "organSystem": "Nervous system disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "notes": "Ataxia/impaired coordination",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Hyperventilation",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Nausea/Vomiting",
+          "organSystem": "Gastrointestinal disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Stomach/ abdominal discomfort",
+          "organSystem": "Gastrointestinal disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Constipation",
+          "organSystem": "Gastrointestinal disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Diarrhea",
+          "organSystem": "Gastrointestinal disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Urination Problems",
+          "organSystem": "Renal and urinary disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Libido Decrease",
+          "organSystem": "Reproductive system and breast disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Orgasmic Dysfunction",
+          "organSystem": "Reproductive system and breast disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Sweating",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "notes": "Sweating excessively",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Appetite Decrease",
+          "organSystem": "Metabolism and nutrition disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Appetite Increase",
+          "organSystem": "Metabolism and nutrition disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Weight Loss",
+          "organSystem": "Metabolism and nutrition disorders",
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 2,
+              "numAffected": 2,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 0,
+              "numAffected": 0,
+              "numAtRisk": 17
+            }
+          ]
+        },
+        {
+          "term": "Other",
+          "organSystem": "General disorders",
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "notes": "Other unspecified non-serious adverse events",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numEvents": 1,
+              "numAffected": 1,
+              "numAtRisk": 19
+            },
+            {
+              "groupId": "EG001",
+              "numEvents": 3,
+              "numAffected": 3,
+              "numAtRisk": 17
+            }
+          ]
+        }
+      ]
+    },
+    "moreInfoModule": {
+      "certainAgreement": {
+        "piSponsorEmployee": true,
+        "restrictiveAgreement": false
+      },
+      "pointOfContact": {
+        "title": "Cenk Tek, M.D.",
+        "organization": "Yale University",
+        "email": "cenk.tek@yale.edu",
+        "phone": "203-974-7484"
+      }
+    }
+  },
+  "derivedSection": {
+    "miscInfoModule": {
+      "versionHolder": "2024-12-13"
+    },
+    "conditionBrowseModule": {
+      "meshes": [
+        {
+          "id": "D007319",
+          "term": "Sleep Initiation and Maintenance Disorders"
+        },
+        {
+          "id": "D012893",
+          "term": "Sleep Wake Disorders"
+        },
+        {
+          "id": "D012559",
+          "term": "Schizophrenia"
+        },
+        {
+          "id": "D011618",
+          "term": "Psychotic Disorders"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "D019967",
+          "term": "Schizophrenia Spectrum and Other Psychotic Disorders"
+        },
+        {
+          "id": "D001523",
+          "term": "Mental Disorders"
+        },
+        {
+          "id": "D020919",
+          "term": "Sleep Disorders, Intrinsic"
+        },
+        {
+          "id": "D020920",
+          "term": "Dyssomnias"
+        },
+        {
+          "id": "D009422",
+          "term": "Nervous System Diseases"
+        },
+        {
+          "id": "D009461",
+          "term": "Neurologic Manifestations"
+        }
+      ],
+      "browseLeaves": [
+        {
+          "id": "M15376",
+          "name": "Schizophrenia",
+          "asFound": "Schizophrenia",
+          "relevance": "HIGH"
+        },
+        {
+          "id": "M22242",
+          "name": "Parasomnias",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M10356",
+          "name": "Sleep Initiation and Maintenance Disorders",
+          "asFound": "Insomnia",
+          "relevance": "HIGH"
+        },
+        {
+          "id": "M15696",
+          "name": "Sleep Wake Disorders",
+          "asFound": "Sleep Disorders",
+          "relevance": "HIGH"
+        },
+        {
+          "id": "M14473",
+          "name": "Psychotic Disorders",
+          "asFound": "Schizoaffective Disorder",
+          "relevance": "HIGH"
+        },
+        {
+          "id": "M4815",
+          "name": "Mental Disorders",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M21838",
+          "name": "Schizophrenia Spectrum and Other Psychotic Disorders",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M22654",
+          "name": "Sleep Disorders, Intrinsic",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M22655",
+          "name": "Dyssomnias",
+          "relevance": "LOW"
+        },
+        {
+          "id": "M12404",
+          "name": "Neurologic Manifestations",
+          "relevance": "LOW"
+        }
+      ],
+      "browseBranches": [
+        {
+          "abbrev": "BXM",
+          "name": "Behaviors and Mental Disorders"
+        },
+        {
+          "abbrev": "All",
+          "name": "All Conditions"
+        },
+        {
+          "abbrev": "BC10",
+          "name": "Nervous System Diseases"
+        },
+        {
+          "abbrev": "BC23",
+          "name": "Symptoms and General Pathology"
+        }
+      ]
+    },
+    "interventionBrowseModule": {
+      "meshes": [
+        {
+          "id": "D000069582",
+          "term": "Eszopiclone"
+        }
+      ],
+      "ancestors": [
+        {
+          "id": "D006993",
+          "term": "Hypnotics and Sedatives"
+        },
+        {
+          "id": "D002492",
+          "term": "Central Nervous System Depressants"
+        },
+        {
+          "id": "D045505",
+          "term": "Physiological Effects of Drugs"
+        }
+      ],
+      "browseLeaves": [
+        {
+          "id": "M475",
+          "name": "Eszopiclone",
+          "asFound": "Healthcare Workers",
+          "relevance": "HIGH"
+        },
+        {
+          "id": "M10043",
+          "name": "Hypnotics and Sedatives",
+          "relevance": "LOW"
+        }
+      ],
+      "browseBranches": [
+        {
+          "abbrev": "CNSDep",
+          "name": "Central Nervous System Depressants"
+        },
+        {
+          "abbrev": "All",
+          "name": "All Drugs and Chemicals"
+        }
+      ]
+    }
+  },
+  "hasResults": true
+}
